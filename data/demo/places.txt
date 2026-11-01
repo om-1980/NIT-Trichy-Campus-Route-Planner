@@ -1,0 +1,16 @@
+# SYNTHETIC DEMONSTRATION DATA - NOT REAL NIT TRICHY GEOGRAPHY.
+#
+# Format: place_id|node_id|name
+#   place_id  positive integer typed in the menu (separate from graph-node IDs)
+#   node_id   graph node used as this place's approach point (entrance)
+#   name      text shown in the menu
+1|101|Main Gate
+2|104|Administrative Block
+3|106|Central Library
+4|108|Lecture Hall Complex
+5|110|Computer Science Department
+6|113|Central Canteen
+7|116|Hostel Zone
+8|118|Sports Complex
+9|120|Health Centre
+10|130|Remote Research Station (disconnected)

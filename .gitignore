@@ -1,0 +1,11 @@
+# Compiled binaries (rebuild with build.bat)
+build/
+*.exe
+*.o
+# Packaged ZIP (same content as the repository)
+dist/
+# Editor / OS files
+.vscode/
+*.swp
+Thumbs.db
+desktop.ini

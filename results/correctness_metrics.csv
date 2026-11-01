@@ -1,0 +1,5 @@
+metric,numerator,denominator,value_percent
+test_pass_rate,61,61,100.00
+oracle_agreement_rate (all sweep pairs incl. NO_ROUTE),154985,154985,100.00
+route_validity_rate (OK routes),98112,98112,100.00
+no_route_pairs_checked,56873,154985,36.70

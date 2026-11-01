@@ -1,0 +1,393 @@
+Loading campus data from 'data/demo' ...
+Loaded 22 nodes, 31 physical edges, 61 adjacency entries, 10 places (0 warning(s)).
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 1 | 22 nodes | 31 physical edges | 1 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option: 
+  Place  Name                                     Graph node (approach point)
+      1  Main Gate                                Main Gate [101]
+      2  Administrative Block                     Administrative Block (entrance) [104]
+      3  Central Library                          Central Library (entrance) [106]
+      4  Lecture Hall Complex                     Lecture Hall Complex (entrance) [108]
+      5  Computer Science Department              Computer Science Dept (entrance) [110]
+      6  Central Canteen                          Central Canteen (entrance) [113]
+      7  Hostel Zone                              Hostel Zone (entrance) [116]
+      8  Sports Complex                           Sports Complex (entrance) [118]
+      9  Health Centre                            Health Centre (entrance) [120]
+     10  Remote Research Station (disconnected)   Remote Research Station (entrance) [130]
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 1 | 22 nodes | 31 physical edges | 1 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Source place ID:   Destination place ID: 
+  Route: Main Gate  ->  Central Library
+  Mode: standard   Graph version: 1
+  Status: OK
+  Total distance: 590.0 m   Segments: 4
+   1. E01  Main Gate [101]                        -> Gate Junction J1 [102]                  160.0 m  road
+   2. E02  Gate Junction J1 [102]                 -> Admin Road Junction J2 [103]            155.0 m  road
+   3. E03  Admin Road Junction J2 [103]           -> Administrative Block (entrance) [104]   105.0 m  walkway
+   4. E22  Administrative Block (entrance) [104]  -> Central Library (entrance) [106]        170.0 m  stairs
+  Node IDs: 101 -> 102 -> 103 -> 104 -> 106
+  Edge IDs: E01, E02, E03, E22
+  Search: 11 vertices settled, 32 adjacency entries scanned (2 filtered), 16 heap pushes
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 1 | 22 nodes | 31 physical edges | 1 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Source place ID:   Destination place ID: 
+  Route: Main Gate  ->  Central Library
+  Mode: step-free   Graph version: 1
+  Status: OK
+  Total distance: 608.0 m   Segments: 4
+   1. E01  Main Gate [101]                        -> Gate Junction J1 [102]                  160.0 m  road
+   2. E02  Gate Junction J1 [102]                 -> Admin Road Junction J2 [103]            155.0 m  road
+   3. E04  Admin Road Junction J2 [103]           -> Library Junction J3 [105]               158.0 m  road
+   4. E05  Library Junction J3 [105]              -> Central Library (entrance) [106]        135.0 m  walkway
+  Node IDs: 101 -> 102 -> 103 -> 105 -> 106
+  Edge IDs: E01, E02, E04, E05
+  Search: 11 vertices settled, 32 adjacency entries scanned (3 filtered), 16 heap pushes
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 1 | 22 nodes | 31 physical edges | 1 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Edge ID to close (e.g. E22):   Edge E22 (Administrative Block (entrance) [104] <-> Central Library (entrance) [106]) is now CLOSED in both directions. Graph version 2.
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 2 | 22 nodes | 31 physical edges | 2 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Source place ID:   Destination place ID: 
+  Route: Main Gate  ->  Central Library
+  Mode: standard   Graph version: 2
+  Status: OK
+  Total distance: 608.0 m   Segments: 4
+   1. E01  Main Gate [101]                        -> Gate Junction J1 [102]                  160.0 m  road
+   2. E02  Gate Junction J1 [102]                 -> Admin Road Junction J2 [103]            155.0 m  road
+   3. E04  Admin Road Junction J2 [103]           -> Library Junction J3 [105]               158.0 m  road
+   4. E05  Library Junction J3 [105]              -> Central Library (entrance) [106]        135.0 m  walkway
+  Node IDs: 101 -> 102 -> 103 -> 105 -> 106
+  Edge IDs: E01, E02, E04, E05
+  Search: 11 vertices settled, 32 adjacency entries scanned (3 filtered), 16 heap pushes
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 2 | 22 nodes | 31 physical edges | 2 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Edge ID to close (e.g. E22):   Edge E05 (Library Junction J3 [105] <-> Central Library (entrance) [106]) is now CLOSED in both directions. Graph version 3.
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 3 | 22 nodes | 31 physical edges | 3 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Edge ID to close (e.g. E22):   Edge E24 (Central Library (entrance) [106] <-> Lecture Hall Complex (entrance) [108]) is now CLOSED in both directions. Graph version 4.
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 4 | 22 nodes | 31 physical edges | 4 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Source place ID:   Destination place ID: 
+  Route: Main Gate  ->  Central Library
+  Mode: standard   Graph version: 4
+  Status: NO_ROUTE
+  No permitted route exists from Main Gate [101] to Central Library (entrance) [106] with the current closures and mode.
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 4 | 22 nodes | 31 physical edges | 4 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Edge ID to reopen (e.g. E22):   Edge E22 (Administrative Block (entrance) [104] <-> Central Library (entrance) [106]) is now OPEN in both directions. Graph version 5.
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 5 | 22 nodes | 31 physical edges | 3 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Source place ID:   Destination place ID: 
+  Route: Main Gate  ->  Central Library
+  Mode: standard   Graph version: 5
+  Status: OK
+  Total distance: 590.0 m   Segments: 4
+   1. E01  Main Gate [101]                        -> Gate Junction J1 [102]                  160.0 m  road
+   2. E02  Gate Junction J1 [102]                 -> Admin Road Junction J2 [103]            155.0 m  road
+   3. E03  Admin Road Junction J2 [103]           -> Administrative Block (entrance) [104]   105.0 m  walkway
+   4. E22  Administrative Block (entrance) [104]  -> Central Library (entrance) [106]        170.0 m  stairs
+  Node IDs: 101 -> 102 -> 103 -> 104 -> 106
+  Edge IDs: E01, E02, E03, E22
+  Search: 11 vertices settled, 32 adjacency entries scanned (3 filtered), 16 heap pushes
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 5 | 22 nodes | 31 physical edges | 3 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   2 edge status(es) restored. Graph version 6.
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 6 | 22 nodes | 31 physical edges | 1 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Source place ID:   Destination place ID: 
+  Route: Main Gate  ->  Remote Research Station (disconnected)
+  Mode: standard   Graph version: 6
+  Status: NO_ROUTE
+  No permitted route exists from Main Gate [101] to Remote Research Station (entrance) [130] with the current closures and mode.
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 6 | 22 nodes | 31 physical edges | 1 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Source place ID:   Destination place ID: 
+  Route: Central Library  ->  Central Library
+  Mode: standard   Graph version: 6
+  Status: OK
+  Total distance: 0.0 m   Segments: 0
+  Source and destination are the same location: Central Library (entrance) [106]
+  Node IDs: 106
+  Edge IDs: (none)
+  Search: 1 vertices settled, 0 adjacency entries scanned (0 filtered), 1 heap pushes
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 6 | 22 nodes | 31 physical edges | 1 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Source place ID:   Destination place ID:   Invalid destination: enter a place ID from option 1.
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 6 | 22 nodes | 31 physical edges | 1 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Source place ID:   Destination place ID: 
+  Route: Sports Complex  ->  Hostel Zone
+  Mode: standard   Graph version: 6
+  Status: OK
+  Total distance: 382.0 m   Segments: 2
+   1. E23  Sports Complex (entrance) [118]        -> Hostel Junction J9 [115]                220.0 m  road
+   2. E15  Hostel Junction J9 [115]               -> Hostel Zone (entrance) [116]            162.0 m  walkway
+  Node IDs: 118 -> 115 -> 116
+  Edge IDs: E23, E15
+  Search: 7 vertices settled, 18 adjacency entries scanned (0 filtered), 9 heap pushes
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 6 | 22 nodes | 31 physical edges | 1 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Source place ID:   Destination place ID: 
+  Route: Hostel Zone  ->  Sports Complex
+  Mode: standard   Graph version: 6
+  Status: OK
+  Total distance: 491.0 m   Segments: 3
+   1. E15  Hostel Zone (entrance) [116]           -> Hostel Junction J9 [115]                162.0 m  walkway
+   2. E19  Hostel Junction J9 [115]               -> Sports Junction J10 [117]               170.0 m  road
+   3. E18  Sports Junction J10 [117]              -> Sports Complex (entrance) [118]         159.0 m  walkway
+  Node IDs: 116 -> 115 -> 117 -> 118
+  Edge IDs: E15, E19, E18
+  Search: 7 vertices settled, 17 adjacency entries scanned (0 filtered), 11 heap pushes
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 6 | 22 nodes | 31 physical edges | 1 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option:   Source graph-node ID:   Destination graph-node ID:   INVALID_DESTINATION: no graph node with ID 555.
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 6 | 22 nodes | 31 physical edges | 1 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option: 
+--- Graph summary (version 6) ---
+  name                  : SYNTHETIC demo campus (not real NIT Trichy geography)
+  provenance            : Synthetic layout written for development and testing (AI-assisted); no survey or map source
+  units                 : metres (distance_m); coordinates are an invented local x/y frame
+  direction_assumption  : paths are two-way unless marked one-way
+  licence               : Project teaching data; free to reuse with the project
+  Graph nodes            : 22
+  Physical edges         : 31 (30 two-way, 1 one-way)
+  Adjacency entries      : 61 (= 2 x two-way + one-way)
+  Places (menu entries)  : 10
+  Closed edges now       : 1
+  Step-free yes/no/unknown: 29/1/1
+  Total path length      : 5859.0 m
+  Connected components   : 2 (ignoring direction and status)
+  Isolated nodes         : 0
+  Load errors / warnings : 0 / 0
+
+=========== Smart Campus Route Planner ===========
+ Dataset: SYNTHETIC demo campus (not real NIT Trichy geography)
+ Graph version 6 | 22 nodes | 31 physical edges | 1 closed
+  1. List places
+  2. Find shortest route (standard)
+  3. Find shortest route (step-free paths only)
+  4. List physical edges and status
+  5. Close a path
+  6. Reopen a path
+  7. Reset all paths to dataset status
+  8. Graph summary and data-validation report
+  9. Route between graph-node IDs (diagnostic)
+  0. Exit
+Choose an option: Goodbye.

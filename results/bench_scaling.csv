@@ -1,0 +1,12 @@
+graph,nodes,physical_edges,adjacency_entries,build_ms,algorithm,queries,batches,calls_per_batch,median_of_query_medians_us,mean_settled,mean_adjacency_scanned,mean_heap_pushes,mean_stale_pops,mean_max_heap,est_query_workspace_bytes,est_graph_bytes,oracle_agreement
+grid_10x10,100,180,360,0.29,dijkstra_p2p_early_stop,20,21,50,1.340,45.4,164.1,62.1,5.0,16.1,2356,28960,20/20
+grid_10x10,100,180,360,0.29,dijkstra_full_sssp,20,21,50,2.020,100.0,360.0,118.2,18.2,18.4,2388,28960,
+grid_10x10,100,180,360,0.29,bellman_ford_reference_full,20,21,1,5.000,,,,,,,28960,
+grid_32x32,1024,1984,3968,2.42,dijkstra_p2p_early_stop,20,21,50,12.240,477.1,1861.5,599.8,85.0,51.5,22320,312320,20/20
+grid_32x32,1024,1984,3968,2.42,dijkstra_full_sssp,20,21,50,48.240,1024.0,3968.0,1216.8,192.8,64.5,22528,312320,
+grid_32x32,1024,1984,3968,2.42,bellman_ford_reference_full,20,21,1,176.000,,,,,,,312320,
+grid_100x100,10000,19800,39600,31.98,dijkstra_p2p_early_stop,20,9,5,349.200,3899.2,15494.0,4808.6,768.9,159.3,212544,3097600,20/20
+grid_100x100,10000,19800,39600,31.98,dijkstra_full_sssp,20,9,5,951.400,10000.0,39600.0,12083.2,2083.2,203.9,213248,3097600,
+grid_100x100,10000,19800,39600,31.98,bellman_ford_reference_full,20,3,1,8353.000,,,,,,,3097600,
+grid_317x317,100489,200344,400688,341.51,dijkstra_p2p_early_stop,20,5,1,8295.000,48001.2,191541.1,58123.3,9712.9,497.3,2118221,31281560,20/20
+grid_317x317,100489,200344,400688,341.51,dijkstra_full_sssp,20,5,1,15443.000,100489.0,400688.0,121179.3,20690.3,585.2,2119629,31281560,

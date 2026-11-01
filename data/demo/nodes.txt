@@ -1,0 +1,30 @@
+# SYNTHETIC DEMONSTRATION DATA - NOT REAL NIT TRICHY GEOGRAPHY.
+# Names are generic campus facilities; coordinates and distances were invented
+# for testing the planner. Replace with verified campus data (see data/README.md).
+#
+# Format: node_id|name|x_m|y_m
+#   node_id  non-negative integer, unique (need not be contiguous)
+#   name     non-empty text without '|'
+#   x_m,y_m  optional local planar coordinates in metres (both given or both empty)
+101|Main Gate|0|0
+102|Gate Junction J1|0|150
+103|Admin Road Junction J2|150|150
+104|Administrative Block (entrance)|150|250
+105|Library Junction J3|300|150
+106|Central Library (entrance)|300|280
+107|Academic Junction J4|450|150
+108|Lecture Hall Complex (entrance)|450|300
+109|Department Junction J5|600|150
+110|Computer Science Dept (entrance)|600|300
+111|South Road Junction J6|300|0
+112|Canteen Junction J7|450|0
+113|Central Canteen (entrance)|450|-100
+114|Hostel Road Junction J8|600|0
+115|Hostel Junction J9|750|0
+116|Hostel Zone (entrance)|750|-150
+117|Sports Junction J10|750|150
+118|Sports Complex (entrance)|900|150
+119|Health Road Junction J11|150|-100
+120|Health Centre (entrance)|150|-200
+130|Remote Research Station (entrance)|2000|2000
+131|Research Station Gate|2000|1900

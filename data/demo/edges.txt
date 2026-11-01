@@ -1,0 +1,44 @@
+# SYNTHETIC DEMONSTRATION DATA - NOT REAL NIT TRICHY GEOGRAPHY.
+#
+# Format: edge_id|from_node|to_node|distance_m|direction|status|step_free|path_type|label
+#   edge_id     unique physical path ID (letters, digits, '_' or '-'; case-insensitive)
+#   from/to     graph-node IDs from nodes.txt (no self-loops)
+#   distance_m  finite, non-negative walking distance in metres
+#   direction   two-way | one-way   (one-way allows from_node -> to_node only)
+#   status      open | closed       (initial status; changeable at run time)
+#   step_free   yes | no | unknown  (only "yes" is usable in step-free mode)
+#   path_type   walkway | road | ramp | stairs   (stairs cannot be step_free=yes)
+#   label       optional description
+# A two-way record produces two adjacency entries that share this one record,
+# so closing it blocks both directions.
+E01|101|102|160|two-way|open|yes|road|Gate road north
+E02|102|103|155|two-way|open|yes|road|North road west section
+E03|103|104|105|two-way|open|yes|walkway|Admin approach walk
+E04|103|105|158|two-way|open|yes|road|North road centre section
+E05|105|106|135|two-way|open|yes|walkway|Library approach walk
+E06|105|107|152|two-way|open|yes|road|North road east section
+E07|107|108|160|two-way|open|yes|walkway|Lecture hall approach walk
+E08|107|109|154|two-way|open|yes|road|North road far-east section
+E09|109|110|158|two-way|open|yes|walkway|CS department approach walk
+E10|101|111|310|two-way|open|yes|road|South road from gate
+E11|111|112|156|two-way|open|yes|road|South road centre section
+E12|112|113|104|two-way|open|yes|walkway|Canteen approach walk
+E13|112|114|157|two-way|open|yes|road|South road east section
+E14|114|115|153|two-way|open|yes|road|Hostel road
+E15|115|116|162|two-way|open|yes|walkway|Hostel approach walk
+E16|109|114|165|two-way|open|yes|road|East link road
+E17|109|117|151|two-way|open|yes|road|Sports road
+E18|117|118|159|two-way|open|yes|walkway|Sports approach walk
+E19|115|117|170|two-way|open|yes|road|Hostel-sports link road
+E20|111|105|175|two-way|open|yes|walkway|Central cross walk
+E21|101|105|520|two-way|open|yes|road|Winding perimeter road (direct but long)
+E22|104|106|170|two-way|open|no|stairs|Admin-library footbridge (stairs)
+E23|118|115|220|one-way|open|yes|road|Sports exit lane (one-way)
+E24|106|108|160|two-way|open|yes|ramp|Library-lecture hall ramp
+E25|110|118|350|two-way|open|unknown|walkway|Back lane (step-free status unverified)
+E26|101|119|185|two-way|open|yes|road|Health road from gate
+E27|119|120|105|two-way|open|yes|walkway|Health centre approach walk
+E28|119|111|190|two-way|open|yes|road|Health-south link road
+E29|113|119|450|two-way|open|yes|walkway|Canteen-health service path
+E30|130|131|120|two-way|open|yes|walkway|Research station lane (not linked to main campus)
+E31|102|104|190|two-way|closed|yes|walkway|Gate-admin shortcut (closed for construction in data)

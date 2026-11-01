@@ -1,0 +1,13 @@
+run_at_local: 2026-11-01 22:31:35
+compiler: g++ 15.2.0
+flags: -std=c++17 -O2 -Wall -Wextra -pedantic -static
+cplusplus: 201703
+timer: std::chrono::steady_clock, period 1/1000000000 s
+method: per-call time = batch time / calls_per_batch; median over batches; loading, printing and
+        result checking are outside timed regions
+demo_load_time_us_median: 129.0 (21 batches x 20 loads of nodes/edges/places/metadata files)
+demo_dataset: 22 nodes, 31 physical edges, 61 adjacency entries, 10 places
+sizeof: Node 64, PhysicalEdge 96, AdjEntry 8, heap entry 16 bytes
+cpu: 12th Gen Intel(R) Core(TM) i5-12400F (6 cores, 12 threads)
+os: Microsoft Windows 11 Pro 10.0.26300
+ram_gb: 15.8

@@ -1,0 +1,6 @@
+# Optional dataset description shown by the planner (key = value).
+name = SYNTHETIC demo campus (not real NIT Trichy geography)
+provenance = Synthetic layout written for development and testing (AI-assisted); no survey or map source
+units = metres (distance_m); coordinates are an invented local x/y frame
+direction_assumption = paths are two-way unless marked one-way
+licence = Project teaching data; free to reuse with the project
