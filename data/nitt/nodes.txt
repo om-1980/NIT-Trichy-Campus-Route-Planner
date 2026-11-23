@@ -1,0 +1,210 @@
+# Node ID | Name | X (metres from Main Gate) | Y (metres from Main Gate)
+101|Main Gate (NH 67 Entrance)|0.00|0.00
+102|Security Office & Visitors Reception|-19.58|53.10
+103|Administrative Building & Clock Tower|-12.47|230.21
+104|Director's Office & Senate Hall|-12.47|242.34
+105|Golden Jubilee Convention Hall (GJCH)|-245.51|514.74
+106|Barn Hall Multi-purpose Auditorium|-2.41|279.64
+107|Training and Placement (T&P) Cell|59.60|353.22
+108|Student Activity Centre (SAC)|268.70|-91.06
+109|Estate Maintenance Department (EMD)|190.07|351.66
+110|Central Campus Roundabout & Fountain|0.11|112.10
+121|Dept of Architecture and Planning|-343.39|375.48
+122|Dept of Chemical Engineering|-170.16|214.85
+123|Dept of Chemistry (OJAS Block - West Wing)|-150.81|234.89
+124|Dept of Civil Engineering|292.10|214.51
+125|Dept of Computer Applications (CA / MCA)|523.29|256.82
+126|Dept of Computer Science & Engineering (CSE)|523.29|281.31
+127|Dept of Electrical & Electronics Engineering (EEE)|162.18|238.00
+128|Dept of Electronics & Communication Engineering (ECE)|390.52|420.46
+129|Dept of Energy and Environment (CEESAT)|-64.96|324.83
+130|Dept of Humanities and Social Sciences (HSS)|-178.15|214.51
+131|Dept of Instrumentation & Control Engineering (ICE)|535.32|428.58
+132|Dept of Management Studies (DoMS / MBA)|401.02|509.85
+133|Dept of Mathematics|-178.15|259.04
+134|Dept of Mechanical Engineering|262.03|290.66
+135|Dept of Metallurgical & Materials Engineering (MME)|322.83|231.66
+136|Dept of Physics (OJAS Block - East Wing)|-107.06|234.89
+137|Dept of Production Engineering|311.35|480.46
+141|Workshop Building (Central Workshop)|262.03|290.66
+142|Carpentry & Foundry Workshop|254.81|350.77
+143|Machine Shop & Fitting Workshop|256.45|319.38
+144|Welding & Smithy Workshop|290.13|337.19
+145|Production Machine Tool Lab|250.43|477.56
+146|Siemens Centre of Excellence (CoE)|303.04|437.15
+147|The Octagon Computer Center (CSG)|166.34|417.23
+148|Param Porul Supercomputing Center|167.10|470.33
+149|CECASE Corrosion Research Centre|357.72|336.97
+150|Civil Structures & Heavy Testing Lab|292.10|214.51
+151|High Voltage Engineering Lab (EEE)|182.74|225.65
+156|Central Library Main Portico|532.69|-30.39
+157|Central Library Digital Knowledge Centre|532.69|-13.69
+158|Orion Lecture Hall Complex (UG Mega LHC)|-272.74|313.70
+159|Orion PG Lecture Hall Wing|-272.74|336.97
+160|Lecture Hall Complex (Old LHC)|97.33|462.53
+161|New Lecture Hall Complex (NLHC / Third Eye)|175.63|505.50
+162|MiG-23 Fighter Jet Display (MiGold Plaza)|-314.85|342.53
+166|Agate Hostel|21.33|597.45
+167|Coral Hostel|253.17|610.37
+168|Diamond Hostel|117.12|737.72
+169|Jade Hostel|633.96|765.21
+170|Garnet A Hostel|68.79|884.99
+171|Garnet B Hostel|150.15|887.89
+172|Garnet C Hostel|68.68|843.03
+173|Zircon A Hostel|352.36|1055.76
+174|Zircon B Hostel|520.33|1062.10
+175|Zircon C Hostel|335.19|1054.98
+176|Amber A Hostel|551.17|1191.46
+177|Amber B Hostel|578.08|1187.45
+178|Aquamarine A Hostel|550.85|1272.72
+179|Aquamarine B Hostel|574.36|1278.18
+180|Emerald Hostel|340.88|736.38
+181|Pearl Hostel|232.06|849.59
+182|Topaz Hostel|337.48|965.81
+183|Sapphire Hostel|115.59|958.24
+184|Ruby Hostel|440.50|857.83
+185|Jasper Hostel|561.67|1394.39
+186|Lapis Hostel|543.63|682.06
+191|Opal Complex Security & Main Gate|740.48|-74.92
+192|Opal A Hostel|853.34|-112.10
+193|Opal B Hostel|892.38|-110.10
+194|Opal C Hostel - East Wing|931.86|-108.31
+195|Opal C Hostel - West Wing|931.86|-97.18
+196|Opal D Hostel|791.44|-73.81
+197|Opal E Hostel|754.91|-38.85
+198|Opal F Hostel|791.22|-36.74
+199|Opal G Hostel|795.38|-2.78
+200|Beryl Hostel|459.09|639.98
+206|Mega Mess I - Ground Floor|228.67|1010.67
+207|Mega Mess I - First Floor|228.67|1021.58
+208|Mega Mess II - Ground Floor|-83.11|859.39
+209|Mega Mess II - First Floor|-83.11|865.74
+210|A Mess (Nilgiri Mess)|-36.42|624.62
+211|B Mess|-25.04|659.79
+212|Kailash Mess (Pure Veg)|-106.84|646.66
+213|Sabari Mess (Kerala Cuisine)|452.31|1221.74
+214|Annapurna Mess (Andhra Mess)|-50.31|1214.39
+215|Opal Girls Mess 1|754.04|-76.37
+216|Opal Girls Mess 2|754.04|-63.79
+226|Institute Central Canteen / Staff Canteen|-102.14|279.41
+227|Central Canteen Fast Food Counter|-102.14|286.87
+228|Nescafe Coffee Kiosk|84.32|359.23
+229|Aavin Milk Parlour|140.75|556.60
+230|Night Canteen (Mega Mess Plaza)|443.13|900.02
+231|Night Canteen (Amber & Garnet Plaza)|340.66|790.04
+232|Night Canteen (Opal Girls Complex)|795.16|-86.05
+233|BHEL Gate Canteen & Snack Stalls|-43.20|-76.25
+236|Health Centre / NITT Hospital|610.23|646.32
+237|Hospital Pharmacy & Ambulance Bay|610.23|654.23
+238|Sports Complex & Central Gymnasium|379.92|92.06
+239|Indoor Badminton Stadium|374.34|18.37
+240|NITT Cricket Ground & Pavilion|207.13|5.23
+241|Football Ground & Athletic Track|303.04|-41.52
+242|Tennis Courts|438.10|-11.13
+243|Basketball Courts|434.92|26.49
+244|Swimming Pool, NIT Trichy|427.38|93.17
+245|Jade Playground & Sports Shed|633.96|765.21
+251|Shopping Complex (2K Market)|616.90|478.45
+252|State Bank of India (SBI) NITT Branch|-289.59|93.51
+253|SBI 24x7 ATM Center (Shopping Complex)|625.65|481.68
+254|Canara Bank 24x7 ATM (SAC Plaza)|292.87|-104.20
+255|India Post Office (NITT Sub-Post Office)|603.78|470.55
+256|Co-operative Departmental Store|609.24|476.12
+257|Campus Bookstall & Stationery Store|227.03|894.46
+258|Campus Pharmacy & Medical Store|603.78|648.66
+259|Guest House 1 (Kurunji House)|164.26|785.14
+260|Guest House 2 (Marutham House)|187.77|785.14
+261|Director's Bungalow|906.38|356.00
+262|Staff & Faculty Residential Quarters Zone|787.72|35.40
+266|Sri Vidya Ganapathi Temple (Historic 1968)|718.60|-188.02
+267|Sri Hanuman Shrine|718.60|-175.11
+268|NITT Campus Mosque|573.92|943.44
+269|Campus Christian Prayer Fellowship Centre|841.85|1653.21
+276|Staff Gate / East Gate|616.68|-312.81
+277|Thuvakudi Rear Gate|297.13|1538.00
+281|Classic Foods Restaurant|74.04|393.74
+282|Electrical Maintenance Department|160.87|325.83
+283|Automobile Lab|191.93|280.19
+284|Powder Metallurgy Lab|298.55|403.42
+285|Silver Jubilee Building (SJB)|303.69|415.11
+286|Lyceum (Faculty Block)|523.29|236.78
+287|Space Technology Incubation Centre (S-TIC)|523.29|214.51
+288|Academic Parking Lot (East)|431.75|241.23
+289|Dept of Physical Education|229.77|108.76
+290|NIT Cycle Parking (Main Gate)|24.17|41.97
+291|NSO Ground, NITT|207.13|5.23
+292|Mechanical Dept Labs (Roundabout)|270.01|231.32
+1001|Main Gate Entrance J01|0.00|0.00
+1002|Security Office & Cycle Parking J02|0.00|53.10
+1003|Admin Circle Roundabout J03|0.11|112.10
+1004|Admin South Front J04|0.11|181.12
+1005|Admin Block East Avenue J05|0.11|230.21
+1006|Barn Hall Cross J06|0.11|279.64
+1007|Classic Foods Turn J07|0.11|370.36
+1008|Old LHC Cross J08|0.11|437.15
+1009|Convocation East Cross J09|0.11|515.08
+1010|Agate Hostel Entry J10|0.11|597.45
+1011|A Mess North Spine J11|0.11|626.40
+1012|Diamond Avenue Cross J12|0.11|737.72
+1013|Mega Mess II Cross J13|0.11|860.17
+1014|Sapphire & Mega Mess I J14|0.11|960.36
+1015|North Hostel Spine J15|0.11|1071.68
+1016|Andhra Mess Cross J16|0.11|1183.00
+1020|SBI Branch Road Turn J20|-156.28|112.10
+1021|SBI Main Entrance Plaza J21|-265.64|93.51
+1022|Science Avenue West Cross J22|-150.81|225.65
+1023|Orion LHC South Approach J23|-272.74|270.17
+1024|Orion Front Plaza J24|-298.44|313.70
+1025|Old LHC West Approach J25|-156.28|370.36
+1026|GJCH West Approach J26|-200.02|514.74
+1027|Kailash Mess Avenue J27|-112.53|646.66
+1028|Mega Mess II West Approach J28|-112.53|859.39
+1029|OJAS Science Block Plaza J29|-107.06|230.21
+1030|EEE Front Cross J30|162.18|231.32
+1031|Automobile Lab Road Turn J31|215.55|231.32
+1032|Mechanical Dept Roundabout J32|262.03|231.32
+1033|MME Front Cross J33|322.83|231.32
+1034|Academic Parking Cross J34|431.75|231.32
+1035|Lyceum & CSE Front J35|523.29|231.32
+1036|S-TIC Front Cross J36|523.29|214.51
+1040|Electrical & Estate Maint J40|162.18|325.83
+1041|Octagon Computer Center Front J41|139.00|417.23
+1042|Classic Foods & Old LHC Walkway J42|73.38|416.00
+1043|Third i & Hostel Office Cross J43|139.00|548.47
+1045|Automobile Lab East Gate J45|262.03|280.19
+1046|Central Workshop Front J46|262.03|325.83
+1047|Powder Metallurgy & SJB Turn J47|262.03|414.89
+1048|Silver Jubilee Front J48|357.72|414.89
+1049|ICE Department Cross J49|523.29|414.89
+1050|Coral Hostel Approach J50|303.04|610.37
+1051|Beryl & Nilkesh Canteen J51|368.65|639.98
+1052|Emerald Hostel Approach J52|368.65|736.38
+1053|Pearl & Ruby Hostel Cross J53|368.65|849.04
+1054|Topaz & Nikesh Food Court J54|368.65|960.36
+1055|Zircon Hostel Avenue J55|368.65|1055.76
+1056|Sabari Mess & Amber South J56|368.65|1183.00
+1057|Aquamarine Hostel Avenue J57|467.08|1272.72
+1058|Jasper Hostel North Approach J58|467.08|1394.39
+1059|Rear Perimeter Road J59|368.65|1538.00
+1060|Shopping Centre Turn J60|521.76|478.45
+1061|Shopping Centre Central Plaza J61|616.90|478.45
+1062|Hospital Main Entrance Turn J62|576.44|646.32
+1063|Jade Hostel & Playground Turn J63|576.44|765.21
+1064|NITT Mosque Approach J64|573.92|943.44
+1065|Amber & Aquamarine East Spur J65|551.17|1191.46
+1070|Physical Education Front J70|229.77|112.10
+1071|Sports Complex Front J71|379.59|112.10
+1072|Swimming Pool Front J72|427.38|93.17
+1073|Central Library Front J73|523.29|-30.39
+1074|East Avenue Central Cross J74|523.29|112.10
+1075|Sports Grounds Central Access J75|229.77|5.23
+1076|Courts Complex Access J76|434.27|3.01
+1077|SAC & Pavilion Access J77|229.77|-91.06
+1080|New Avenue West Gate J80|609.24|-74.92
+1081|Opal Main Entrance Plaza J81|740.48|-74.92
+1082|Opal Central Residence Circle J82|827.96|-74.92
+1083|Opal East Block Avenue J83|915.45|-74.92
+1084|Staff Quarters South Avenue J84|718.60|35.40
+1085|Staff Quarters North Turn J85|795.16|292.44
+1086|Director Bungalow Turn J86|849.84|356.00
+1087|Temple Avenue J87|652.99|-188.02

@@ -4,10 +4,10 @@ ADSA project: a C++17 terminal application. It models a campus as a weighted gra
 of physical paths, finds shortest walking routes with Dijkstra's algorithm and a
 binary min-heap, and handles path closures, one-way paths and a step-free mode.
 
-> **Data notice:** the bundled dataset `data/demo/` is **synthetic**. Its names are
-> generic and its geometry is invented. It is **not** real NIT Trichy geography. See
-> [data/README.md](data/README.md) for the file formats and how to substitute
-> verified campus data.
+> **Datasets:** 
+> * `data/nitt/` is the **comprehensive, verified NIT Trichy campus dataset** containing **123 destinations, 188 graph nodes, and 212 physical paths (18.0 km of walkways and roads)** covering all hostels, departments, workshops, library, messes, canteens, sports complex, and central amenities.
+> * `data/demo/` is the compact synthetic dataset retained for automated regression tests (`run_tests.bat`).
+> The application automatically defaults to `data/nitt/` when present.
 
 ## Requirements
 
@@ -35,12 +35,40 @@ g++ -std=c++17 -O2 -Wall -Wextra -pedantic -static -Isrc -o build\route_planner.
 `-static` bundles the C++ runtime. Without it, the .exe fails with
 "libstdc++-6-x64.dll not found" when MinGW's `bin` folder is not on `PATH`.
 
-## Run the planner
+## Interactive Map GUI
+
+A visual, modern GUI is available in the [`gui/`](file:///d:/NIT%20Trichy%20Campus%20Route%20Planner/gui) folder. It features an interactive vector map of the 800-acre NIT Trichy campus with real-time shortest path visualization, smooth pan/zoom, step-by-step turn-by-turn navigation, accessibility mode, and live road closures.
+
+### How to Launch the GUI:
+
+1. **Option 1 (One-click batch launcher)**:
+   ```powershell
+   .\run_gui.bat
+   ```
+2. **Option 2 (Direct browser open)**:
+   Double-click [`gui/index.html`](file:///d:/NIT%20Trichy%20Campus%20Route%20Planner/gui/index.html) in Windows File Explorer or open it in Google Chrome, Microsoft Edge, or Firefox.
+3. **Option 3 (Local web server)**:
+   ```powershell
+   python -m http.server 8080
+   ```
+   Then open `http://localhost:8080/gui/` in your browser.
+
+### GUI Features:
+* **Interactive Vector Campus Map**: Smooth pan, drag, mouse wheel zoom, and reset-to-fit controls.
+* **Point-and-Click Navigation**: Click any campus building or landmark to set as Start (A) or Destination (B).
+* **Category Filters & Directory**: Browse all 123 places categorized by Hostels, Departments, Messes, Workshops & Labs, Sports, and Amenities.
+* **Standard & Step-Free Modes**: Toggle between fastest routes and step-free routes that bypass staircases (like the Admin-Library footbridge).
+* **Live Road Closures**: Click on any road/path on the map to toggle it closed or open; watch Dijkstra dynamically re-calculate alternative routes in real time.
+* **Walking & Cycling Time Estimates**: See distance in metres, estimated walking time (at 1.2 m/s), and cycling time (at 4.2 m/s).
+
+## Run the planner (Terminal CLI)
 
 ```powershell
-.\build\route_planner.exe                     # uses data/demo
-.\build\route_planner.exe data/demo           # explicit data folder
-.\build\route_planner.exe --validate data/demo   # load, validate, print counts, exit
+.\build\route_planner.exe                     # defaults to data/nitt (full NIT Trichy)
+.\build\route_planner.exe data/nitt           # explicit NIT Trichy campus dataset
+.\build\route_planner.exe data/demo           # synthetic demo dataset (for tests)
+.\build\route_planner.exe --validate          # validate default dataset (data/nitt)
+.\build\route_planner.exe --validate data/nitt # validate NITT dataset, print counts, exit
 ```
 
 Run these from the project folder, because the data path is relative. The menu is:

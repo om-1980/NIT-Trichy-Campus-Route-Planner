@@ -1,0 +1,1005 @@
+/* NIT Trichy Campus Route Planner - Realistic & Modern UI Styles */
+
+:root {
+    --bg-dark: #090d16;
+    --sidebar-bg: rgba(15, 23, 42, 0.92);
+    --sidebar-border: rgba(51, 65, 85, 0.7);
+    --card-bg: rgba(30, 41, 59, 0.7);
+    --card-hover: rgba(51, 65, 85, 0.85);
+    --card-border: rgba(71, 85, 105, 0.5);
+    
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --text-dim: #64748b;
+    
+    --primary: #2563eb;
+    --primary-gradient: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    --accent-emerald: #10b981;
+    --accent-amber: #f59e0b;
+    --accent-coral: #ef4444;
+    --accent-purple: #8b5cf6;
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --shadow-lg: 0 14px 35px -5px rgba(0, 0, 0, 0.6), 0 8px 16px -6px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 6px 14px -2px rgba(0, 0, 0, 0.4);
+    --blur-glass: blur(18px);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+}
+
+.app-layout {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* ==========================================================================
+   TOP FLOATING HEADER BAR
+   ========================================================================== */
+.top-header-bar {
+    position: absolute;
+    top: 16px;
+    left: 480px;
+    right: 20px;
+    height: 52px;
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: var(--blur-glass);
+    -webkit-backdrop-filter: var(--blur-glass);
+    border: 1px solid var(--sidebar-border);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    z-index: 1000;
+    box-shadow: var(--shadow-lg);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nitt-crest {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.4);
+}
+
+.header-title {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.2px;
+}
+
+.header-subtitle {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+/* Basemap Switcher Toolbar */
+.basemap-switcher {
+    display: flex;
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(51, 65, 85, 0.8);
+    border-radius: 20px;
+    padding: 3px;
+    gap: 2px;
+}
+
+.base-btn {
+    padding: 5px 12px;
+    background: transparent;
+    border: none;
+    border-radius: 16px;
+    color: #cbd5e1;
+    font-size: 11.5px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.2s ease;
+}
+
+.base-btn:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.base-btn.active {
+    background: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.5);
+}
+
+/* ==========================================================================
+   SIDEBAR (Left Navigation & Control Drawer)
+   ========================================================================== */
+.sidebar {
+    width: 440px;
+    min-width: 400px;
+    height: 100%;
+    background: var(--sidebar-bg);
+    backdrop-filter: var(--blur-glass);
+    -webkit-backdrop-filter: var(--blur-glass);
+    border-right: 1px solid var(--sidebar-border);
+    display: flex;
+    flex-direction: column;
+    z-index: 1010;
+    box-shadow: var(--shadow-lg);
+}
+
+.sidebar-header {
+    padding: 18px 22px;
+    border-bottom: 1px solid var(--sidebar-border);
+    background: linear-gradient(180deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%);
+}
+
+.logo-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 38px;
+    height: 38px;
+    background: var(--primary-gradient);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    box-shadow: 0 3px 10px rgba(37, 99, 235, 0.45);
+}
+
+.logo-text h1 {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    color: #ffffff;
+}
+
+.logo-text p {
+    font-size: 11px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.stats-pill-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    overflow-x: auto;
+}
+
+.stat-pill {
+    padding: 3px 9px;
+    background: rgba(30, 41, 59, 0.8);
+    border: 1px solid rgba(71, 85, 105, 0.5);
+    border-radius: 12px;
+    font-size: 11px;
+    color: #cbd5e1;
+    white-space: nowrap;
+}
+
+.stat-pill strong {
+    color: #60a5fa;
+}
+
+/* Sidebar Scrollable Body */
+.sidebar-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.sidebar-content::-webkit-scrollbar {
+    width: 6px;
+}
+.sidebar-content::-webkit-scrollbar-thumb {
+    background-color: #334155;
+    border-radius: 4px;
+}
+
+/* Route Finder Card */
+.route-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+}
+
+.input-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.input-label-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+.dot-start { background-color: var(--accent-emerald); box-shadow: 0 0 8px var(--accent-emerald); }
+.dot-dest { background-color: var(--accent-coral); box-shadow: 0 0 8px var(--accent-coral); }
+
+.select-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.custom-select-input {
+    width: 100%;
+    padding: 10.5px 14px;
+    background-color: rgba(15, 23, 42, 0.9);
+    border: 1px solid #334155;
+    border-radius: var(--radius-md);
+    color: #ffffff;
+    font-size: 13.5px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.custom-select-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.35);
+}
+
+.swap-btn-row {
+    display: flex;
+    justify-content: flex-end;
+    margin: -6px 0;
+}
+
+.swap-btn {
+    background: rgba(30, 41, 59, 0.9);
+    border: 1px solid #475569;
+    color: #cbd5e1;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.swap-btn:hover {
+    background: #3b82f6;
+    color: #ffffff;
+    border-color: #60a5fa;
+    transform: rotate(180deg);
+}
+
+/* Route Mode Toggle (Standard vs Step-Free) */
+.mode-toggle-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(15, 23, 42, 0.8);
+    border: 1px solid #334155;
+    border-radius: var(--radius-md);
+    padding: 3px;
+    gap: 4px;
+}
+
+.mode-btn {
+    padding: 8px 6px;
+    background: transparent;
+    border: none;
+    border-radius: var(--radius-sm);
+    color: #94a3b8;
+    font-size: 11.5px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.mode-btn.active {
+    background: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.action-btn-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.btn-primary {
+    flex: 1;
+    padding: 12px;
+    background: var(--primary-gradient);
+    border: none;
+    border-radius: var(--radius-md);
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 3px 10px rgba(37, 99, 235, 0.4);
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    padding: 12px 18px;
+    background: rgba(30, 41, 59, 0.9);
+    border: 1px solid #475569;
+    border-radius: var(--radius-md);
+    color: #cbd5e1;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background: #334155;
+    color: #ffffff;
+}
+
+/* Route Results Panel */
+.route-result-card {
+    background: rgba(24, 34, 53, 0.9);
+    border: 1.5px solid #2563eb;
+    border-radius: var(--radius-lg);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.25);
+}
+
+.route-summary-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgba(15, 23, 42, 0.85);
+    border-radius: var(--radius-md);
+    padding: 12px;
+    text-align: center;
+    gap: 8px;
+    border: 1px solid rgba(51, 65, 85, 0.6);
+}
+
+.metric-item .val {
+    font-size: 18px;
+    font-weight: 800;
+    color: #ffffff;
+}
+.metric-item .lbl {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-top: 2px;
+    font-weight: 600;
+}
+
+.route-actions-bar {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-sim-walk {
+    flex: 1;
+    padding: 8px 12px;
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.35);
+    border-radius: var(--radius-sm);
+    color: #34d399;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn-sim-walk:hover {
+    background: #059669;
+    color: #ffffff;
+}
+
+.step-free-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 14px;
+    font-size: 11.5px;
+    font-weight: 600;
+    align-self: flex-start;
+}
+.badge-yes { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35); }
+.badge-no { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.35); }
+
+/* Step-by-Step Directions Accordion */
+.directions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 260px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.direction-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 12px;
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(51, 65, 85, 0.6);
+    border-radius: var(--radius-md);
+    font-size: 12px;
+}
+
+.dir-step-num {
+    width: 22px;
+    height: 22px;
+    background: rgba(37, 99, 235, 0.2);
+    border: 1px solid #3b82f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 800;
+    color: #60a5fa;
+    flex-shrink: 0;
+}
+
+.dir-step-body {
+    flex: 1;
+}
+
+.dir-step-name {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.dir-step-meta {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+/* Category Filter Chips */
+.category-filter-row {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+}
+
+.category-filter-row::-webkit-scrollbar {
+    height: 4px;
+}
+.category-filter-row::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 2px;
+}
+
+.chip-btn {
+    padding: 6px 12px;
+    background: rgba(30, 41, 59, 0.8);
+    border: 1px solid rgba(51, 65, 85, 0.7);
+    border-radius: 16px;
+    color: #cbd5e1;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.15s ease;
+}
+
+.chip-btn.active, .chip-btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #3b82f6;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.4);
+}
+
+/* Preset Quick Routes */
+.presets-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section-title {
+    font-size: 11.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--text-muted);
+}
+
+.preset-chip-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+
+.preset-chip {
+    padding: 9px 12px;
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(51, 65, 85, 0.6);
+    border-radius: var(--radius-md);
+    color: #e2e8f0;
+    font-size: 11.5px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.15s ease;
+}
+
+.preset-chip:hover {
+    background: #1e3a8a;
+    border-color: #3b82f6;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* Road Closures Manager */
+.closures-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.closures-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closure-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    border-radius: var(--radius-sm);
+    font-size: 11px;
+}
+
+.btn-reopen {
+    padding: 4px 10px;
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid #475569;
+    color: #fca5a5;
+    border-radius: 4px;
+    font-size: 10.5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-reopen:hover {
+    background: #ef4444;
+    color: #ffffff;
+}
+
+/* Directory Items */
+.directory-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px;
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(51, 65, 85, 0.6);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.directory-item:hover {
+    background: rgba(51, 65, 85, 0.8);
+    border-color: #3b82f6;
+    transform: translateX(2px);
+}
+
+.dir-item-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.cat-hostels { background-color: #f97316; }
+.cat-departments { background-color: #2563eb; }
+.cat-workshops { background-color: #0891b2; }
+.cat-libraries { background-color: #7c3aed; }
+.cat-messes { background-color: #059669; }
+.cat-canteens { background-color: #d97706; }
+.cat-sports { background-color: #16a34a; }
+.cat-admin { background-color: #dc2626; }
+.cat-amenities { background-color: #0d9488; }
+.cat-worship { background-color: #b45309; }
+.cat-gates { background-color: #475569; }
+.cat-other { background-color: #94a3b8; }
+
+.dir-item-info {
+    flex: 1;
+    overflow: hidden;
+}
+
+.dir-item-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dir-item-sub {
+    font-size: 10.5px;
+    color: #94a3b8;
+}
+
+.dir-quick-route {
+    padding: 4px 10px;
+    background: #2563eb;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.dir-quick-route:hover {
+    background: #1d4ed8;
+}
+
+/* ==========================================================================
+   MAP CONTAINER & LEAFLET CUSTOM STYLES
+   ========================================================================== */
+.map-container {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    background-color: #0b1120;
+}
+
+#mapViewport {
+    width: 100%;
+    height: 100%;
+}
+
+.map-dark-theme .leaflet-tile-pane {
+    filter: brightness(0.65) invert(1) contrast(3) hue-rotate(200deg) saturate(0.35);
+}
+
+/* Custom DivIcons */
+.campus-div-icon {
+    background: transparent;
+    border: none;
+}
+
+.custom-pin {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ffffff;
+    transition: transform 0.2s ease;
+}
+
+.custom-pin:hover {
+    transform: scale(1.25);
+    z-index: 999;
+}
+
+.pin-icon {
+    font-size: 13px;
+    user-select: none;
+}
+
+/* Start & Destination Pins */
+.pin-start, .pin-dest {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
+
+.pin-badge {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 900;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    position: relative;
+    z-index: 2;
+}
+
+.bg-start {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.bg-dest {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.pulse-ring {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    top: -9px;
+    left: -9px;
+    border-radius: 50%;
+    z-index: 1;
+    animation: pulseRing 1.8s ease-out infinite;
+}
+
+.ring-start {
+    border: 3px solid #10b981;
+    background: rgba(16, 185, 129, 0.25);
+}
+
+.ring-dest {
+    border: 3px solid #ef4444;
+    background: rgba(239, 68, 68, 0.25);
+}
+
+@keyframes pulseRing {
+    0% { transform: scale(0.6); opacity: 0.9; }
+    50% { transform: scale(1.2); opacity: 0.3; }
+    100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* Simulation Runner Icon */
+.sim-person-marker {
+    font-size: 24px;
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.7));
+    animation: runnerBob 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes runnerBob {
+    from { transform: translateY(0); }
+    to { transform: translateY(-4px); }
+}
+
+/* Route Animation */
+@keyframes leafletFlow {
+    to {
+        stroke-dashoffset: -32;
+    }
+}
+
+.leaflet-animated-route-flow {
+    animation: leafletFlow 1.2s linear infinite;
+}
+
+/* Custom Tooltip Styling */
+.custom-leaflet-tooltip, .road-leaflet-tooltip {
+    background: rgba(15, 23, 42, 0.92) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(71, 85, 105, 0.8) !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.5) !important;
+}
+
+.custom-leaflet-tooltip::before, .road-leaflet-tooltip::before {
+    border-top-color: rgba(15, 23, 42, 0.92) !important;
+}
+
+.place-leaflet-tooltip {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.tooltip-cat {
+    font-size: 9.5px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.tooltip-sub {
+    font-size: 10px;
+    color: #94a3b8;
+}
+
+/* Floating Controls on Map */
+.map-floating-controls {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1000;
+}
+
+.map-ctrl-btn {
+    width: 44px;
+    height: 44px;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(71, 85, 105, 0.7);
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+    transition: all 0.2s ease;
+}
+
+.map-ctrl-btn:hover {
+    background: #2563eb;
+    border-color: #60a5fa;
+    transform: scale(1.08);
+}
+
+/* Map Popover */
+.map-popover {
+    position: absolute;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(16px);
+    border: 1px solid #3b82f6;
+    border-radius: var(--radius-md);
+    padding: 14px 16px;
+    box-shadow: var(--shadow-lg);
+    z-index: 1020;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.popover-title {
+    font-size: 14px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.popover-cat {
+    font-size: 10.5px;
+    color: #60a5fa;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.popover-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.btn-popover-start {
+    flex: 1;
+    padding: 7px;
+    background: #059669;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.btn-popover-start:hover { background: #10b981; }
+
+.btn-popover-dest {
+    flex: 1;
+    padding: 7px;
+    background: #dc2626;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.btn-popover-dest:hover { background: #ef4444; }
+
+/* Mobile responsive drawer */
+@media (max-width: 900px) {
+    .app-layout {
+        flex-direction: column-reverse;
+    }
+    .top-header-bar {
+        left: 10px;
+        right: 10px;
+        top: 10px;
+        height: 48px;
+    }
+    .sidebar {
+        width: 100%;
+        min-width: 100%;
+        height: 55vh;
+    }
+    .map-container {
+        height: 45vh;
+    }
+}

@@ -7,6 +7,7 @@
 #include "router.hpp"
 
 #include <algorithm>
+#include <fstream>
 #include <iomanip>
 #include <iostream>
 #include <sstream>
@@ -76,9 +77,9 @@ void printSummary(const CampusGraph& g, const LoadReport& rep) {
 }
 
 void listPlaces(const CampusGraph& g) {
-    std::cout << "\n  Place  Name                                     Graph node (approach point)\n";
+    std::cout << "\n  Place  Name                                              Graph node (approach point)\n";
     for (const Place& p : g.places())
-        std::cout << "  " << std::setw(5) << p.id << "  " << std::left << std::setw(40) << p.name << std::right << " "
+        std::cout << "  " << std::setw(5) << p.id << "  " << std::left << std::setw(48) << p.name << std::right << " "
                   << nodeLabel(g, p.node) << "\n";
 }
 
@@ -201,12 +202,16 @@ void printMenu(const CampusGraph& g) {
 
 int main(int argc, char** argv) {
     std::string dataDir = "data/demo";
+    {
+        std::ifstream testNitt("data/nitt/nodes.txt");
+        if (testNitt.good()) dataDir = "data/nitt";
+    }
     bool validateOnly = false;
     for (int i = 1; i < argc; ++i) {
         const std::string a = argv[i];
         if (a == "--validate") validateOnly = true;
         else if (a == "--help" || a == "-h") {
-            std::cout << "Usage: route_planner [--validate] [data_dir]   (default data_dir: data/demo)\n";
+            std::cout << "Usage: route_planner [--validate] [data_dir]   (default data_dir: " << dataDir << ")\n";
             return 0;
         } else dataDir = a;
     }

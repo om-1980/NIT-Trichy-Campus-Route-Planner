@@ -1,0 +1,136 @@
+# Place ID | Graph Node ID | Place / Building / POI Name
+1|101|Main Gate (NH 67 Highway Entrance)
+2|102|Security Office & Visitors Reception
+3|103|Administrative Building & Clock Tower
+4|104|Director's Office & Senate Hall
+5|105|Golden Jubilee Convention Hall (GJCH)
+6|106|Barn Hall Multi-purpose Auditorium
+7|107|Training and Placement (T&P) Cell
+8|108|Student Activity Centre (SAC)
+9|109|Estate Maintenance Department (EMD)
+10|110|Central Campus Roundabout & Fountain
+11|121|Dept of Architecture and Planning (Arch)
+12|122|Dept of Chemical Engineering
+13|123|Dept of Chemistry
+14|124|Dept of Civil Engineering
+15|125|Dept of Computer Applications (CA / MCA)
+16|126|Dept of Computer Science & Engineering (CSE)
+17|127|Dept of Electrical & Electronics Engineering (EEE)
+18|128|Dept of Electronics & Communication Engineering (ECE)
+19|129|Dept of Energy and Environment (CEESAT)
+20|130|Dept of Humanities and Social Sciences (HSS)
+21|131|Dept of Instrumentation & Control Engineering (ICE)
+22|132|Dept of Management Studies (DoMS / MBA)
+23|133|Dept of Mathematics
+24|134|Dept of Mechanical Engineering
+25|135|Dept of Metallurgical & Materials Engineering (MME)
+26|136|Dept of Physics
+27|137|Dept of Production Engineering
+28|141|Central Workshop Main Entrance
+29|142|Carpentry & Foundry Workshop
+30|143|Machine Shop & Fitting Workshop
+31|144|Welding & Smithy Workshop
+32|145|Production Machine Tool Lab
+33|146|Siemens Centre of Excellence (CoE in Manufacturing)
+34|147|The Octagon Computer Support Group (CSG)
+35|148|Param Porul Supercomputing Center
+36|149|CECASE Corrosion Research Centre
+37|150|Civil Structures & Heavy Testing Lab
+38|151|High Voltage Engineering Lab (EEE)
+39|156|Central Library Main Portico
+40|157|Central Library Digital Knowledge Centre
+41|158|Orion Lecture Hall Complex (UG Mega LHC)
+42|159|Orion PG Lecture Hall Wing
+43|160|Old Lecture Hall Complex (Old LHC)
+44|161|New Lecture Hall Complex (NLHC / Third Eye)
+45|162|MiG-23 Fighter Jet Display Landmark
+46|166|Agate Hostel (UG 1st Year Boys)
+47|167|Coral Hostel (UG 1st Year Boys)
+48|168|Diamond Hostel (UG 1st Year Boys)
+49|169|Jade Hostel (UG 1st Year Boys)
+50|170|Garnet A Hostel
+51|171|Garnet B Hostel
+52|172|Garnet C Hostel
+53|173|Zircon A Hostel
+54|174|Zircon B Hostel
+55|175|Zircon C Hostel
+56|176|Amber A Hostel
+57|177|Amber B Hostel
+58|178|Aquamarine A Hostel
+59|179|Aquamarine B Hostel
+60|180|Emerald Hostel (PG Boys)
+61|181|Pearl Hostel (PG Boys)
+62|182|Topaz Hostel
+63|183|Sapphire Hostel
+64|184|Ruby Hostel
+65|185|Jasper Hostel (PhD & Research Scholars)
+66|186|Lapis Hostel (Single Seater)
+67|191|Opal Hostel Complex Security & Main Gate
+68|192|Opal A Hostel (Senior UG & PG Girls)
+69|193|Opal B Hostel (PG Girls & Scholars)
+70|194|Opal C Hostel - East Wing (UG 1st Year Girls)
+71|195|Opal C Hostel - West Wing (UG 1st Year Girls)
+72|196|Opal D Hostel (UG Girls)
+73|197|Opal E Hostel (Final Year Single Seater Girls)
+74|198|Opal F Hostel (UG & PG Girls)
+75|199|Opal G Hostel (UG & PG Girls)
+76|200|Beryl Hostel (Girls & Scholars Residence)
+77|206|Mega Mess I - Ground Floor (South Indian)
+78|207|Mega Mess I - First Floor (North Indian)
+79|208|Mega Mess II - Ground Floor (Multi-Cuisine)
+80|209|Mega Mess II - First Floor (Special Cuisine)
+81|210|A Mess (Nilgiri Mess / North Indian)
+82|211|B Mess (Hostel Dining)
+83|212|Kailash Mess (South Indian Freshers)
+84|213|Sabari Mess (Kerala Regional Cuisine)
+85|214|Annapurna Mess (Andhra Regional Cuisine)
+86|215|Opal Girls Mess 1 (South Dining Hall)
+87|216|Opal Girls Mess 2 (North Dining Hall)
+88|226|Institute Central Canteen
+89|227|Central Canteen Fast Food & Juice Counter
+90|228|Nescafe Coffee Kiosk (Library & LHC)
+91|229|Aavin Milk Parlour (Orion / Science Zone)
+92|230|Night Canteen (Mega Mess Plaza)
+93|231|Night Canteen (Amber & Garnet Plaza)
+94|232|Night Canteen (Opal Girls Complex)
+95|233|BHEL Gate Canteen & Snack Stalls
+96|236|Health Centre / NITT Hospital (24x7 Emergency)
+97|237|Hospital Pharmacy & Ambulance Bay
+98|238|Sports Complex & Central Gymnasium
+99|239|Indoor Badminton Stadium
+100|240|NITT Cricket Ground & Pavilion
+101|241|Football Ground & Athletic Track
+102|242|Tennis Courts
+103|243|Basketball Courts
+104|244|Swimming Pool Complex
+105|245|Jade Playground & Sports Shed
+106|251|Shopping Complex (2K Market)
+107|252|State Bank of India (SBI) NITT Branch
+108|253|SBI 24x7 ATM Center (Shopping Complex)
+109|254|Canara Bank 24x7 ATM (SAC Plaza)
+110|255|India Post Office (NITT Sub-Post Office)
+111|256|Co-operative Departmental Store
+112|257|Campus Bookstall & Stationery Store
+113|258|Campus Pharmacy & Medical Store
+114|259|Guest House 1 (Kurunji House)
+115|260|Guest House 2 (Marutham House)
+116|261|Director's Bungalow
+117|262|Staff & Faculty Residential Quarters Zone
+118|266|Sri Vidya Ganapathi Temple (Historic 1968)
+119|267|Sri Hanuman Shrine
+120|268|NITT Campus Mosque
+121|269|Campus Christian Prayer Fellowship Centre
+122|276|Staff Gate / East Gate
+123|277|Thuvakudi Rear Gate (North-East Perimeter)
+124|281|Classic Foods Restaurant
+125|282|Electrical Maintenance Department
+126|283|Automobile Lab
+127|284|Powder Metallurgy Lab
+128|285|Silver Jubilee Building (SJB)
+129|286|Lyceum (Faculty Block)
+130|287|Space Technology Incubation Centre (S-TIC)
+131|288|Academic Parking Lot (East)
+132|289|Dept of Physical Education
+133|290|NIT Cycle Parking (Main Gate)
+134|291|NSO Ground, NITT
+135|292|Mechanical Dept Labs (Roundabout)

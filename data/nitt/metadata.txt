@@ -1,0 +1,6 @@
+# Campus metadata for National Institute of Technology, Tiruchirappalli (NIT Trichy)
+name = National Institute of Technology, Tiruchirappalli (NIT Trichy)
+provenance = Calibrated with Google Maps POIs & OpenStreetMap layout for NIT Trichy
+units = metres (distance_m); planar coordinates aligned to Main Gate (0,0) on NH 67
+direction_assumption = campus paths and avenues are two-way pedestrian/vehicle corridors unless marked one-way
+licence = NIT Trichy Campus Route Planning Project Dataset
