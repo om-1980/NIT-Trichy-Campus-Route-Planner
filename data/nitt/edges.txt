@@ -1,230 +1,227 @@
 # Edge ID | From Node | To Node | Distance (m) | Direction | Status | Step-Free | Path Type | Path Label
-N001|1001|1002|51.0|two-way|open|yes|road|Main Avenue Entrance
-N002|1002|1003|75.4|two-way|open|yes|road|Main Avenue South
-N003|1003|1004|69.3|one-way|open|yes|road|Main Avenue Central
-N004|1004|1005|36.0|two-way|open|yes|road|Admin Spine Approach
-N005|1005|1006|76.5|two-way|open|yes|road|Barn Hall Spine
-N006|1006|1007|110.0|two-way|open|yes|road|Classic Foods Spine
-N007|1007|1008|60.7|two-way|open|yes|road|Old LHC Spine
-N008|1008|1009|85.5|two-way|open|yes|road|Convocation Spine
-N009|1009|1010|105.0|two-way|open|yes|road|Hostel Entry Spine
-N010|1010|1011|13.0|two-way|open|yes|road|A Mess Spine
-N011|1011|1012|118.5|two-way|open|yes|road|Diamond Avenue Spine
-N012|1012|1013|129.4|two-way|open|yes|road|Mega Mess II Spine
-N013|1013|1014|106.4|two-way|open|yes|road|Sapphire Spine
+N001|1001|1002|56.8|two-way|open|yes|road|Main Avenue Entrance
+N002|1002|1003|63.0|two-way|open|yes|road|Main Avenue South
+N003|1003|1004|73.5|one-way|open|yes|road|Main Avenue Central
+N004|1004|1005|52.5|two-way|open|yes|road|Admin Spine Approach
+N005|1005|1006|52.9|two-way|open|yes|road|Barn Hall Spine
+N006|1006|1007|96.3|two-way|open|yes|road|Classic Foods Spine
+N007|1007|1008|71.1|two-way|open|yes|road|Old LHC Spine
+N008|1008|1009|82.8|two-way|open|yes|road|Convocation Spine
+N009|1009|1010|87.5|two-way|open|yes|road|Hostel Entry Spine
+N010|1010|1011|31.4|two-way|open|yes|road|A Mess Spine
+N011|1011|1012|117.9|two-way|open|yes|road|Diamond Avenue Spine
+N012|1012|1013|129.6|two-way|open|yes|road|Mega Mess II Spine
+N013|1013|1014|106.2|two-way|open|yes|road|Sapphire Spine
 N014|1014|1015|117.9|two-way|open|yes|road|North Hostel Spine
-N015|1015|1016|118.1|two-way|open|yes|road|Andhra Mess Spine
-N016|1005|1029|127.4|two-way|open|yes|road|Admin to Science Avenue
-N017|1029|1022|58.6|two-way|open|yes|road|Science Avenue Central
-N018|1022|1020|78.4|two-way|open|yes|road|Science West to SBI Turn
-N019|1020|1021|111.9|two-way|open|yes|road|SBI Plaza Road
-N020|1003|1020|169.0|two-way|open|yes|road|Admin Circle to SBI Access
-N021|1022|1023|183.0|two-way|open|yes|road|Science West to Orion South
-N022|1023|1024|47.7|two-way|open|yes|road|Orion South to Front Plaza
-N023|1006|1029|150.9|two-way|open|yes|walkway|Barn Hall to Science Block
-N024|1024|1025|206.1|two-way|open|yes|walkway|Orion to Old LHC
-N025|1025|1026|85.5|two-way|open|yes|walkway|Old LHC to Convocation Hall
-N026|1009|1026|146.5|two-way|open|yes|road|Spine to Convocation Hall
-N027|1026|1027|199.5|two-way|open|yes|road|Convocation to Kailash Mess
-N028|1011|1027|125.5|two-way|open|yes|walkway|A Mess to Kailash Mess
-N029|1027|1028|253.3|two-way|open|yes|road|Kailash to Mega Mess II
-N030|1013|1028|48.2|two-way|open|yes|road|Spine to Mega Mess II
-N031|1070|1030|54.5|two-way|open|yes|road|East Avenue to EEE Front
-N032|1030|1031|139.4|two-way|open|yes|road|EEE to Automobile Lab Avenue
-N033|1031|1032|42.2|two-way|open|yes|road|Automobile to Mech Roundabout
-N034|1032|1033|98.1|two-way|open|yes|road|Mech Roundabout to MME
-N035|1033|1034|30.6|two-way|open|yes|road|MME to Academic Parking Cross
-N036|1034|1035|169.5|two-way|open|yes|road|Parking to Lyceum & CSE Avenue
-N037|1035|1036|60.9|two-way|open|yes|road|Lyceum to S-TIC Front
-N038|1031|1032|42.2|two-way|open|yes|road|Automobile to Mech Roundabout
-N039|1032|1045|33.6|two-way|open|yes|road|Mech Roundabout to Automobile West Gate
-N040|1034|1046|88.7|two-way|open|yes|road|Academic Parking North to Workshop Front
-N041|1045|1046|114.9|two-way|open|yes|road|Central Workshop Road
-N042|1046|1047|142.3|two-way|open|yes|road|Workshop to Powder Metallurgy Road
-N043|1047|1048|47.2|two-way|open|yes|road|Powder Metallurgy to Silver Jubilee Road
-N044|1048|1049|238.7|two-way|open|yes|road|Silver Jubilee to ICE Road
-N045|1049|1060|107.4|two-way|open|yes|road|ICE to Shopping Centre Turn Road
-N046|1035|1049|250.0|two-way|open|yes|road|East Academic Corridor North to ICE
-N047|1030|1040|221.7|two-way|open|yes|road|EEE to Estate Maintenance Road
-N048|1040|1041|91.6|two-way|open|yes|road|Estate Maint to Octagon Plaza
-N049|1041|1042|71.5|two-way|open|yes|walkway|Octagon to Classic Foods Walkway
-N050|1007|1042|75.9|two-way|open|yes|walkway|Main Spine to Classic Foods Walkway
-N051|1008|1042|81.7|two-way|open|yes|walkway|Old LHC to Octagon Walkway
-N052|1041|1043|138.6|two-way|open|yes|road|Octagon to Third i & Hostel Office Road
-N053|1043|1050|70.2|two-way|open|yes|road|Hostel Office to Coral Avenue
-N054|1003|1070|113.1|two-way|open|yes|road|Admin Circle to Physical Education Road
-N055|1033|1071|100.5|two-way|open|yes|road|20th Street to Sports Complex
-N056|1071|1075|173.2|two-way|open|yes|road|Sports Complex South to Grounds Way
-N057|1075|1077|105.6|two-way|open|yes|road|Sports Grounds to SAC Avenue
-N058|1077|1087|231.8|two-way|open|yes|road|20th Street to Temple Avenue
-N059|1071|1072|203.5|two-way|open|yes|road|Sports Complex to Swimming Pool Road
-N060|1072|1076|6.9|two-way|open|yes|walkway|Swimming Pool to Courts Plaza Way
-N061|1072|1073|120.9|two-way|open|yes|road|Swimming Pool to Central Library Road
-N062|1073|1074|16.6|two-way|open|yes|road|Central Library North East Avenue
-N063|1071|1074|229.6|two-way|open|yes|road|Sports Complex East to East Avenue Cross
-N064|1074|1035|30.5|two-way|open|yes|road|East Avenue to Lyceum & CSE
-N065|1073|1080|214.0|two-way|open|yes|road|Central Library to New Avenue
-N066|1080|1081|140.3|two-way|open|yes|road|New Avenue to Opal Main Gate
-N067|1081|1082|87.3|two-way|open|yes|road|Opal Central Plaza Avenue
-N068|1082|1083|102.4|two-way|open|yes|road|Opal East Residential Avenue
-N069|1081|1084|117.8|two-way|open|yes|road|Opal to Quarters South
-N070|1084|1085|278.0|two-way|open|yes|road|Quarters South to North Road
-N071|1085|1086|74.4|two-way|open|yes|road|Quarters North to Director Bungalow
-N072|1061|1085|351.8|two-way|open|yes|road|Shopping Centre to Quarters North
-N073|1080|1087|121.9|two-way|open|yes|road|New Avenue to Temple Road
-N074|1050|1051|229.0|two-way|open|yes|road|Coral to Beryl Avenue
-N075|1051|1052|56.1|two-way|open|yes|road|Beryl to Emerald Avenue
-N076|1052|1053|129.2|two-way|open|yes|road|Emerald to Ruby Avenue
-N077|1053|1054|116.0|two-way|open|yes|road|Ruby to Topaz Avenue
-N078|1054|1055|145.0|two-way|open|yes|road|Topaz to Zircon Avenue
-N079|1015|1055|400.9|two-way|open|yes|road|Hostel Spine to Zircon
-N080|1055|1056|107.2|two-way|open|yes|road|Zircon to Sabari Mess
-N081|1016|1056|460.5|two-way|open|yes|road|Andhra Mess to Sabari Mess
-N082|1056|1057|154.3|two-way|open|yes|road|Sabari Mess to Aquamarine
-N083|1057|1058|128.3|two-way|open|yes|road|Aquamarine to Jasper Avenue
-N084|1058|1059|63.1|two-way|open|yes|road|Jasper to Rear Perimeter
-N085|1049|1060|107.4|two-way|open|yes|road|ICE to Shopping Centre Turn
-N086|1060|1061|79.2|two-way|open|yes|road|Shopping Centre Approach
-N087|1060|1062|175.2|two-way|open|yes|road|Hospital Main Road
-N088|1051|1062|240.2|two-way|open|yes|road|Beryl to Hospital Road
-N089|1062|1063|125.9|two-way|open|yes|road|Hospital to Jade Playground
-N090|1063|1064|171.1|two-way|open|yes|road|Jade to Mosque Road
-N091|1054|1064|233.8|two-way|open|yes|walkway|Topaz to Mosque Way
-N092|1064|1065|246.8|two-way|open|yes|road|Mosque to Amber East
-N093|1056|1065|60.1|two-way|open|yes|road|Amber South to Amber East
-N094|1057|1065|131.1|two-way|open|yes|road|Aquamarine to Amber East
-N095|101|1001|1.0|two-way|open|yes|road|Main Gate Entrance
-N096|102|1002|31.6|two-way|open|yes|walkway|Security Reception Spur
-N097|103|1005|28.9|two-way|open|yes|walkway|Admin Main Portico
-N098|104|103|13.7|two-way|open|no|stairs|Admin Stairs to Senate Hall
-N099|105|1026|143.6|two-way|open|yes|walkway|Convocation Hall Portico
-N100|106|1006|24.6|two-way|open|yes|walkway|Barn Hall Entrance
-N101|107|1007|71.3|two-way|open|yes|walkway|T&P Cell Portico
-N102|108|1077|160.6|two-way|open|yes|walkway|SAC Front Entrance
-N103|109|1040|71.0|two-way|open|yes|walkway|EMD Office Spur
-N104|110|1003|9.2|two-way|open|yes|road|Central Roundabout Link
-N105|121|1024|77.1|two-way|open|yes|walkway|Architecture Department Spur
-N106|122|1022|34.9|two-way|open|yes|walkway|Chemical Engineering Spur
-N107|123|1029|40.7|two-way|open|yes|walkway|Chemistry Department (OJAS West) Spur
-N108|124|1032|4.9|two-way|open|yes|walkway|Civil Engineering Spur
-N109|125|1035|115.6|two-way|open|yes|walkway|CA Department Spur
-N110|126|1035|141.2|two-way|open|yes|walkway|CSE Department Spur
-N111|127|1030|120.5|two-way|open|yes|walkway|EEE Department Spur
-N112|128|1048|62.9|two-way|open|yes|walkway|ECE Department Spur
-N113|129|1029|112.8|two-way|open|yes|walkway|CEESAT Entrance
-N114|130|1022|40.4|two-way|open|yes|walkway|HSS Department Spur
-N115|131|1049|75.0|two-way|open|yes|walkway|ICE Department Spur
-N116|132|1048|153.8|two-way|open|yes|walkway|DoMS Department Spur
-N117|133|1022|79.7|two-way|open|yes|walkway|Mathematics Department Spur
-N118|134|1046|137.3|two-way|open|yes|walkway|Mechanical Engineering Spur
-N119|135|1033|106.0|two-way|open|yes|walkway|MME Department Spur
-N120|136|1029|9.3|two-way|open|yes|walkway|Physics Department (OJAS East) Spur
-N121|137|1048|127.0|two-way|open|yes|walkway|Production Engineering Spur
-N122|141|1046|137.3|two-way|open|yes|walkway|Central Workshop Main Gate
-N123|142|1046|184.9|two-way|open|yes|walkway|Carpentry Workshop Spur
-N124|143|1046|160.3|two-way|open|yes|walkway|Machine Shop Spur
-N125|144|1046|150.8|two-way|open|yes|walkway|Welding Workshop Spur
-N126|145|1047|205.8|two-way|open|yes|walkway|Production Lab Spur
-N127|146|1048|92.6|two-way|open|yes|walkway|Siemens CoE Portico
-N128|147|1041|40.3|two-way|open|yes|walkway|Octagon CSG Main Portico
-N129|148|1041|69.5|two-way|open|yes|walkway|Param Porul Wing Spur
-N130|149|1047|46.3|two-way|open|yes|walkway|CECASE Research Spur
-N131|150|1032|4.9|two-way|open|yes|walkway|Civil Testing Lab Spur
-N132|151|1030|109.4|two-way|open|yes|walkway|High Voltage Lab Spur
-N133|156|1073|148.5|two-way|open|yes|walkway|Central Library Portico
-N134|157|1073|131.0|two-way|open|yes|walkway|Digital Library Spur
-N135|158|1024|35.9|two-way|open|yes|walkway|Orion LHC Main Entrance
-N136|159|1024|43.8|two-way|open|yes|walkway|Orion PG Wing Entrance
-N137|160|1042|88.2|two-way|open|yes|walkway|Old LHC Entrance
-N138|161|1043|66.0|two-way|open|yes|walkway|NLHC Third Eye Portico
-N139|162|1024|33.0|two-way|closed|yes|walkway|MiG-23 Aircraft Landmark Spur (Closed for Maintenance)
-N140|166|1010|39.9|two-way|open|yes|walkway|Agate Hostel Gate
-N141|167|1050|129.1|two-way|open|yes|walkway|Coral Hostel Gate
-N142|168|1012|126.7|two-way|open|yes|walkway|Diamond Hostel Gate
-N143|169|1063|69.0|two-way|open|yes|walkway|Jade Hostel Gate
-N144|170|1013|85.0|two-way|open|yes|walkway|Garnet A Gate
-N145|171|1013|168.7|two-way|open|yes|walkway|Garnet B Gate
-N146|172|1013|82.5|two-way|open|yes|walkway|Garnet C Gate
-N147|173|1055|20.1|two-way|open|yes|walkway|Zircon A Gate
-N148|174|1055|158.5|two-way|open|yes|walkway|Zircon B Gate
-N149|175|1055|38.1|two-way|open|yes|walkway|Zircon C Gate
-N150|176|1056|143.3|two-way|open|yes|walkway|Amber A Gate
-N151|177|1056|168.6|two-way|open|yes|walkway|Amber B Gate
-N152|178|1057|62.8|two-way|open|yes|walkway|Aquamarine A Gate
-N153|179|1057|87.8|two-way|open|yes|walkway|Aquamarine B Gate
-N154|180|1052|48.9|two-way|open|yes|walkway|Emerald Hostel Gate
-N155|181|1053|117.1|two-way|open|yes|walkway|Pearl Hostel Gate
-N156|182|1054|46.7|two-way|open|yes|walkway|Topaz Hostel Gate
-N157|183|1014|131.6|two-way|open|yes|walkway|Sapphire Hostel Gate
-N158|184|1053|120.2|two-way|open|yes|walkway|Ruby Hostel Gate
-N159|185|1058|63.3|two-way|open|yes|walkway|Jasper Hostel Gate
-N160|186|1062|50.8|two-way|open|yes|walkway|Lapis Hostel Gate
-N161|191|1081|14.2|two-way|open|yes|walkway|Opal Complex Security Gate
-N162|192|1082|52.7|two-way|open|yes|walkway|Opal A Hostel Gate
-N163|193|1082|84.6|two-way|open|yes|walkway|Opal B Hostel Gate
-N164|194|1083|25.7|two-way|open|yes|walkway|Opal C East Wing Gate
-N165|195|1083|18.8|two-way|open|yes|walkway|Opal C West Wing Gate
-N166|196|1082|31.9|two-way|open|yes|walkway|Opal D Hostel Gate
-N167|197|1081|30.4|two-way|open|yes|walkway|Opal E Hostel Gate
-N168|198|1082|51.9|two-way|open|yes|walkway|Opal F Hostel Gate
-N169|199|1082|81.6|two-way|open|yes|walkway|Opal G Hostel Gate
-N170|200|1051|118.7|two-way|open|yes|walkway|Beryl Hostel Gate
-N171|206|1014|255.9|two-way|open|yes|walkway|Mega Mess I Ground Floor Portico
-N172|207|206|12.5|two-way|open|no|stairs|Mega Mess I Stairs to 1st Floor
-N173|208|1013|80.8|two-way|open|yes|walkway|Mega Mess II Ground Floor Portico
-N174|209|208|7.7|two-way|open|no|stairs|Mega Mess II Stairs to 1st Floor
-N175|210|1011|26.9|two-way|open|yes|walkway|A Mess Entrance
-N176|211|1011|39.0|two-way|open|yes|walkway|B Mess Entrance
-N177|212|1027|25.0|two-way|open|yes|walkway|Kailash Mess Entrance
-N178|213|1056|90.7|two-way|open|yes|walkway|Sabari Mess Entrance
-N179|214|1016|54.5|two-way|open|yes|walkway|Andhra Mess Entrance
-N180|215|1081|22.1|two-way|open|yes|walkway|Opal Girls Mess 1 Entrance
-N181|216|1081|16.1|two-way|open|yes|walkway|Opal Girls Mess 2 Entrance
-N182|226|1029|54.2|two-way|open|yes|walkway|Staff Canteen Main Entrance
-N183|227|226|8.8|two-way|open|yes|walkway|Central Canteen Fast Food Counter
-N184|228|1041|78.0|two-way|open|yes|walkway|Nescafe Kiosk Walkway
-N185|229|1043|14.3|two-way|open|yes|walkway|Aavin Milk Parlour Walkway
-N186|230|1054|113.2|two-way|open|yes|walkway|Mega Mess Plaza Night Canteen
-N187|231|1052|105.2|two-way|open|yes|walkway|Garnet Plaza Night Canteen
-N188|232|1082|30.3|two-way|open|yes|walkway|Opal Night Canteen
-N189|233|1001|93.0|two-way|open|yes|walkway|BHEL Gate Snack Stalls
-N190|236|1062|38.3|two-way|open|yes|walkway|Health Centre Main Portico
-N191|237|236|9.3|two-way|open|yes|walkway|Hospital Emergency Bay
-N192|238|1071|75.2|two-way|open|yes|walkway|Sports Complex Entrance
-N193|239|1071|50.9|two-way|open|yes|walkway|Badminton Stadium Entrance
-N194|240|1075|173.6|two-way|open|yes|walkway|Cricket Pavilion Entrance
-N195|241|1075|86.5|two-way|open|yes|walkway|Football Ground Gate
-N196|242|1076|92.9|two-way|open|yes|walkway|Tennis Courts Gate
-N197|243|1076|101.0|two-way|open|yes|walkway|Basketball Courts Gate
-N198|244|1072|142.0|two-way|open|yes|walkway|Swimming Pool Entrance
-N199|245|1063|69.0|two-way|open|yes|walkway|Jade Playground Gate
-N200|251|1061|90.1|two-way|open|yes|walkway|Shopping Complex Main Gate
-N201|252|1021|34.3|two-way|open|yes|walkway|SBI Bank Branch Entrance
-N202|253|1061|91.6|two-way|open|yes|walkway|Shopping Complex ATM Walkway
-N203|254|1077|131.9|two-way|open|yes|walkway|Canara Bank ATM Walkway
-N204|255|1061|93.0|two-way|open|yes|walkway|Post Office Entrance
-N205|256|1061|89.2|two-way|open|yes|walkway|Co-op Store Entrance
-N206|257|1012|293.0|two-way|open|yes|walkway|Campus Xerox & Stationery
-N207|258|1062|31.7|two-way|open|yes|walkway|Campus Pharmacy
-N208|259|1043|251.9|two-way|open|yes|walkway|Kurunji Guest House Gate
-N209|260|1043|256.6|two-way|open|yes|walkway|Marutham Guest House Gate
-N210|261|1086|61.5|two-way|open|yes|walkway|Director Bungalow Gate
-N211|262|1084|75.0|two-way|open|yes|walkway|Staff Quarters Sector Gate
-N212|266|1087|111.5|two-way|open|yes|walkway|Ganapathi Temple Entrance
-N213|267|1087|112.5|two-way|open|yes|walkway|Hanuman Shrine Walkway
-N214|268|1064|23.7|two-way|open|yes|walkway|Mosque Main Entrance
-N215|269|1059|413.8|two-way|open|yes|walkway|Christian Fellowship Centre
-N216|276|1087|130.1|two-way|open|yes|road|Staff East Gate
-N217|277|1059|237.8|two-way|open|yes|road|Thuvakudi Rear Gate
-N218|281|1042|11.9|two-way|open|yes|walkway|Classic Foods Entrance
-N219|282|1040|37.4|two-way|open|yes|walkway|Electrical Maintenance Entrance
-N220|283|1045|111.9|two-way|open|yes|walkway|Automobile Lab Entrance
-N221|284|1047|119.7|two-way|open|yes|walkway|Powder Metallurgy Entrance
-N222|285|1048|75.8|two-way|open|yes|walkway|Silver Jubilee Building Entrance
-N223|286|1035|94.7|two-way|open|yes|walkway|Lyceum Faculty Block Entrance
-N224|287|1036|13.8|two-way|open|yes|walkway|Space Technology Incubation Entrance
-N225|288|1034|128.1|two-way|open|yes|road|Academic Parking Lot Entrance
-N226|289|1070|125.0|two-way|open|yes|walkway|Physical Education Entrance
-N227|290|1002|17.8|two-way|open|yes|road|NIT Cycle Parking Entrance
-N228|291|1075|173.6|two-way|open|yes|walkway|NSO Ground Entrance
-N229|292|1032|33.3|two-way|open|yes|walkway|Mech Roundabout Lab Entrance
+N015|1015|1016|117.9|two-way|open|yes|road|Andhra Mess Spine
+N016|1005|1029|113.5|two-way|open|yes|road|Admin to Science Avenue
+N017|1029|1022|47.2|two-way|open|yes|road|Science Avenue Central
+N018|1022|1020|120.4|two-way|open|yes|road|Science West to SBI Turn
+N019|1020|1021|117.5|two-way|open|yes|road|SBI Plaza Road
+N020|1003|1020|165.2|two-way|open|yes|road|Admin Circle to SBI Access
+N021|1022|1023|137.3|two-way|open|yes|road|Science West to Orion South
+N022|1023|1024|54.1|two-way|open|yes|road|Orion South to Front Plaza
+N023|1006|1029|124.9|two-way|open|yes|walkway|Barn Hall to Science Block
+N024|1024|1025|161.7|two-way|open|yes|walkway|Orion to Old LHC
+N025|1025|1026|159.4|two-way|open|yes|walkway|Old LHC to Convocation Hall
+N026|1009|1026|211.1|two-way|open|yes|road|Spine to Convocation Hall
+N027|1026|1027|167.2|two-way|open|yes|road|Convocation to Kailash Mess
+N028|1011|1027|121.2|two-way|open|yes|walkway|A Mess to Kailash Mess
+N029|1027|1028|224.4|two-way|open|yes|road|Kailash to Mega Mess II
+N030|1013|1028|119.3|two-way|open|yes|road|Spine to Mega Mess II
+N031|1005|1030|171.2|two-way|open|yes|road|Admin to EEE Avenue
+N032|1030|1031|57.0|two-way|open|yes|road|EEE to Automobile Lab Avenue
+N033|1031|1032|49.8|two-way|open|yes|road|Automobile to Mech Roundabout
+N034|1032|1033|64.8|two-way|open|yes|road|Mech Roundabout to MME
+N035|1033|1034|115.4|two-way|open|yes|road|MME to Academic Parking Cross
+N036|1034|1035|97.1|two-way|open|yes|road|Parking to Lyceum & CSE Avenue
+N037|1035|1036|18.7|two-way|open|yes|road|Lyceum to S-TIC Front
+N038|1032|1045|52.3|two-way|open|yes|road|Mech Roundabout North to Workshop Way
+N039|1045|1046|48.9|two-way|open|yes|road|Central Workshop Road
+N040|1046|1047|94.5|two-way|open|yes|road|Workshop to Powder Metallurgy Road
+N041|1047|1048|101.5|two-way|open|yes|road|Powder Metallurgy to Silver Jubilee Road
+N042|1048|1049|174.8|two-way|open|yes|road|Silver Jubilee to ICE Road
+N043|1049|1060|67.8|two-way|open|yes|road|ICE to Shopping Centre Turn Road
+N044|1035|1049|193.7|two-way|open|yes|road|East Academic Corridor North to ICE
+N045|1030|1040|100.2|two-way|open|yes|road|EEE to Estate Maintenance Road
+N046|1040|1041|100.0|two-way|open|yes|road|Estate Maint to Octagon Plaza
+N047|1041|1042|69.9|two-way|open|yes|walkway|Octagon to Classic Foods Walkway
+N048|1007|1042|91.6|two-way|open|yes|walkway|Main Spine to Classic Foods Walkway
+N049|1008|1042|81.1|two-way|open|yes|walkway|Old LHC to Octagon Walkway
+N050|1041|1043|138.8|two-way|open|yes|road|Octagon to Third i & Hostel Office Road
+N051|1043|1050|185.1|two-way|open|yes|road|Hostel Office to Coral Avenue
+N052|1003|1070|242.1|two-way|open|yes|road|Admin Circle to Physical Education Road
+N053|1070|1071|158.3|two-way|open|yes|road|Physical Education to Sports Complex
+N054|1070|1075|113.2|two-way|open|yes|road|Physical Education South to Grounds Way
+N055|1075|1077|102.1|two-way|open|yes|road|Sports Grounds to SAC Avenue
+N056|1071|1072|55.0|two-way|open|yes|road|Sports Complex to Swimming Pool Road
+N057|1072|1076|95.9|two-way|open|yes|walkway|Swimming Pool to Courts Plaza Way
+N058|1072|1073|165.2|two-way|open|yes|road|Swimming Pool to Central Library Road
+N059|1073|1074|150.6|two-way|open|yes|road|Central Library North East Avenue
+N060|1071|1074|151.9|two-way|open|yes|road|Sports Complex East to East Avenue Cross
+N061|1074|1035|126.2|two-way|open|yes|road|East Avenue to Lyceum & CSE
+N062|1073|1080|102.6|two-way|open|yes|road|Central Library to New Avenue
+N063|1080|1081|138.8|two-way|open|yes|road|New Avenue to Opal Main Gate
+N064|1081|1082|92.9|two-way|open|yes|road|Opal Central Plaza Avenue
+N065|1082|1083|92.9|two-way|open|yes|road|Opal East Residential Avenue
+N066|1081|1084|119.1|two-way|open|yes|road|Opal to Quarters South
+N067|1084|1085|282.6|two-way|open|yes|road|Quarters South to North Road
+N068|1085|1086|89.0|two-way|open|yes|road|Quarters North to Director Bungalow
+N069|1061|1085|271.5|two-way|open|yes|road|Shopping Centre to Quarters North
+N070|1080|1087|128.3|two-way|open|yes|road|New Avenue to Temple Road
+N071|1050|1051|76.6|two-way|open|yes|road|Coral to Beryl Avenue
+N072|1051|1052|102.2|two-way|open|yes|road|Beryl to Emerald Avenue
+N073|1052|1053|119.3|two-way|open|yes|road|Emerald to Ruby Avenue
+N074|1053|1054|117.9|two-way|open|yes|road|Ruby to Topaz Avenue
+N075|1054|1055|101.2|two-way|open|yes|road|Topaz to Zircon Avenue
+N076|1015|1055|388.3|two-way|open|yes|road|Hostel Spine to Zircon
+N077|1055|1056|134.6|two-way|open|yes|road|Zircon to Sabari Mess
+N078|1016|1056|388.0|two-way|open|yes|road|Andhra Mess to Sabari Mess
+N079|1056|1057|140.8|two-way|open|yes|road|Sabari Mess to Aquamarine
+N080|1057|1058|128.8|two-way|open|yes|road|Aquamarine to Jasper Avenue
+N081|1058|1059|183.8|two-way|open|yes|road|Jasper to Rear Perimeter
+N082|1049|1060|67.8|two-way|open|yes|road|ICE to Shopping Centre Turn
+N083|1060|1061|100.9|two-way|open|yes|road|Shopping Centre Approach
+N084|1060|1062|186.4|two-way|open|yes|road|Hospital Main Road
+N085|1051|1062|219.3|two-way|open|yes|road|Beryl to Hospital Road
+N086|1062|1063|125.8|two-way|open|yes|road|Hospital to Jade Playground
+N087|1063|1064|188.2|two-way|open|yes|road|Jade to Mosque Road
+N088|1054|1064|217.3|two-way|open|yes|walkway|Topaz to Mosque Way
+N089|1064|1065|262.5|two-way|open|yes|road|Mosque to Amber East
+N090|1056|1065|192.9|two-way|open|yes|road|Amber South to Amber East
+N091|1057|1065|123.8|two-way|open|yes|road|Aquamarine to Amber East
+N092|101|1001|1.0|two-way|open|yes|road|Main Gate Entrance
+N093|102|1002|21.6|two-way|open|yes|walkway|Security Reception Spur
+N094|103|1005|14.2|two-way|open|yes|walkway|Admin Main Portico
+N095|104|103|13.7|two-way|open|no|stairs|Admin Stairs to Senate Hall
+N096|105|1026|48.8|two-way|open|yes|walkway|Convocation Hall Portico
+N097|106|1006|3.6|two-way|open|yes|walkway|Barn Hall Entrance
+N098|107|1007|66.0|two-way|open|yes|walkway|T&P Cell Portico
+N099|108|1077|41.9|two-way|open|yes|walkway|SAC Front Entrance
+N100|109|1040|40.9|two-way|open|yes|walkway|EMD Office Spur
+N101|110|1003|1.0|two-way|open|yes|road|Central Roundabout Link
+N102|121|1024|81.2|two-way|open|yes|walkway|Architecture Department Spur
+N103|122|1022|24.3|two-way|open|yes|walkway|Chemical Engineering Spur
+N104|123|1029|47.2|two-way|open|yes|walkway|Chemistry Department (OJAS West) Spur
+N105|124|1032|37.2|two-way|open|yes|walkway|Civil Engineering Spur
+N106|125|1035|27.8|two-way|open|yes|walkway|CA Department Spur
+N107|126|1035|53.5|two-way|open|yes|walkway|CSE Department Spur
+N108|127|1030|8.0|two-way|open|yes|walkway|EEE Department Spur
+N109|128|1048|35.9|two-way|open|yes|walkway|ECE Department Spur
+N110|129|1029|109.7|two-way|open|yes|walkway|CEESAT Entrance
+N111|130|1022|32.0|two-way|open|yes|walkway|HSS Department Spur
+N112|131|1049|20.1|two-way|open|yes|walkway|ICE Department Spur
+N113|132|1048|110.6|two-way|open|yes|walkway|DoMS Department Spur
+N114|133|1022|46.3|two-way|open|yes|walkway|Mathematics Department Spur
+N115|134|1046|37.9|two-way|open|yes|walkway|Mechanical Engineering Spur
+N116|135|1033|1.4|two-way|open|yes|walkway|MME Department Spur
+N117|136|1029|5.9|two-way|open|yes|walkway|Physics Department (OJAS East) Spur
+N118|137|1048|85.3|two-way|open|yes|walkway|Production Engineering Spur
+N119|141|1046|37.9|two-way|open|yes|walkway|Central Workshop Main Gate
+N120|142|1046|28.3|two-way|open|yes|walkway|Carpentry Workshop Spur
+N121|143|1046|10.0|two-way|open|yes|walkway|Machine Shop Spur
+N122|144|1046|32.8|two-way|open|yes|walkway|Welding Workshop Spur
+N123|145|1047|67.9|two-way|open|yes|walkway|Production Lab Spur
+N124|146|1048|63.0|two-way|open|yes|walkway|Siemens CoE Portico
+N125|147|1041|29.7|two-way|open|yes|walkway|Octagon CSG Main Portico
+N126|148|1041|64.1|two-way|open|yes|walkway|Param Porul Wing Spur
+N127|149|1047|130.6|two-way|open|yes|walkway|CECASE Research Spur
+N128|150|1032|37.2|two-way|open|yes|walkway|Civil Testing Lab Spur
+N129|151|1030|23.4|two-way|open|yes|walkway|High Voltage Lab Spur
+N130|156|1073|10.9|two-way|open|yes|walkway|Central Library Portico
+N131|157|1073|21.1|two-way|open|yes|walkway|Digital Library Spur
+N132|158|1024|28.0|two-way|open|yes|walkway|Orion LHC Main Entrance
+N133|159|1024|37.4|two-way|open|yes|walkway|Orion PG Wing Entrance
+N134|160|1042|55.9|two-way|open|yes|walkway|Old LHC Entrance
+N135|161|1043|60.3|two-way|open|yes|walkway|NLHC Third Eye Portico
+N136|162|1024|35.8|two-way|closed|yes|walkway|MiG-23 Aircraft Landmark Spur (Closed for Maintenance)
+N137|166|1010|23.3|two-way|open|yes|walkway|Agate Hostel Gate
+N138|167|1050|53.4|two-way|open|yes|walkway|Coral Hostel Gate
+N139|168|1012|123.9|two-way|open|yes|walkway|Diamond Hostel Gate
+N140|169|1063|61.4|two-way|open|yes|walkway|Jade Hostel Gate
+N141|170|1013|77.7|two-way|open|yes|walkway|Garnet A Gate
+N142|171|1013|161.2|two-way|open|yes|walkway|Garnet B Gate
+N143|172|1013|75.2|two-way|open|yes|walkway|Garnet C Gate
+N144|173|1055|18.1|two-way|open|yes|walkway|Zircon A Gate
+N145|174|1055|160.4|two-way|open|yes|walkway|Zircon B Gate
+N146|175|1055|36.1|two-way|open|yes|walkway|Zircon C Gate
+N147|176|1056|192.9|two-way|open|yes|walkway|Amber A Gate
+N148|177|1056|221.0|two-way|open|yes|walkway|Amber B Gate
+N149|178|1057|89.0|two-way|open|yes|walkway|Aquamarine A Gate
+N150|179|1057|113.8|two-way|open|yes|walkway|Aquamarine B Gate
+N151|180|1052|30.2|two-way|open|yes|walkway|Emerald Hostel Gate
+N152|181|1053|144.4|two-way|open|yes|walkway|Pearl Hostel Gate
+N153|182|1054|34.2|two-way|open|yes|walkway|Topaz Hostel Gate
+N154|183|1014|122.3|two-way|open|yes|walkway|Sapphire Hostel Gate
+N155|184|1053|77.0|two-way|open|yes|walkway|Ruby Hostel Gate
+N156|185|1058|100.3|two-way|open|yes|walkway|Jasper Hostel Gate
+N157|186|1062|51.9|two-way|open|yes|walkway|Lapis Hostel Gate
+N158|191|1081|1.0|two-way|open|yes|walkway|Opal Complex Security Gate
+N159|192|1082|48.3|two-way|open|yes|walkway|Opal A Hostel Gate
+N160|193|1082|78.1|two-way|open|yes|walkway|Opal B Hostel Gate
+N161|194|1083|40.1|two-way|open|yes|walkway|Opal C East Wing Gate
+N162|195|1083|30.0|two-way|open|yes|walkway|Opal C West Wing Gate
+N163|196|1082|39.4|two-way|open|yes|walkway|Opal D Hostel Gate
+N164|197|1081|41.8|two-way|open|yes|walkway|Opal E Hostel Gate
+N165|198|1082|56.6|two-way|open|yes|walkway|Opal F Hostel Gate
+N166|199|1082|84.1|two-way|open|yes|walkway|Opal G Hostel Gate
+N167|200|1051|96.0|two-way|open|yes|walkway|Beryl Hostel Gate
+N168|206|1014|246.7|two-way|open|yes|walkway|Mega Mess I Ground Floor Portico
+N169|207|206|12.5|two-way|open|no|stairs|Mega Mess I Stairs to 1st Floor
+N170|208|1013|88.4|two-way|open|yes|walkway|Mega Mess II Ground Floor Portico
+N171|209|208|7.7|two-way|open|no|stairs|Mega Mess II Stairs to 1st Floor
+N172|210|1011|39.4|two-way|open|yes|walkway|A Mess Entrance
+N173|211|1011|44.9|two-way|open|yes|walkway|B Mess Entrance
+N174|212|1027|7.0|two-way|open|yes|walkway|Kailash Mess Entrance
+N175|213|1056|97.8|two-way|open|yes|walkway|Sabari Mess Entrance
+N176|214|1016|63.4|two-way|open|yes|walkway|Andhra Mess Entrance
+N177|215|1081|15.3|two-way|open|yes|walkway|Opal Girls Mess 1 Entrance
+N178|216|1081|19.4|two-way|open|yes|walkway|Opal Girls Mess 2 Entrance
+N179|226|1029|52.9|two-way|open|yes|walkway|Staff Canteen Main Entrance
+N180|227|226|8.8|two-way|open|yes|walkway|Central Canteen Fast Food Counter
+N181|228|1041|84.7|two-way|open|yes|walkway|Nescafe Kiosk Walkway
+N182|229|1043|9.7|two-way|open|yes|walkway|Aavin Milk Parlour Walkway
+N183|230|1054|101.6|two-way|open|yes|walkway|Mega Mess Plaza Night Canteen
+N184|231|1052|64.5|two-way|open|yes|walkway|Garnet Plaza Night Canteen
+N185|232|1082|37.4|two-way|open|yes|walkway|Opal Night Canteen
+N186|233|1001|93.0|two-way|open|yes|walkway|BHEL Gate Snack Stalls
+N187|236|1062|36.5|two-way|open|yes|walkway|Health Centre Main Portico
+N188|237|236|9.3|two-way|open|yes|walkway|Hospital Emergency Bay
+N189|238|1071|22.0|two-way|open|yes|walkway|Sports Complex Entrance
+N190|239|1071|99.6|two-way|open|yes|walkway|Badminton Stadium Entrance
+N191|240|1075|24.8|two-way|open|yes|walkway|Cricket Pavilion Entrance
+N192|241|1075|92.3|two-way|open|yes|walkway|Football Ground Gate
+N193|242|1076|16.4|two-way|open|yes|walkway|Tennis Courts Gate
+N194|243|1076|25.7|two-way|open|yes|walkway|Basketball Courts Gate
+N195|244|1072|1.0|two-way|open|yes|walkway|Swimming Pool Entrance
+N196|245|1063|61.4|two-way|open|yes|walkway|Jade Playground Gate
+N197|251|1061|1.0|two-way|open|yes|walkway|Shopping Complex Main Gate
+N198|252|1021|26.1|two-way|open|yes|walkway|SBI Bank Branch Entrance
+N199|253|1061|10.8|two-way|open|yes|walkway|Shopping Complex ATM Walkway
+N200|254|1077|68.7|two-way|open|yes|walkway|Canara Bank ATM Walkway
+N201|255|1061|17.1|two-way|open|yes|walkway|Post Office Entrance
+N202|256|1061|9.4|two-way|open|yes|walkway|Co-op Store Entrance
+N203|257|1012|290.6|two-way|open|yes|walkway|Campus Xerox & Stationery
+N204|258|1062|29.8|two-way|open|yes|walkway|Campus Pharmacy
+N205|259|1043|250.9|two-way|open|yes|walkway|Kurunji Guest House Gate
+N206|260|1043|254.7|two-way|open|yes|walkway|Marutham Guest House Gate
+N207|261|1086|60.4|two-way|open|yes|walkway|Director Bungalow Gate
+N208|262|1084|73.6|two-way|open|yes|walkway|Staff Quarters Sector Gate
+N209|266|1087|69.9|two-way|open|yes|walkway|Ganapathi Temple Entrance
+N210|267|1087|71.2|two-way|open|yes|walkway|Hanuman Shrine Walkway
+N211|268|1064|1.0|two-way|open|yes|walkway|Mosque Main Entrance
+N212|269|1059|512.4|two-way|open|yes|walkway|Christian Fellowship Centre
+N213|276|1087|137.5|two-way|open|yes|road|Staff East Gate
+N214|277|1059|76.1|two-way|open|yes|road|Thuvakudi Rear Gate
+N215|281|1042|24.4|two-way|open|yes|walkway|Classic Foods Entrance
+N216|282|1040|2.4|two-way|open|yes|walkway|Electrical Maintenance Entrance
+N217|283|1045|74.6|two-way|open|yes|walkway|Automobile Lab Entrance
+N218|284|1047|41.2|two-way|open|yes|walkway|Powder Metallurgy Entrance
+N219|285|1048|57.7|two-way|open|yes|walkway|Silver Jubilee Building Entrance
+N220|286|1035|6.7|two-way|open|yes|walkway|Lyceum Faculty Block Entrance
+N221|287|1036|1.0|two-way|open|yes|walkway|Space Technology Incubation Entrance
+N222|288|1034|11.4|two-way|open|yes|road|Academic Parking Lot Entrance
+N223|289|1070|4.5|two-way|open|yes|walkway|Physical Education Entrance
+N224|290|1002|28.9|two-way|open|yes|road|NIT Cycle Parking Entrance
+N225|291|1075|24.8|two-way|open|yes|walkway|NSO Ground Entrance
+N226|292|1032|9.4|two-way|open|yes|walkway|Mech Roundabout Lab Entrance

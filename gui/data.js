@@ -1,5 +1,5 @@
-// NIT Trichy Verified Campus Map Dataset for Web GUI
-window.CAMPUS_DATA = {
+// Auto-generated from data/nitt
+const dataObj = {
   "metadata": {
     "name": "National Institute of Technology, Tiruchirappalli (NIT Trichy)",
     "provenance": "Calibrated with Google Maps POIs & OpenStreetMap layout for NIT Trichy",
@@ -1371,730 +1371,730 @@ window.CAMPUS_DATA = {
     {
       "id": 1002,
       "name": "Security Office & Cycle Parking J02",
-      "x": 8.86,
-      "y": 46.75,
-      "lat": 10.757293,
-      "lon": 78.81331,
+      "x": 0.0,
+      "y": 53.1,
+      "lat": 10.75735,
+      "lon": 78.813229,
       "category": "other",
       "isJunction": false
     },
     {
       "id": 1003,
       "name": "Admin Circle Roundabout J03",
-      "x": 5.69,
-      "y": 117.55,
-      "lat": 10.757929,
-      "lon": 78.813281,
+      "x": 0.11,
+      "y": 112.1,
+      "lat": 10.75788,
+      "lon": 78.81323,
       "category": "admin",
       "isJunction": false
     },
     {
       "id": 1004,
       "name": "Admin South Front J04",
-      "x": -9.4,
-      "y": 180.78,
-      "lat": 10.758497,
-      "lon": 78.813143,
+      "x": 0.11,
+      "y": 181.12,
+      "lat": 10.7585,
+      "lon": 78.81323,
       "category": "admin",
       "isJunction": false
     },
     {
       "id": 1005,
       "name": "Admin Block East Avenue J05",
-      "x": 5.47,
-      "y": 210.62,
-      "lat": 10.758765,
-      "lon": 78.813279,
+      "x": 0.11,
+      "y": 230.21,
+      "lat": 10.758941,
+      "lon": 78.81323,
       "category": "admin",
       "isJunction": false
     },
     {
       "id": 1006,
-      "name": "Barn Hall Spine J06",
-      "x": 20.01,
-      "y": 281.08,
-      "lat": 10.759398,
-      "lon": 78.813412,
-      "category": "admin",
-      "isJunction": false
+      "name": "Barn Hall Cross J06",
+      "x": 0.11,
+      "y": 279.64,
+      "lat": 10.759385,
+      "lon": 78.81323,
+      "category": "junction",
+      "isJunction": true
     },
     {
       "id": 1007,
       "name": "Classic Foods Turn J07",
-      "x": -0.44,
-      "y": 382.83,
-      "lat": 10.760312,
-      "lon": 78.813225,
+      "x": 0.11,
+      "y": 370.36,
+      "lat": 10.7602,
+      "lon": 78.81323,
       "category": "canteens",
       "isJunction": false
     },
     {
       "id": 1008,
-      "name": "Old LHC Spine J08",
-      "x": 15.75,
-      "y": 437.38,
-      "lat": 10.760802,
-      "lon": 78.813373,
-      "category": "libraries",
-      "isJunction": false
+      "name": "Old LHC Cross J08",
+      "x": 0.11,
+      "y": 437.15,
+      "lat": 10.7608,
+      "lon": 78.81323,
+      "category": "junction",
+      "isJunction": true
     },
     {
       "id": 1009,
       "name": "Convocation East Cross J09",
-      "x": -1.2,
-      "y": 516.08,
-      "lat": 10.761509,
-      "lon": 78.813218,
+      "x": 0.11,
+      "y": 515.08,
+      "lat": 10.7615,
+      "lon": 78.81323,
       "category": "junction",
       "isJunction": true
     },
     {
       "id": 1010,
-      "name": "Hostel Entry Spine J10",
-      "x": -11.48,
-      "y": 614.6,
-      "lat": 10.762394,
-      "lon": 78.813124,
+      "name": "Agate Hostel Entry J10",
+      "x": 0.11,
+      "y": 597.45,
+      "lat": 10.76224,
+      "lon": 78.81323,
       "category": "hostels",
       "isJunction": false
     },
     {
       "id": 1011,
-      "name": "A Mess Spine J11",
-      "x": -11.81,
-      "y": 626.06,
-      "lat": 10.762497,
-      "lon": 78.813121,
+      "name": "A Mess North Spine J11",
+      "x": 0.11,
+      "y": 626.4,
+      "lat": 10.7625,
+      "lon": 78.81323,
       "category": "messes",
       "isJunction": false
     },
     {
       "id": 1012,
-      "name": "Diamond Avenue Spine J12",
-      "x": -2.62,
-      "y": 737.61,
-      "lat": 10.763499,
-      "lon": 78.813205,
-      "category": "other",
-      "isJunction": false
+      "name": "Diamond Avenue Cross J12",
+      "x": 0.11,
+      "y": 737.72,
+      "lat": 10.7635,
+      "lon": 78.81323,
+      "category": "junction",
+      "isJunction": true
     },
     {
       "id": 1013,
-      "name": "Mega Mess II Spine J13",
-      "x": -7.11,
-      "y": 859.84,
-      "lat": 10.764597,
-      "lon": 78.813164,
-      "category": "messes",
-      "isJunction": false
+      "name": "Mega Mess II Cross J13",
+      "x": 0.11,
+      "y": 860.17,
+      "lat": 10.7646,
+      "lon": 78.81323,
+      "category": "junction",
+      "isJunction": true
     },
     {
       "id": 1014,
-      "name": "Sapphire Spine J14",
-      "x": -8.75,
-      "y": 960.25,
-      "lat": 10.765499,
-      "lon": 78.813149,
-      "category": "other",
+      "name": "Sapphire & Mega Mess I J14",
+      "x": 0.11,
+      "y": 960.36,
+      "lat": 10.7655,
+      "lon": 78.81323,
+      "category": "messes",
       "isJunction": false
     },
     {
       "id": 1015,
       "name": "North Hostel Spine J15",
-      "x": -10.06,
-      "y": 1071.57,
-      "lat": 10.766499,
-      "lon": 78.813137,
+      "x": 0.11,
+      "y": 1071.68,
+      "lat": 10.7665,
+      "lon": 78.81323,
       "category": "hostels",
       "isJunction": false
     },
     {
       "id": 1016,
-      "name": "Andhra Mess Spine J16",
-      "x": -10.06,
-      "y": 1183.11,
-      "lat": 10.767501,
-      "lon": 78.813137,
-      "category": "messes",
-      "isJunction": false
+      "name": "Andhra Mess Cross J16",
+      "x": 0.11,
+      "y": 1183.0,
+      "lat": 10.7675,
+      "lon": 78.81323,
+      "category": "junction",
+      "isJunction": true
     },
     {
       "id": 1020,
       "name": "SBI Branch Road Turn J20",
-      "x": -154.31,
-      "y": 115.88,
-      "lat": 10.757914,
-      "lon": 78.811818,
+      "x": -156.28,
+      "y": 112.1,
+      "lat": 10.75788,
+      "lon": 78.8118,
       "category": "amenities",
       "isJunction": false
     },
     {
       "id": 1021,
-      "name": "SBI Plaza Road J21",
-      "x": -259.07,
-      "y": 102.3,
-      "lat": 10.757792,
-      "lon": 78.81086,
+      "name": "SBI Main Entrance Plaza J21",
+      "x": -265.64,
+      "y": 93.51,
+      "lat": 10.757713,
+      "lon": 78.8108,
       "category": "amenities",
       "isJunction": false
     },
     {
       "id": 1022,
       "name": "Science Avenue West Cross J22",
-      "x": -150.26,
-      "y": 189.47,
-      "lat": 10.758575,
-      "lon": 78.811855,
+      "x": -150.81,
+      "y": 225.65,
+      "lat": 10.7589,
+      "lon": 78.81185,
       "category": "junction",
       "isJunction": true
     },
     {
       "id": 1023,
       "name": "Orion LHC South Approach J23",
-      "x": -304.35,
-      "y": 268.95,
-      "lat": 10.759289,
-      "lon": 78.810446,
+      "x": -272.74,
+      "y": 270.17,
+      "lat": 10.7593,
+      "lon": 78.810735,
       "category": "libraries",
       "isJunction": false
     },
     {
       "id": 1024,
       "name": "Orion Front Plaza J24",
-      "x": -305.99,
-      "y": 313.37,
-      "lat": 10.759688,
-      "lon": 78.810431,
+      "x": -298.44,
+      "y": 313.7,
+      "lat": 10.759691,
+      "lon": 78.8105,
       "category": "libraries",
       "isJunction": false
     },
     {
       "id": 1025,
-      "name": "Old LHC West Walkway J25",
-      "x": -119.86,
-      "y": 372.59,
-      "lat": 10.76022,
-      "lon": 78.812133,
+      "name": "Old LHC West Approach J25",
+      "x": -156.28,
+      "y": 370.36,
+      "lat": 10.7602,
+      "lon": 78.8118,
       "category": "libraries",
       "isJunction": false
     },
     {
       "id": 1026,
-      "name": "Convocation Hall Front J26",
-      "x": -124.56,
-      "y": 452.96,
-      "lat": 10.760942,
-      "lon": 78.81209,
+      "name": "GJCH West Approach J26",
+      "x": -200.02,
+      "y": 514.74,
+      "lat": 10.761497,
+      "lon": 78.8114,
       "category": "other",
       "isJunction": false
     },
     {
       "id": 1027,
-      "name": "Kailash Mess Approach J27",
-      "x": -129.26,
-      "y": 641.98,
-      "lat": 10.76264,
-      "lon": 78.812047,
+      "name": "Kailash Mess Avenue J27",
+      "x": -112.53,
+      "y": 646.66,
+      "lat": 10.762682,
+      "lon": 78.8122,
       "category": "messes",
       "isJunction": false
     },
     {
       "id": 1028,
       "name": "Mega Mess II West Approach J28",
-      "x": -51.07,
-      "y": 869.19,
-      "lat": 10.764681,
-      "lon": 78.812762,
+      "x": -112.53,
+      "y": 859.39,
+      "lat": 10.764593,
+      "lon": 78.8122,
       "category": "messes",
       "isJunction": false
     },
     {
       "id": 1029,
-      "name": "Science Avenue Central J29",
-      "x": -113.3,
-      "y": 229.99,
-      "lat": 10.758939,
-      "lon": 78.812193,
+      "name": "OJAS Science Block Plaza J29",
+      "x": -107.06,
+      "y": 230.21,
+      "lat": 10.758941,
+      "lon": 78.81225,
       "category": "other",
       "isJunction": false
     },
     {
       "id": 1030,
       "name": "EEE Front Cross J30",
-      "x": 163.27,
-      "y": 124.23,
-      "lat": 10.757989,
-      "lon": 78.814722,
+      "x": 162.18,
+      "y": 231.32,
+      "lat": 10.758951,
+      "lon": 78.814712,
       "category": "junction",
       "isJunction": true
     },
     {
       "id": 1031,
-      "name": "Automobile Lab Approach J31",
-      "x": 285.98,
-      "y": 172.32,
-      "lat": 10.758421,
-      "lon": 78.815844,
+      "name": "Automobile Lab Road Turn J31",
+      "x": 215.55,
+      "y": 231.32,
+      "lat": 10.758951,
+      "lon": 78.8152,
       "category": "workshops",
       "isJunction": false
     },
     {
       "id": 1032,
       "name": "Mechanical Dept Roundabout J32",
-      "x": 293.08,
-      "y": 210.95,
-      "lat": 10.758768,
-      "lon": 78.815909,
+      "x": 262.03,
+      "y": 231.32,
+      "lat": 10.758951,
+      "lon": 78.815625,
       "category": "other",
       "isJunction": false
     },
     {
       "id": 1033,
       "name": "MME Front Cross J33",
-      "x": 344.37,
-      "y": 134.03,
-      "lat": 10.758077,
-      "lon": 78.816378,
+      "x": 322.83,
+      "y": 231.32,
+      "lat": 10.758951,
+      "lon": 78.816181,
       "category": "junction",
       "isJunction": true
     },
     {
       "id": 1034,
       "name": "Academic Parking Cross J34",
-      "x": 372.48,
-      "y": 135.7,
-      "lat": 10.758092,
-      "lon": 78.816635,
+      "x": 431.75,
+      "y": 231.32,
+      "lat": 10.758951,
+      "lon": 78.817177,
       "category": "junction",
       "isJunction": true
     },
     {
       "id": 1035,
       "name": "Lyceum & CSE Front J35",
-      "x": 532.47,
-      "y": 148.06,
-      "lat": 10.758203,
-      "lon": 78.818098,
+      "x": 523.29,
+      "y": 231.32,
+      "lat": 10.758951,
+      "lon": 78.818014,
       "category": "other",
       "isJunction": false
     },
     {
       "id": 1036,
       "name": "S-TIC Front Cross J36",
-      "x": 531.05,
-      "y": 205.05,
-      "lat": 10.758715,
-      "lon": 78.818085,
+      "x": 523.29,
+      "y": 214.51,
+      "lat": 10.7588,
+      "lon": 78.818014,
       "category": "junction",
       "isJunction": true
     },
     {
       "id": 1040,
       "name": "Electrical & Estate Maint J40",
-      "x": 126.64,
-      "y": 331.18,
-      "lat": 10.759848,
-      "lon": 78.814387,
+      "x": 162.18,
+      "y": 325.83,
+      "lat": 10.7598,
+      "lon": 78.814712,
       "category": "admin",
       "isJunction": false
     },
     {
       "id": 1041,
       "name": "Octagon Computer Center Front J41",
-      "x": 128.94,
-      "y": 417.45,
-      "lat": 10.760623,
-      "lon": 78.814408,
+      "x": 139.0,
+      "y": 417.23,
+      "lat": 10.760621,
+      "lon": 78.8145,
       "category": "workshops",
       "isJunction": false
     },
     {
       "id": 1042,
       "name": "Classic Foods & Old LHC Walkway J42",
-      "x": 70.87,
-      "y": 383.83,
-      "lat": 10.760321,
-      "lon": 78.813877,
+      "x": 73.38,
+      "y": 416.0,
+      "lat": 10.76061,
+      "lon": 78.8139,
       "category": "libraries",
       "isJunction": false
     },
     {
       "id": 1043,
       "name": "Third i & Hostel Office Cross J43",
-      "x": 131.01,
+      "x": 139.0,
       "y": 548.47,
       "lat": 10.7618,
-      "lon": 78.814427,
+      "lon": 78.8145,
       "category": "junction",
       "isJunction": true
     },
     {
       "id": 1045,
       "name": "Automobile Lab East Gate J45",
-      "x": 263.23,
-      "y": 202.27,
-      "lat": 10.75869,
-      "lon": 78.815636,
+      "x": 262.03,
+      "y": 280.19,
+      "lat": 10.75939,
+      "lon": 78.815625,
       "category": "workshops",
       "isJunction": false
     },
     {
       "id": 1046,
       "name": "Central Workshop Front J46",
-      "x": 370.4,
-      "y": 219.19,
-      "lat": 10.758842,
-      "lon": 78.816616,
+      "x": 262.03,
+      "y": 325.83,
+      "lat": 10.7598,
+      "lon": 78.815625,
       "category": "workshops",
       "isJunction": false
     },
     {
       "id": 1047,
       "name": "Powder Metallurgy & SJB Turn J47",
-      "x": 398.62,
-      "y": 350.77,
-      "lat": 10.760024,
-      "lon": 78.816874,
+      "x": 262.03,
+      "y": 414.89,
+      "lat": 10.7606,
+      "lon": 78.815625,
       "category": "other",
       "isJunction": false
     },
     {
       "id": 1048,
       "name": "Silver Jubilee Front J48",
-      "x": 359.25,
-      "y": 370.47,
-      "lat": 10.760201,
-      "lon": 78.816514,
+      "x": 357.72,
+      "y": 414.89,
+      "lat": 10.7606,
+      "lon": 78.8165,
       "category": "other",
       "isJunction": false
     },
     {
       "id": 1049,
       "name": "ICE Department Cross J49",
-      "x": 585.51,
-      "y": 379.16,
-      "lat": 10.760279,
-      "lon": 78.818583,
+      "x": 523.29,
+      "y": 414.89,
+      "lat": 10.7606,
+      "lon": 78.818014,
       "category": "junction",
       "isJunction": true
     },
     {
       "id": 1050,
-      "name": "Coral & Beryl Avenue J50",
-      "x": 131.23,
-      "y": 614.38,
-      "lat": 10.762392,
-      "lon": 78.814429,
+      "name": "Coral Hostel Approach J50",
+      "x": 303.04,
+      "y": 610.37,
+      "lat": 10.762356,
+      "lon": 78.816,
       "category": "hostels",
       "isJunction": false
     },
     {
       "id": 1051,
-      "name": "Emerald & Jade Avenue J51",
-      "x": 347.0,
-      "y": 638.53,
-      "lat": 10.762609,
-      "lon": 78.816402,
-      "category": "other",
-      "isJunction": false
-    },
-    {
-      "id": 1052,
-      "name": "Pearl & Ruby Avenue J52",
-      "x": 343.5,
-      "y": 690.85,
-      "lat": 10.763079,
-      "lon": 78.81637,
-      "category": "other",
-      "isJunction": false
-    },
-    {
-      "id": 1053,
-      "name": "Pearl Hostel Front J53",
-      "x": 336.28,
-      "y": 812.75,
-      "lat": 10.764174,
-      "lon": 78.816304,
+      "name": "Beryl & Nilkesh Canteen J51",
+      "x": 368.65,
+      "y": 639.98,
+      "lat": 10.762622,
+      "lon": 78.8166,
       "category": "hostels",
       "isJunction": false
     },
     {
-      "id": 1054,
-      "name": "Topaz & Zircon Turn J54",
-      "x": 338.58,
-      "y": 922.29,
-      "lat": 10.765158,
-      "lon": 78.816325,
-      "category": "other",
+      "id": 1052,
+      "name": "Emerald Hostel Approach J52",
+      "x": 368.65,
+      "y": 736.38,
+      "lat": 10.763488,
+      "lon": 78.8166,
+      "category": "hostels",
       "isJunction": false
     },
     {
-      "id": 1055,
-      "name": "Zircon Plaza Cross J55",
-      "x": 370.51,
-      "y": 1055.65,
-      "lat": 10.766356,
-      "lon": 78.816617,
+      "id": 1053,
+      "name": "Pearl & Ruby Hostel Cross J53",
+      "x": 368.65,
+      "y": 849.04,
+      "lat": 10.7645,
+      "lon": 78.8166,
       "category": "junction",
       "isJunction": true
     },
     {
+      "id": 1054,
+      "name": "Topaz & Nikesh Food Court J54",
+      "x": 368.65,
+      "y": 960.36,
+      "lat": 10.7655,
+      "lon": 78.8166,
+      "category": "canteens",
+      "isJunction": false
+    },
+    {
+      "id": 1055,
+      "name": "Zircon Hostel Avenue J55",
+      "x": 368.65,
+      "y": 1055.76,
+      "lat": 10.766357,
+      "lon": 78.8166,
+      "category": "hostels",
+      "isJunction": false
+    },
+    {
       "id": 1056,
-      "name": "Amber & Sabari Turn J56",
-      "x": 425.52,
-      "y": 1140.58,
-      "lat": 10.767119,
-      "lon": 78.81712,
-      "category": "other",
+      "name": "Sabari Mess & Amber South J56",
+      "x": 368.65,
+      "y": 1183.0,
+      "lat": 10.7675,
+      "lon": 78.8166,
+      "category": "messes",
       "isJunction": false
     },
     {
       "id": 1057,
-      "name": "Aquamarine North Turn J57",
-      "x": 492.01,
-      "y": 1270.61,
-      "lat": 10.768287,
-      "lon": 78.817728,
-      "category": "other",
+      "name": "Aquamarine Hostel Avenue J57",
+      "x": 467.08,
+      "y": 1272.72,
+      "lat": 10.768306,
+      "lon": 78.8175,
+      "category": "hostels",
       "isJunction": false
     },
     {
       "id": 1058,
-      "name": "Jasper Research Avenue J58",
-      "x": 502.4,
-      "y": 1391.39,
-      "lat": 10.769372,
-      "lon": 78.817823,
-      "category": "other",
+      "name": "Jasper Hostel North Approach J58",
+      "x": 467.08,
+      "y": 1394.39,
+      "lat": 10.769399,
+      "lon": 78.8175,
+      "category": "hostels",
       "isJunction": false
     },
     {
       "id": 1059,
-      "name": "Rear Perimeter Way J59",
-      "x": 505.02,
-      "y": 1450.5,
-      "lat": 10.769903,
-      "lon": 78.817847,
+      "name": "Rear Perimeter Road J59",
+      "x": 368.65,
+      "y": 1538.0,
+      "lat": 10.770689,
+      "lon": 78.8166,
       "category": "other",
       "isJunction": false
     },
     {
       "id": 1060,
       "name": "Shopping Centre Turn J60",
-      "x": 582.56,
-      "y": 480.46,
-      "lat": 10.761189,
-      "lon": 78.818556,
+      "x": 521.76,
+      "y": 478.45,
+      "lat": 10.761171,
+      "lon": 78.818,
       "category": "amenities",
       "isJunction": false
     },
     {
       "id": 1061,
-      "name": "Shopping Centre East J61",
-      "x": 580.05,
-      "y": 554.93,
-      "lat": 10.761858,
-      "lon": 78.818533,
+      "name": "Shopping Centre Central Plaza J61",
+      "x": 616.9,
+      "y": 478.45,
+      "lat": 10.761171,
+      "lon": 78.81887,
       "category": "amenities",
       "isJunction": false
     },
     {
       "id": 1062,
-      "name": "Hospital Main Road J62",
-      "x": 574.69,
-      "y": 646.21,
-      "lat": 10.762678,
-      "lon": 78.818484,
+      "name": "Hospital Main Entrance Turn J62",
+      "x": 576.44,
+      "y": 646.32,
+      "lat": 10.762679,
+      "lon": 78.8185,
       "category": "other",
       "isJunction": false
     },
     {
       "id": 1063,
-      "name": "Hospital North Gate J63",
-      "x": 569.22,
-      "y": 764.99,
-      "lat": 10.763745,
-      "lon": 78.818434,
-      "category": "gates",
+      "name": "Jade Hostel & Playground Turn J63",
+      "x": 576.44,
+      "y": 765.21,
+      "lat": 10.763747,
+      "lon": 78.8185,
+      "category": "hostels",
       "isJunction": false
     },
     {
       "id": 1064,
-      "name": "Mosque Way Turn J64",
-      "x": 560.25,
-      "y": 926.74,
-      "lat": 10.765198,
-      "lon": 78.818352,
+      "name": "NITT Mosque Approach J64",
+      "x": 573.92,
+      "y": 943.44,
+      "lat": 10.765348,
+      "lon": 78.818477,
       "category": "worship",
       "isJunction": false
     },
     {
       "id": 1065,
-      "name": "Amber East Avenue J65",
-      "x": 481.4,
-      "y": 1147.15,
-      "lat": 10.767178,
-      "lon": 78.817631,
+      "name": "Amber & Aquamarine East Spur J65",
+      "x": 551.17,
+      "y": 1191.46,
+      "lat": 10.767576,
+      "lon": 78.818269,
       "category": "other",
       "isJunction": false
     },
     {
       "id": 1070,
-      "name": "Admin East to Sports Turn J70",
-      "x": 112.42,
-      "y": 121.67,
-      "lat": 10.757966,
-      "lon": 78.814257,
-      "category": "sports",
+      "name": "Physical Education Front J70",
+      "x": 229.77,
+      "y": 112.1,
+      "lat": 10.75788,
+      "lon": 78.81533,
+      "category": "other",
       "isJunction": false
     },
     {
       "id": 1071,
       "name": "Sports Complex Front J71",
-      "x": 332.02,
-      "y": 40.08,
-      "lat": 10.757233,
-      "lon": 78.816265,
+      "x": 379.59,
+      "y": 112.1,
+      "lat": 10.75788,
+      "lon": 78.8167,
       "category": "sports",
       "isJunction": false
     },
     {
       "id": 1072,
-      "name": "Swimming Pool & Gym Access J72",
-      "x": 519.68,
-      "y": -4.34,
-      "lat": 10.756834,
-      "lon": 78.817981,
+      "name": "Swimming Pool Front J72",
+      "x": 427.38,
+      "y": 93.17,
+      "lat": 10.75771,
+      "lon": 78.817137,
       "category": "sports",
       "isJunction": false
     },
     {
       "id": 1073,
       "name": "Central Library Front J73",
-      "x": 523.73,
-      "y": 109.76,
-      "lat": 10.757859,
-      "lon": 78.818018,
+      "x": 523.29,
+      "y": -30.39,
+      "lat": 10.7566,
+      "lon": 78.818014,
       "category": "libraries",
       "isJunction": false
     },
     {
       "id": 1074,
       "name": "East Avenue Central Cross J74",
-      "x": 534.55,
-      "y": 120.0,
-      "lat": 10.757951,
-      "lon": 78.818117,
+      "x": 523.29,
+      "y": 112.1,
+      "lat": 10.75788,
+      "lon": 78.818014,
       "category": "junction",
       "isJunction": true
     },
     {
       "id": 1075,
       "name": "Sports Grounds Central Access J75",
-      "x": 310.58,
-      "y": -122.56,
-      "lat": 10.755772,
-      "lon": 78.816069,
+      "x": 229.77,
+      "y": 5.23,
+      "lat": 10.75692,
+      "lon": 78.81533,
       "category": "sports",
       "isJunction": false
     },
     {
       "id": 1076,
       "name": "Courts Complex Access J76",
-      "x": 525.26,
-      "y": -3.56,
-      "lat": 10.756841,
-      "lon": 78.818032,
+      "x": 434.27,
+      "y": 3.01,
+      "lat": 10.7569,
+      "lon": 78.8172,
       "category": "sports",
       "isJunction": false
     },
     {
       "id": 1077,
       "name": "SAC & Pavilion Access J77",
-      "x": 393.91,
-      "y": -177.22,
-      "lat": 10.755281,
-      "lon": 78.816831,
+      "x": 229.77,
+      "y": -91.06,
+      "lat": 10.756055,
+      "lon": 78.81533,
       "category": "other",
       "isJunction": false
     },
     {
       "id": 1080,
       "name": "New Avenue West Gate J80",
-      "x": 607.6,
+      "x": 609.24,
       "y": -74.92,
       "lat": 10.7562,
-      "lon": 78.818785,
+      "lon": 78.8188,
       "category": "gates",
       "isJunction": false
     },
     {
       "id": 1081,
       "name": "Opal Main Entrance Plaza J81",
-      "x": 739.71,
-      "y": -62.34,
-      "lat": 10.756313,
-      "lon": 78.819993,
+      "x": 740.48,
+      "y": -74.92,
+      "lat": 10.7562,
+      "lon": 78.82,
       "category": "hostels",
       "isJunction": false
     },
     {
       "id": 1082,
       "name": "Opal Central Residence Circle J82",
-      "x": 820.86,
-      "y": -75.14,
-      "lat": 10.756198,
-      "lon": 78.820735,
+      "x": 827.96,
+      "y": -74.92,
+      "lat": 10.7562,
+      "lon": 78.8208,
       "category": "hostels",
       "isJunction": false
     },
     {
       "id": 1083,
       "name": "Opal East Block Avenue J83",
-      "x": 916.11,
-      "y": -90.84,
-      "lat": 10.756057,
-      "lon": 78.821606,
+      "x": 915.45,
+      "y": -74.92,
+      "lat": 10.7562,
+      "lon": 78.8216,
       "category": "hostels",
       "isJunction": false
     },
     {
       "id": 1084,
       "name": "Staff Quarters South Avenue J84",
-      "x": 718.17,
-      "y": 46.75,
-      "lat": 10.757293,
-      "lon": 78.819796,
+      "x": 718.6,
+      "y": 35.4,
+      "lat": 10.757191,
+      "lon": 78.8198,
       "category": "amenities",
       "isJunction": false
     },
     {
       "id": 1085,
       "name": "Staff Quarters North Turn J85",
-      "x": 794.94,
-      "y": 299.12,
-      "lat": 10.75956,
-      "lon": 78.820498,
+      "x": 795.16,
+      "y": 292.44,
+      "lat": 10.7595,
+      "lon": 78.8205,
       "category": "amenities",
       "isJunction": false
     },
     {
       "id": 1086,
       "name": "Director Bungalow Turn J86",
-      "x": 850.71,
-      "y": 341.2,
-      "lat": 10.759938,
-      "lon": 78.821008,
+      "x": 849.84,
+      "y": 356.0,
+      "lat": 10.760071,
+      "lon": 78.821,
       "category": "amenities",
       "isJunction": false
     },
     {
       "id": 1087,
       "name": "Temple Avenue J87",
-      "x": 613.4,
-      "y": -189.91,
-      "lat": 10.755167,
-      "lon": 78.818838,
+      "x": 652.99,
+      "y": -188.02,
+      "lat": 10.755184,
+      "lon": 78.8192,
       "category": "worship",
       "isJunction": false
     }
@@ -3456,342 +3456,144 @@ window.CAMPUS_DATA = {
       "id": "N001",
       "from": 1001,
       "to": 1002,
-      "distance": 51.0,
+      "distance": 56.8,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Main Avenue Entrance",
-      "coords": [
-        [
-          10.756873,
-          78.813229
-        ],
-        [
-          10.756865,
-          78.813242
-        ],
-        [
-          10.756879,
-          78.813251
-        ],
-        [
-          10.756912,
-          78.813271
-        ],
-        [
-          10.756949,
-          78.81329
-        ],
-        [
-          10.757111,
-          78.813313
-        ],
-        [
-          10.757293,
-          78.81331
-        ]
-      ]
+      "label": "Main Avenue Entrance"
     },
     {
       "id": "N002",
       "from": 1002,
       "to": 1003,
-      "distance": 75.4,
+      "distance": 63.0,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Main Avenue South",
-      "coords": [
-        [
-          10.757293,
-          78.81331
-        ],
-        [
-          10.757384,
-          78.813309
-        ],
-        [
-          10.757657,
-          78.813292
-        ],
-        [
-          10.75784,
-          78.813283
-        ],
-        [
-          10.757929,
-          78.813281
-        ]
-      ]
+      "label": "Main Avenue South"
     },
     {
       "id": "N003",
       "from": 1003,
       "to": 1004,
-      "distance": 69.3,
+      "distance": 73.5,
       "direction": "one-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Main Avenue Central",
-      "coords": [
-        [
-          10.757929,
-          78.813281
-        ],
-        [
-          10.757925,
-          78.813204
-        ],
-        [
-          10.758103,
-          78.813173
-        ],
-        [
-          10.758195,
-          78.813153
-        ],
-        [
-          10.758497,
-          78.813143
-        ]
-      ]
+      "label": "Main Avenue Central"
     },
     {
       "id": "N004",
       "from": 1004,
       "to": 1005,
-      "distance": 36.0,
+      "distance": 52.5,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Admin Spine Approach",
-      "coords": [
-        [
-          10.758497,
-          78.813143
-        ],
-        [
-          10.758627,
-          78.813138
-        ],
-        [
-          10.758674,
-          78.813143
-        ],
-        [
-          10.758721,
-          78.813166
-        ],
-        [
-          10.758744,
-          78.813202
-        ],
-        [
-          10.758765,
-          78.813279
-        ]
-      ]
+      "label": "Admin Spine Approach"
     },
     {
       "id": "N005",
       "from": 1005,
       "to": 1006,
-      "distance": 76.5,
+      "distance": 52.9,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Barn Hall Spine",
-      "coords": [
-        [
-          10.758765,
-          78.813279
-        ],
-        [
-          10.759398,
-          78.813412
-        ]
-      ]
+      "label": "Barn Hall Spine"
     },
     {
       "id": "N006",
       "from": 1006,
       "to": 1007,
-      "distance": 110.0,
+      "distance": 96.3,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Classic Foods Spine",
-      "coords": [
-        [
-          10.759398,
-          78.813412
-        ],
-        [
-          10.760312,
-          78.813225
-        ]
-      ]
+      "label": "Classic Foods Spine"
     },
     {
       "id": "N007",
       "from": 1007,
       "to": 1008,
-      "distance": 60.7,
+      "distance": 71.1,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Old LHC Spine",
-      "coords": [
-        [
-          10.760312,
-          78.813225
-        ],
-        [
-          10.760802,
-          78.813373
-        ]
-      ]
+      "label": "Old LHC Spine"
     },
     {
       "id": "N008",
       "from": 1008,
       "to": 1009,
-      "distance": 85.5,
+      "distance": 82.8,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Convocation Spine",
-      "coords": [
-        [
-          10.760802,
-          78.813373
-        ],
-        [
-          10.761509,
-          78.813218
-        ]
-      ]
+      "label": "Convocation Spine"
     },
     {
       "id": "N009",
       "from": 1009,
       "to": 1010,
-      "distance": 105.0,
+      "distance": 87.5,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Hostel Entry Spine",
-      "coords": [
-        [
-          10.761509,
-          78.813218
-        ],
-        [
-          10.762394,
-          78.813124
-        ]
-      ]
+      "label": "Hostel Entry Spine"
     },
     {
       "id": "N010",
       "from": 1010,
       "to": 1011,
-      "distance": 13.0,
+      "distance": 31.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "A Mess Spine",
-      "coords": [
-        [
-          10.762394,
-          78.813124
-        ],
-        [
-          10.762497,
-          78.813121
-        ]
-      ]
+      "label": "A Mess Spine"
     },
     {
       "id": "N011",
       "from": 1011,
       "to": 1012,
-      "distance": 118.5,
+      "distance": 117.9,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Diamond Avenue Spine",
-      "coords": [
-        [
-          10.762497,
-          78.813121
-        ],
-        [
-          10.763499,
-          78.813205
-        ]
-      ]
+      "label": "Diamond Avenue Spine"
     },
     {
       "id": "N012",
       "from": 1012,
       "to": 1013,
-      "distance": 129.4,
+      "distance": 129.6,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Mega Mess II Spine",
-      "coords": [
-        [
-          10.763499,
-          78.813205
-        ],
-        [
-          10.764019,
-          78.813193
-        ],
-        [
-          10.76449,
-          78.81317
-        ],
-        [
-          10.764597,
-          78.813164
-        ]
-      ]
+      "label": "Mega Mess II Spine"
     },
     {
       "id": "N013",
       "from": 1013,
       "to": 1014,
-      "distance": 106.4,
+      "distance": 106.2,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Sapphire Spine",
-      "coords": [
-        [
-          10.764597,
-          78.813164
-        ],
-        [
-          10.765499,
-          78.813149
-        ]
-      ]
+      "label": "Sapphire Spine"
     },
     {
       "id": "N014",
@@ -3802,1976 +3604,857 @@ window.CAMPUS_DATA = {
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "North Hostel Spine",
-      "coords": [
-        [
-          10.765499,
-          78.813149
-        ],
-        [
-          10.766499,
-          78.813137
-        ]
-      ]
+      "label": "North Hostel Spine"
     },
     {
       "id": "N015",
       "from": 1015,
       "to": 1016,
-      "distance": 118.1,
+      "distance": 117.9,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Andhra Mess Spine",
-      "coords": [
-        [
-          10.766499,
-          78.813137
-        ],
-        [
-          10.766766,
-          78.813134
-        ],
-        [
-          10.766979,
-          78.813131
-        ],
-        [
-          10.767501,
-          78.813137
-        ]
-      ]
+      "label": "Andhra Mess Spine"
     },
     {
       "id": "N016",
       "from": 1005,
       "to": 1029,
-      "distance": 127.4,
+      "distance": 113.5,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Admin to Science Avenue",
-      "coords": [
-        [
-          10.758765,
-          78.813279
-        ],
-        [
-          10.758939,
-          78.812193
-        ]
-      ]
+      "label": "Admin to Science Avenue"
     },
     {
       "id": "N017",
       "from": 1029,
       "to": 1022,
-      "distance": 58.6,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Science Avenue Central",
-      "coords": [
-        [
-          10.758939,
-          78.812193
-        ],
-        [
-          10.758575,
-          78.811855
-        ]
-      ]
-    },
-    {
-      "id": "N018",
-      "from": 1022,
-      "to": 1020,
-      "distance": 78.4,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Science West to SBI Turn",
-      "coords": [
-        [
-          10.758575,
-          78.811855
-        ],
-        [
-          10.757914,
-          78.811818
-        ]
-      ]
-    },
-    {
-      "id": "N019",
-      "from": 1020,
-      "to": 1021,
-      "distance": 111.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "SBI Plaza Road",
-      "coords": [
-        [
-          10.757914,
-          78.811818
-        ],
-        [
-          10.757792,
-          78.81086
-        ]
-      ]
-    },
-    {
-      "id": "N020",
-      "from": 1003,
-      "to": 1020,
-      "distance": 169.0,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Admin Circle to SBI Access",
-      "coords": [
-        [
-          10.757929,
-          78.813281
-        ],
-        [
-          10.757914,
-          78.811818
-        ]
-      ]
-    },
-    {
-      "id": "N021",
-      "from": 1022,
-      "to": 1023,
-      "distance": 183.0,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Science West to Orion South",
-      "coords": [
-        [
-          10.758575,
-          78.811855
-        ],
-        [
-          10.759289,
-          78.810446
-        ]
-      ]
-    },
-    {
-      "id": "N022",
-      "from": 1023,
-      "to": 1024,
-      "distance": 47.7,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Orion South to Front Plaza",
-      "coords": [
-        [
-          10.759289,
-          78.810446
-        ],
-        [
-          10.759688,
-          78.810431
-        ]
-      ]
-    },
-    {
-      "id": "N023",
-      "from": 1006,
-      "to": 1029,
-      "distance": 150.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Barn Hall to Science Block",
-      "coords": [
-        [
-          10.759398,
-          78.813412
-        ],
-        [
-          10.758939,
-          78.812193
-        ]
-      ]
-    },
-    {
-      "id": "N024",
-      "from": 1024,
-      "to": 1025,
-      "distance": 206.1,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Orion to Old LHC",
-      "coords": [
-        [
-          10.759688,
-          78.810431
-        ],
-        [
-          10.76022,
-          78.812133
-        ]
-      ]
-    },
-    {
-      "id": "N025",
-      "from": 1025,
-      "to": 1026,
-      "distance": 85.5,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Old LHC to Convocation Hall",
-      "coords": [
-        [
-          10.76022,
-          78.812133
-        ],
-        [
-          10.760523,
-          78.812115
-        ],
-        [
-          10.760942,
-          78.812091
-        ]
-      ]
-    },
-    {
-      "id": "N026",
-      "from": 1009,
-      "to": 1026,
-      "distance": 146.5,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Spine to Convocation Hall",
-      "coords": [
-        [
-          10.761509,
-          78.813218
-        ],
-        [
-          10.760942,
-          78.81209
-        ]
-      ]
-    },
-    {
-      "id": "N027",
-      "from": 1026,
-      "to": 1027,
-      "distance": 199.5,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Convocation to Kailash Mess",
-      "coords": [
-        [
-          10.760942,
-          78.81209
-        ],
-        [
-          10.761625,
-          78.812069
-        ],
-        [
-          10.76264,
-          78.812047
-        ]
-      ]
-    },
-    {
-      "id": "N028",
-      "from": 1011,
-      "to": 1027,
-      "distance": 125.5,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "A Mess to Kailash Mess",
-      "coords": [
-        [
-          10.762497,
-          78.813121
-        ],
-        [
-          10.76264,
-          78.812047
-        ]
-      ]
-    },
-    {
-      "id": "N029",
-      "from": 1027,
-      "to": 1028,
-      "distance": 253.3,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Kailash to Mega Mess II",
-      "coords": [
-        [
-          10.76264,
-          78.812047
-        ],
-        [
-          10.764681,
-          78.812762
-        ]
-      ]
-    },
-    {
-      "id": "N030",
-      "from": 1013,
-      "to": 1028,
-      "distance": 48.2,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Spine to Mega Mess II",
-      "coords": [
-        [
-          10.764597,
-          78.813164
-        ],
-        [
-          10.764689,
-          78.813159
-        ],
-        [
-          10.764676,
-          78.812858
-        ],
-        [
-          10.764676,
-          78.812791
-        ],
-        [
-          10.764681,
-          78.812762
-        ]
-      ]
-    },
-    {
-      "id": "N031",
-      "from": 1070,
-      "to": 1030,
-      "distance": 54.5,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "East Avenue to EEE Front",
-      "coords": [
-        [
-          10.757966,
-          78.814257
-        ],
-        [
-          10.757989,
-          78.814722
-        ]
-      ]
-    },
-    {
-      "id": "N032",
-      "from": 1030,
-      "to": 1031,
-      "distance": 139.4,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "EEE to Automobile Lab Avenue",
-      "coords": [
-        [
-          10.757989,
-          78.814722
-        ],
-        [
-          10.758421,
-          78.815844
-        ]
-      ]
-    },
-    {
-      "id": "N033",
-      "from": 1031,
-      "to": 1032,
-      "distance": 42.2,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Automobile to Mech Roundabout",
-      "coords": [
-        [
-          10.758421,
-          78.815844
-        ],
-        [
-          10.758768,
-          78.815909
-        ]
-      ]
-    },
-    {
-      "id": "N034",
-      "from": 1032,
-      "to": 1033,
-      "distance": 98.1,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Mech Roundabout to MME",
-      "coords": [
-        [
-          10.758768,
-          78.815909
-        ],
-        [
-          10.758077,
-          78.816378
-        ]
-      ]
-    },
-    {
-      "id": "N035",
-      "from": 1033,
-      "to": 1034,
-      "distance": 30.6,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "MME to Academic Parking Cross",
-      "coords": [
-        [
-          10.758077,
-          78.816378
-        ],
-        [
-          10.758092,
-          78.816635
-        ]
-      ]
-    },
-    {
-      "id": "N036",
-      "from": 1034,
-      "to": 1035,
-      "distance": 169.5,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Parking to Lyceum & CSE Avenue",
-      "coords": [
-        [
-          10.758092,
-          78.816635
-        ],
-        [
-          10.758203,
-          78.818098
-        ]
-      ]
-    },
-    {
-      "id": "N037",
-      "from": 1035,
-      "to": 1036,
-      "distance": 60.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Lyceum to S-TIC Front",
-      "coords": [
-        [
-          10.758203,
-          78.818098
-        ],
-        [
-          10.758715,
-          78.818085
-        ]
-      ]
-    },
-    {
-      "id": "N038",
-      "from": 1031,
-      "to": 1032,
-      "distance": 42.2,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Automobile to Mech Roundabout",
-      "coords": [
-        [
-          10.758421,
-          78.815844
-        ],
-        [
-          10.758768,
-          78.815909
-        ]
-      ]
-    },
-    {
-      "id": "N039",
-      "from": 1032,
-      "to": 1045,
-      "distance": 33.6,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Mech Roundabout to Automobile West Gate",
-      "coords": [
-        [
-          10.758768,
-          78.815909
-        ],
-        [
-          10.758792,
-          78.815848
-        ],
-        [
-          10.758794,
-          78.815782
-        ],
-        [
-          10.758774,
-          78.81572
-        ],
-        [
-          10.758739,
-          78.815671
-        ],
-        [
-          10.75869,
-          78.815636
-        ]
-      ]
-    },
-    {
-      "id": "N040",
-      "from": 1034,
-      "to": 1046,
-      "distance": 88.7,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Academic Parking North to Workshop Front",
-      "coords": [
-        [
-          10.758092,
-          78.816635
-        ],
-        [
-          10.758842,
-          78.816616
-        ]
-      ]
-    },
-    {
-      "id": "N041",
-      "from": 1045,
-      "to": 1046,
-      "distance": 114.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Central Workshop Road",
-      "coords": [
-        [
-          10.75869,
-          78.815636
-        ],
-        [
-          10.758842,
-          78.816616
-        ]
-      ]
-    },
-    {
-      "id": "N042",
-      "from": 1046,
-      "to": 1047,
-      "distance": 142.3,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Workshop to Powder Metallurgy Road",
-      "coords": [
-        [
-          10.758842,
-          78.816616
-        ],
-        [
-          10.760024,
-          78.816874
-        ]
-      ]
-    },
-    {
-      "id": "N043",
-      "from": 1047,
-      "to": 1048,
       "distance": 47.2,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Powder Metallurgy to Silver Jubilee Road",
-      "coords": [
-        [
-          10.760024,
-          78.816874
-        ],
-        [
-          10.760201,
-          78.816514
-        ]
-      ]
+      "label": "Science Avenue Central"
+    },
+    {
+      "id": "N018",
+      "from": 1022,
+      "to": 1020,
+      "distance": 120.4,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Science West to SBI Turn"
+    },
+    {
+      "id": "N019",
+      "from": 1020,
+      "to": 1021,
+      "distance": 117.5,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "SBI Plaza Road"
+    },
+    {
+      "id": "N020",
+      "from": 1003,
+      "to": 1020,
+      "distance": 165.2,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Admin Circle to SBI Access"
+    },
+    {
+      "id": "N021",
+      "from": 1022,
+      "to": 1023,
+      "distance": 137.3,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Science West to Orion South"
+    },
+    {
+      "id": "N022",
+      "from": 1023,
+      "to": 1024,
+      "distance": 54.1,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Orion South to Front Plaza"
+    },
+    {
+      "id": "N023",
+      "from": 1006,
+      "to": 1029,
+      "distance": 124.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Barn Hall to Science Block"
+    },
+    {
+      "id": "N024",
+      "from": 1024,
+      "to": 1025,
+      "distance": 161.7,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Orion to Old LHC"
+    },
+    {
+      "id": "N025",
+      "from": 1025,
+      "to": 1026,
+      "distance": 159.4,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Old LHC to Convocation Hall"
+    },
+    {
+      "id": "N026",
+      "from": 1009,
+      "to": 1026,
+      "distance": 211.1,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Spine to Convocation Hall"
+    },
+    {
+      "id": "N027",
+      "from": 1026,
+      "to": 1027,
+      "distance": 167.2,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Convocation to Kailash Mess"
+    },
+    {
+      "id": "N028",
+      "from": 1011,
+      "to": 1027,
+      "distance": 121.2,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "A Mess to Kailash Mess"
+    },
+    {
+      "id": "N029",
+      "from": 1027,
+      "to": 1028,
+      "distance": 224.4,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Kailash to Mega Mess II"
+    },
+    {
+      "id": "N030",
+      "from": 1013,
+      "to": 1028,
+      "distance": 119.3,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Spine to Mega Mess II"
+    },
+    {
+      "id": "N031",
+      "from": 1005,
+      "to": 1030,
+      "distance": 171.2,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Admin to EEE Avenue"
+    },
+    {
+      "id": "N032",
+      "from": 1030,
+      "to": 1031,
+      "distance": 57.0,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "EEE to Automobile Lab Avenue"
+    },
+    {
+      "id": "N033",
+      "from": 1031,
+      "to": 1032,
+      "distance": 49.8,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Automobile to Mech Roundabout"
+    },
+    {
+      "id": "N034",
+      "from": 1032,
+      "to": 1033,
+      "distance": 64.8,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Mech Roundabout to MME"
+    },
+    {
+      "id": "N035",
+      "from": 1033,
+      "to": 1034,
+      "distance": 115.4,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "MME to Academic Parking Cross"
+    },
+    {
+      "id": "N036",
+      "from": 1034,
+      "to": 1035,
+      "distance": 97.1,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Parking to Lyceum & CSE Avenue"
+    },
+    {
+      "id": "N037",
+      "from": 1035,
+      "to": 1036,
+      "distance": 18.7,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Lyceum to S-TIC Front"
+    },
+    {
+      "id": "N038",
+      "from": 1032,
+      "to": 1045,
+      "distance": 52.3,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Mech Roundabout North to Workshop Way"
+    },
+    {
+      "id": "N039",
+      "from": 1045,
+      "to": 1046,
+      "distance": 48.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Central Workshop Road"
+    },
+    {
+      "id": "N040",
+      "from": 1046,
+      "to": 1047,
+      "distance": 94.5,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Workshop to Powder Metallurgy Road"
+    },
+    {
+      "id": "N041",
+      "from": 1047,
+      "to": 1048,
+      "distance": 101.5,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Powder Metallurgy to Silver Jubilee Road"
+    },
+    {
+      "id": "N042",
+      "from": 1048,
+      "to": 1049,
+      "distance": 174.8,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Silver Jubilee to ICE Road"
+    },
+    {
+      "id": "N043",
+      "from": 1049,
+      "to": 1060,
+      "distance": 67.8,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "ICE to Shopping Centre Turn Road"
     },
     {
       "id": "N044",
-      "from": 1048,
+      "from": 1035,
       "to": 1049,
-      "distance": 238.7,
+      "distance": 193.7,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Silver Jubilee to ICE Road",
-      "coords": [
-        [
-          10.760201,
-          78.816514
-        ],
-        [
-          10.760199,
-          78.816857
-        ],
-        [
-          10.760193,
-          78.817709
-        ],
-        [
-          10.760279,
-          78.818583
-        ]
-      ]
+      "label": "East Academic Corridor North to ICE"
     },
     {
       "id": "N045",
-      "from": 1049,
-      "to": 1060,
-      "distance": 107.4,
+      "from": 1030,
+      "to": 1040,
+      "distance": 100.2,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "ICE to Shopping Centre Turn Road",
-      "coords": [
-        [
-          10.760279,
-          78.818583
-        ],
-        [
-          10.760553,
-          78.818577
-        ],
-        [
-          10.761189,
-          78.818556
-        ]
-      ]
+      "label": "EEE to Estate Maintenance Road"
     },
     {
       "id": "N046",
-      "from": 1035,
-      "to": 1049,
-      "distance": 250.0,
+      "from": 1040,
+      "to": 1041,
+      "distance": 100.0,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "East Academic Corridor North to ICE",
-      "coords": [
-        [
-          10.758203,
-          78.818098
-        ],
-        [
-          10.760279,
-          78.818583
-        ]
-      ]
+      "label": "Estate Maint to Octagon Plaza"
     },
     {
       "id": "N047",
-      "from": 1030,
-      "to": 1040,
-      "distance": 221.7,
+      "from": 1041,
+      "to": 1042,
+      "distance": 69.9,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
-      "type": "road",
-      "label": "EEE to Estate Maintenance Road",
-      "coords": [
-        [
-          10.757989,
-          78.814722
-        ],
-        [
-          10.759848,
-          78.814387
-        ]
-      ]
+      "type": "walkway",
+      "label": "Octagon to Classic Foods Walkway"
     },
     {
       "id": "N048",
-      "from": 1040,
-      "to": 1041,
+      "from": 1007,
+      "to": 1042,
       "distance": 91.6,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
-      "type": "road",
-      "label": "Estate Maint to Octagon Plaza",
-      "coords": [
-        [
-          10.759848,
-          78.814387
-        ],
-        [
-          10.759851,
-          78.814353
-        ],
-        [
-          10.76022,
-          78.814387
-        ],
-        [
-          10.760403,
-          78.814404
-        ],
-        [
-          10.760623,
-          78.814408
-        ]
-      ]
+      "type": "walkway",
+      "label": "Main Spine to Classic Foods Walkway"
     },
     {
       "id": "N049",
-      "from": 1041,
+      "from": 1008,
       "to": 1042,
-      "distance": 71.5,
+      "distance": 81.1,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Octagon to Classic Foods Walkway",
-      "coords": [
-        [
-          10.760623,
-          78.814408
-        ],
-        [
-          10.760321,
-          78.813877
-        ]
-      ]
+      "label": "Old LHC to Octagon Walkway"
     },
     {
       "id": "N050",
-      "from": 1007,
-      "to": 1042,
-      "distance": 75.9,
+      "from": 1041,
+      "to": 1043,
+      "distance": 138.8,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
-      "type": "walkway",
-      "label": "Main Spine to Classic Foods Walkway",
-      "coords": [
-        [
-          10.760312,
-          78.813225
-        ],
-        [
-          10.760336,
-          78.813225
-        ],
-        [
-          10.760336,
-          78.813292
-        ],
-        [
-          10.760344,
-          78.81338
-        ],
-        [
-          10.760351,
-          78.813501
-        ],
-        [
-          10.760349,
-          78.813582
-        ],
-        [
-          10.76034,
-          78.813682
-        ],
-        [
-          10.760323,
-          78.813768
-        ],
-        [
-          10.760323,
-          78.813853
-        ],
-        [
-          10.760321,
-          78.813877
-        ]
-      ]
+      "type": "road",
+      "label": "Octagon to Third i & Hostel Office Road"
     },
     {
       "id": "N051",
-      "from": 1008,
-      "to": 1042,
-      "distance": 81.7,
+      "from": 1043,
+      "to": 1050,
+      "distance": 185.1,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
-      "type": "walkway",
-      "label": "Old LHC to Octagon Walkway",
-      "coords": [
-        [
-          10.760802,
-          78.813373
-        ],
-        [
-          10.760321,
-          78.813877
-        ]
-      ]
+      "type": "road",
+      "label": "Hostel Office to Coral Avenue"
     },
     {
       "id": "N052",
-      "from": 1041,
-      "to": 1043,
-      "distance": 138.6,
+      "from": 1003,
+      "to": 1070,
+      "distance": 242.1,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Octagon to Third i & Hostel Office Road",
-      "coords": [
-        [
-          10.760623,
-          78.814408
-        ],
-        [
-          10.761663,
-          78.814427
-        ],
-        [
-          10.7618,
-          78.814427
-        ]
-      ]
+      "label": "Admin Circle to Physical Education Road"
     },
     {
       "id": "N053",
-      "from": 1043,
-      "to": 1050,
-      "distance": 70.2,
+      "from": 1070,
+      "to": 1071,
+      "distance": 158.3,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Hostel Office to Coral Avenue",
-      "coords": [
-        [
-          10.7618,
-          78.814427
-        ],
-        [
-          10.762392,
-          78.814429
-        ]
-      ]
+      "label": "Physical Education to Sports Complex"
     },
     {
       "id": "N054",
-      "from": 1003,
-      "to": 1070,
-      "distance": 113.1,
+      "from": 1070,
+      "to": 1075,
+      "distance": 113.2,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Admin Circle to Physical Education Road",
-      "coords": [
-        [
-          10.757929,
-          78.813281
-        ],
-        [
-          10.757933,
-          78.813357
-        ],
-        [
-          10.757937,
-          78.813408
-        ],
-        [
-          10.757966,
-          78.814257
-        ]
-      ]
+      "label": "Physical Education South to Grounds Way"
     },
     {
       "id": "N055",
-      "from": 1033,
-      "to": 1071,
-      "distance": 100.5,
+      "from": 1075,
+      "to": 1077,
+      "distance": 102.1,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "20th Street to Sports Complex",
-      "coords": [
-        [
-          10.758077,
-          78.816378
-        ],
-        [
-          10.757233,
-          78.816265
-        ]
-      ]
+      "label": "Sports Grounds to SAC Avenue"
     },
     {
       "id": "N056",
       "from": 1071,
-      "to": 1075,
-      "distance": 173.2,
+      "to": 1072,
+      "distance": 55.0,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Sports Complex South to Grounds Way",
-      "coords": [
-        [
-          10.757233,
-          78.816265
-        ],
-        [
-          10.755772,
-          78.816069
-        ]
-      ]
+      "label": "Sports Complex to Swimming Pool Road"
     },
     {
       "id": "N057",
-      "from": 1075,
-      "to": 1077,
-      "distance": 105.6,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Sports Grounds to SAC Avenue",
-      "coords": [
-        [
-          10.755772,
-          78.816069
-        ],
-        [
-          10.755281,
-          78.816831
-        ]
-      ]
-    },
-    {
-      "id": "N058",
-      "from": 1077,
-      "to": 1087,
-      "distance": 231.8,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "20th Street to Temple Avenue",
-      "coords": [
-        [
-          10.755281,
-          78.816831
-        ],
-        [
-          10.755161,
-          78.817146
-        ],
-        [
-          10.755177,
-          78.817729
-        ],
-        [
-          10.75517,
-          78.818504
-        ],
-        [
-          10.755167,
-          78.818838
-        ]
-      ]
-    },
-    {
-      "id": "N059",
-      "from": 1071,
-      "to": 1072,
-      "distance": 203.5,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Sports Complex to Swimming Pool Road",
-      "coords": [
-        [
-          10.757233,
-          78.816265
-        ],
-        [
-          10.756834,
-          78.817981
-        ]
-      ]
-    },
-    {
-      "id": "N060",
       "from": 1072,
       "to": 1076,
-      "distance": 6.9,
+      "distance": 95.9,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Swimming Pool to Courts Plaza Way",
-      "coords": [
-        [
-          10.756834,
-          78.817981
-        ],
-        [
-          10.756841,
-          78.818032
-        ]
-      ]
+      "label": "Swimming Pool to Courts Plaza Way"
     },
     {
-      "id": "N061",
+      "id": "N058",
       "from": 1072,
       "to": 1073,
-      "distance": 120.9,
+      "distance": 165.2,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Swimming Pool to Central Library Road",
-      "coords": [
-        [
-          10.756834,
-          78.817981
-        ],
-        [
-          10.756826,
-          78.817922
-        ],
-        [
-          10.756835,
-          78.81786
-        ],
-        [
-          10.756867,
-          78.817812
-        ],
-        [
-          10.756916,
-          78.817764
-        ],
-        [
-          10.756953,
-          78.817758
-        ],
-        [
-          10.757041,
-          78.817771
-        ],
-        [
-          10.757321,
-          78.817767
-        ],
-        [
-          10.757401,
-          78.817745
-        ],
-        [
-          10.757466,
-          78.817732
-        ],
-        [
-          10.757533,
-          78.817755
-        ],
-        [
-          10.757587,
-          78.817795
-        ],
-        [
-          10.757615,
-          78.817839
-        ],
-        [
-          10.757627,
-          78.817915
-        ],
-        [
-          10.757653,
-          78.817983
-        ],
-        [
-          10.757701,
-          78.818021
-        ],
-        [
-          10.757765,
-          78.818054
-        ],
-        [
-          10.757859,
-          78.818018
-        ]
-      ]
+      "label": "Swimming Pool to Central Library Road"
+    },
+    {
+      "id": "N059",
+      "from": 1073,
+      "to": 1074,
+      "distance": 150.6,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Central Library North East Avenue"
+    },
+    {
+      "id": "N060",
+      "from": 1071,
+      "to": 1074,
+      "distance": 151.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Sports Complex East to East Avenue Cross"
+    },
+    {
+      "id": "N061",
+      "from": 1074,
+      "to": 1035,
+      "distance": 126.2,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "East Avenue to Lyceum & CSE"
     },
     {
       "id": "N062",
       "from": 1073,
-      "to": 1074,
-      "distance": 16.6,
+      "to": 1080,
+      "distance": 102.6,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Central Library North East Avenue",
-      "coords": [
-        [
-          10.757859,
-          78.818018
-        ],
-        [
-          10.757894,
-          78.818029
-        ],
-        [
-          10.757922,
-          78.818051
-        ],
-        [
-          10.757942,
-          78.818082
-        ],
-        [
-          10.757951,
-          78.818117
-        ]
-      ]
+      "label": "Central Library to New Avenue"
     },
     {
       "id": "N063",
-      "from": 1071,
-      "to": 1074,
-      "distance": 229.6,
+      "from": 1080,
+      "to": 1081,
+      "distance": 138.8,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Sports Complex East to East Avenue Cross",
-      "coords": [
-        [
-          10.757233,
-          78.816265
-        ],
-        [
-          10.757951,
-          78.818117
-        ]
-      ]
+      "label": "New Avenue to Opal Main Gate"
     },
     {
       "id": "N064",
-      "from": 1074,
-      "to": 1035,
-      "distance": 30.5,
+      "from": 1081,
+      "to": 1082,
+      "distance": 92.9,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "East Avenue to Lyceum & CSE",
-      "coords": [
-        [
-          10.757951,
-          78.818117
-        ],
-        [
-          10.758203,
-          78.818098
-        ]
-      ]
+      "label": "Opal Central Plaza Avenue"
     },
     {
       "id": "N065",
-      "from": 1073,
-      "to": 1080,
-      "distance": 214.0,
+      "from": 1082,
+      "to": 1083,
+      "distance": 92.9,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Central Library to New Avenue",
-      "coords": [
-        [
-          10.757859,
-          78.818018
-        ],
-        [
-          10.7562,
-          78.818785
-        ]
-      ]
+      "label": "Opal East Residential Avenue"
     },
     {
       "id": "N066",
-      "from": 1080,
-      "to": 1081,
-      "distance": 140.3,
+      "from": 1081,
+      "to": 1084,
+      "distance": 119.1,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "New Avenue to Opal Main Gate",
-      "coords": [
-        [
-          10.7562,
-          78.818785
-        ],
-        [
-          10.756239,
-          78.818785
-        ],
-        [
-          10.756249,
-          78.818949
-        ],
-        [
-          10.756313,
-          78.819993
-        ]
-      ]
+      "label": "Opal to Quarters South"
     },
     {
       "id": "N067",
-      "from": 1081,
-      "to": 1082,
-      "distance": 87.3,
+      "from": 1084,
+      "to": 1085,
+      "distance": 282.6,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Opal Central Plaza Avenue",
-      "coords": [
-        [
-          10.756313,
-          78.819993
-        ],
-        [
-          10.756198,
-          78.820735
-        ]
-      ]
+      "label": "Quarters South to North Road"
     },
     {
       "id": "N068",
-      "from": 1082,
-      "to": 1083,
-      "distance": 102.4,
+      "from": 1085,
+      "to": 1086,
+      "distance": 89.0,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Opal East Residential Avenue",
-      "coords": [
-        [
-          10.756198,
-          78.820735
-        ],
-        [
-          10.756057,
-          78.821606
-        ]
-      ]
+      "label": "Quarters North to Director Bungalow"
     },
     {
       "id": "N069",
-      "from": 1081,
-      "to": 1084,
-      "distance": 117.8,
+      "from": 1061,
+      "to": 1085,
+      "distance": 271.5,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Opal to Quarters South",
-      "coords": [
-        [
-          10.756313,
-          78.819993
-        ],
-        [
-          10.757293,
-          78.819796
-        ]
-      ]
+      "label": "Shopping Centre to Quarters North"
     },
     {
       "id": "N070",
-      "from": 1084,
-      "to": 1085,
-      "distance": 278.0,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Quarters South to North Road",
-      "coords": [
-        [
-          10.757293,
-          78.819796
-        ],
-        [
-          10.75956,
-          78.820498
-        ]
-      ]
-    },
-    {
-      "id": "N071",
-      "from": 1085,
-      "to": 1086,
-      "distance": 74.4,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Quarters North to Director Bungalow",
-      "coords": [
-        [
-          10.75956,
-          78.820498
-        ],
-        [
-          10.759938,
-          78.821008
-        ]
-      ]
-    },
-    {
-      "id": "N072",
-      "from": 1061,
-      "to": 1085,
-      "distance": 351.8,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Shopping Centre to Quarters North",
-      "coords": [
-        [
-          10.761858,
-          78.818533
-        ],
-        [
-          10.75956,
-          78.820498
-        ]
-      ]
-    },
-    {
-      "id": "N073",
       "from": 1080,
       "to": 1087,
-      "distance": 121.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "New Avenue to Temple Road",
-      "coords": [
-        [
-          10.7562,
-          78.818785
-        ],
-        [
-          10.755907,
-          78.818797
-        ],
-        [
-          10.755265,
-          78.818821
-        ],
-        [
-          10.755167,
-          78.818838
-        ]
-      ]
-    },
-    {
-      "id": "N074",
-      "from": 1050,
-      "to": 1051,
-      "distance": 229.0,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Coral to Beryl Avenue",
-      "coords": [
-        [
-          10.762392,
-          78.814429
-        ],
-        [
-          10.762609,
-          78.816402
-        ]
-      ]
-    },
-    {
-      "id": "N075",
-      "from": 1051,
-      "to": 1052,
-      "distance": 56.1,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Beryl to Emerald Avenue",
-      "coords": [
-        [
-          10.762609,
-          78.816402
-        ],
-        [
-          10.763079,
-          78.81637
-        ]
-      ]
-    },
-    {
-      "id": "N076",
-      "from": 1052,
-      "to": 1053,
-      "distance": 129.2,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Emerald to Ruby Avenue",
-      "coords": [
-        [
-          10.763079,
-          78.81637
-        ],
-        [
-          10.764174,
-          78.816304
-        ]
-      ]
-    },
-    {
-      "id": "N077",
-      "from": 1053,
-      "to": 1054,
-      "distance": 116.0,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Ruby to Topaz Avenue",
-      "coords": [
-        [
-          10.764174,
-          78.816304
-        ],
-        [
-          10.764297,
-          78.816312
-        ],
-        [
-          10.765158,
-          78.816325
-        ]
-      ]
-    },
-    {
-      "id": "N078",
-      "from": 1054,
-      "to": 1055,
-      "distance": 145.0,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Topaz to Zircon Avenue",
-      "coords": [
-        [
-          10.765158,
-          78.816325
-        ],
-        [
-          10.766356,
-          78.816617
-        ]
-      ]
-    },
-    {
-      "id": "N079",
-      "from": 1015,
-      "to": 1055,
-      "distance": 400.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Hostel Spine to Zircon",
-      "coords": [
-        [
-          10.766499,
-          78.813137
-        ],
-        [
-          10.766356,
-          78.816617
-        ]
-      ]
-    },
-    {
-      "id": "N080",
-      "from": 1055,
-      "to": 1056,
-      "distance": 107.2,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Zircon to Sabari Mess",
-      "coords": [
-        [
-          10.766356,
-          78.816617
-        ],
-        [
-          10.767119,
-          78.81712
-        ]
-      ]
-    },
-    {
-      "id": "N081",
-      "from": 1016,
-      "to": 1056,
-      "distance": 460.5,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Andhra Mess to Sabari Mess",
-      "coords": [
-        [
-          10.767501,
-          78.813137
-        ],
-        [
-          10.767119,
-          78.81712
-        ]
-      ]
-    },
-    {
-      "id": "N082",
-      "from": 1056,
-      "to": 1057,
-      "distance": 154.3,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Sabari Mess to Aquamarine",
-      "coords": [
-        [
-          10.767119,
-          78.81712
-        ],
-        [
-          10.767178,
-          78.817631
-        ],
-        [
-          10.767946,
-          78.817699
-        ],
-        [
-          10.768287,
-          78.817728
-        ]
-      ]
-    },
-    {
-      "id": "N083",
-      "from": 1057,
-      "to": 1058,
       "distance": 128.3,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Aquamarine to Jasper Avenue",
-      "coords": [
-        [
-          10.768287,
-          78.817728
-        ],
-        [
-          10.769372,
-          78.817824
-        ]
-      ]
+      "label": "New Avenue to Temple Road"
+    },
+    {
+      "id": "N071",
+      "from": 1050,
+      "to": 1051,
+      "distance": 76.6,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Coral to Beryl Avenue"
+    },
+    {
+      "id": "N072",
+      "from": 1051,
+      "to": 1052,
+      "distance": 102.2,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Beryl to Emerald Avenue"
+    },
+    {
+      "id": "N073",
+      "from": 1052,
+      "to": 1053,
+      "distance": 119.3,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Emerald to Ruby Avenue"
+    },
+    {
+      "id": "N074",
+      "from": 1053,
+      "to": 1054,
+      "distance": 117.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Ruby to Topaz Avenue"
+    },
+    {
+      "id": "N075",
+      "from": 1054,
+      "to": 1055,
+      "distance": 101.2,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Topaz to Zircon Avenue"
+    },
+    {
+      "id": "N076",
+      "from": 1015,
+      "to": 1055,
+      "distance": 388.3,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Hostel Spine to Zircon"
+    },
+    {
+      "id": "N077",
+      "from": 1055,
+      "to": 1056,
+      "distance": 134.6,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Zircon to Sabari Mess"
+    },
+    {
+      "id": "N078",
+      "from": 1016,
+      "to": 1056,
+      "distance": 388.0,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Andhra Mess to Sabari Mess"
+    },
+    {
+      "id": "N079",
+      "from": 1056,
+      "to": 1057,
+      "distance": 140.8,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Sabari Mess to Aquamarine"
+    },
+    {
+      "id": "N080",
+      "from": 1057,
+      "to": 1058,
+      "distance": 128.8,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Aquamarine to Jasper Avenue"
+    },
+    {
+      "id": "N081",
+      "from": 1058,
+      "to": 1059,
+      "distance": 183.8,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Jasper to Rear Perimeter"
+    },
+    {
+      "id": "N082",
+      "from": 1049,
+      "to": 1060,
+      "distance": 67.8,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "ICE to Shopping Centre Turn"
+    },
+    {
+      "id": "N083",
+      "from": 1060,
+      "to": 1061,
+      "distance": 100.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Shopping Centre Approach"
     },
     {
       "id": "N084",
-      "from": 1058,
-      "to": 1059,
-      "distance": 63.1,
+      "from": 1060,
+      "to": 1062,
+      "distance": 186.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Jasper to Rear Perimeter",
-      "coords": [
-        [
-          10.769372,
-          78.817823
-        ],
-        [
-          10.769453,
-          78.817831
-        ],
-        [
-          10.769473,
-          78.817831
-        ],
-        [
-          10.769903,
-          78.817847
-        ]
-      ]
+      "label": "Hospital Main Road"
     },
     {
       "id": "N085",
-      "from": 1049,
-      "to": 1060,
-      "distance": 107.4,
+      "from": 1051,
+      "to": 1062,
+      "distance": 219.3,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "ICE to Shopping Centre Turn",
-      "coords": [
-        [
-          10.760279,
-          78.818583
-        ],
-        [
-          10.760553,
-          78.818577
-        ],
-        [
-          10.761189,
-          78.818556
-        ]
-      ]
+      "label": "Beryl to Hospital Road"
     },
     {
       "id": "N086",
-      "from": 1060,
-      "to": 1061,
-      "distance": 79.2,
+      "from": 1062,
+      "to": 1063,
+      "distance": 125.8,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Shopping Centre Approach",
-      "coords": [
-        [
-          10.761189,
-          78.818556
-        ],
-        [
-          10.761858,
-          78.818533
-        ]
-      ]
+      "label": "Hospital to Jade Playground"
     },
     {
       "id": "N087",
-      "from": 1060,
-      "to": 1062,
-      "distance": 175.2,
+      "from": 1063,
+      "to": 1064,
+      "distance": 188.2,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Hospital Main Road",
-      "coords": [
-        [
-          10.761189,
-          78.818556
-        ],
-        [
-          10.761858,
-          78.818533
-        ],
-        [
-          10.762678,
-          78.818484
-        ]
-      ]
+      "label": "Jade to Mosque Road"
     },
     {
       "id": "N088",
-      "from": 1051,
-      "to": 1062,
-      "distance": 240.2,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Beryl to Hospital Road",
-      "coords": [
-        [
-          10.762609,
-          78.816402
-        ],
-        [
-          10.762678,
-          78.818484
-        ]
-      ]
-    },
-    {
-      "id": "N089",
-      "from": 1062,
-      "to": 1063,
-      "distance": 125.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Hospital to Jade Playground",
-      "coords": [
-        [
-          10.762678,
-          78.818484
-        ],
-        [
-          10.763159,
-          78.818455
-        ],
-        [
-          10.763745,
-          78.818434
-        ]
-      ]
-    },
-    {
-      "id": "N090",
-      "from": 1063,
-      "to": 1064,
-      "distance": 171.1,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Jade to Mosque Road",
-      "coords": [
-        [
-          10.763745,
-          78.818434
-        ],
-        [
-          10.764237,
-          78.818417
-        ],
-        [
-          10.765109,
-          78.818378
-        ],
-        [
-          10.765175,
-          78.818367
-        ],
-        [
-          10.765198,
-          78.818352
-        ]
-      ]
-    },
-    {
-      "id": "N091",
       "from": 1054,
       "to": 1064,
-      "distance": 233.8,
+      "distance": 217.3,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Topaz to Mosque Way",
-      "coords": [
-        [
-          10.765158,
-          78.816325
-        ],
-        [
-          10.765198,
-          78.818352
-        ]
-      ]
+      "label": "Topaz to Mosque Way"
+    },
+    {
+      "id": "N089",
+      "from": 1064,
+      "to": 1065,
+      "distance": 262.5,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Mosque to Amber East"
+    },
+    {
+      "id": "N090",
+      "from": 1056,
+      "to": 1065,
+      "distance": 192.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Amber South to Amber East"
+    },
+    {
+      "id": "N091",
+      "from": 1057,
+      "to": 1065,
+      "distance": 123.8,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Aquamarine to Amber East"
     },
     {
       "id": "N092",
-      "from": 1064,
-      "to": 1065,
-      "distance": 246.8,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Mosque to Amber East",
-      "coords": [
-        [
-          10.765198,
-          78.818352
-        ],
-        [
-          10.765216,
-          78.81833
-        ],
-        [
-          10.765237,
-          78.81828
-        ],
-        [
-          10.767175,
-          78.818237
-        ],
-        [
-          10.767178,
-          78.817631
-        ]
-      ]
-    },
-    {
-      "id": "N093",
-      "from": 1056,
-      "to": 1065,
-      "distance": 60.1,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Amber South to Amber East",
-      "coords": [
-        [
-          10.767119,
-          78.81712
-        ],
-        [
-          10.767178,
-          78.817631
-        ]
-      ]
-    },
-    {
-      "id": "N094",
-      "from": 1057,
-      "to": 1065,
-      "distance": 131.1,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Aquamarine to Amber East",
-      "coords": [
-        [
-          10.768287,
-          78.817728
-        ],
-        [
-          10.767946,
-          78.817699
-        ],
-        [
-          10.767178,
-          78.817631
-        ]
-      ]
-    },
-    {
-      "id": "N095",
       "from": 101,
       "to": 1001,
       "distance": 1.0,
@@ -5779,74 +4462,32 @@ window.CAMPUS_DATA = {
       "status": "open",
       "stepFree": "yes",
       "type": "road",
-      "label": "Main Gate Entrance",
-      "coords": [
-        [
-          10.756873,
-          78.813229
-        ],
-        [
-          10.756865,
-          78.813242
-        ],
-        [
-          10.756873,
-          78.813229
-        ]
-      ]
+      "label": "Main Gate Entrance"
     },
     {
-      "id": "N096",
+      "id": "N093",
       "from": 102,
       "to": 1002,
-      "distance": 31.6,
+      "distance": 21.6,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Security Reception Spur",
-      "coords": [
-        [
-          10.75735,
-          78.81305
-        ],
-        [
-          10.757268,
-          78.813041
-        ],
-        [
-          10.757263,
-          78.813083
-        ],
-        [
-          10.757293,
-          78.81331
-        ]
-      ]
+      "label": "Security Reception Spur"
     },
     {
-      "id": "N097",
+      "id": "N094",
       "from": 103,
       "to": 1005,
-      "distance": 28.9,
+      "distance": 14.2,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Admin Main Portico",
-      "coords": [
-        [
-          10.758941,
-          78.813115
-        ],
-        [
-          10.758765,
-          78.813279
-        ]
-      ]
+      "label": "Admin Main Portico"
     },
     {
-      "id": "N098",
+      "id": "N095",
       "from": 104,
       "to": 103,
       "distance": 13.7,
@@ -5854,1657 +4495,813 @@ window.CAMPUS_DATA = {
       "status": "open",
       "stepFree": "no",
       "type": "stairs",
-      "label": "Admin Stairs to Senate Hall",
-      "coords": [
-        [
-          10.75905,
-          78.813115
-        ],
-        [
-          10.758941,
-          78.813115
-        ]
-      ]
+      "label": "Admin Stairs to Senate Hall"
     },
     {
-      "id": "N099",
+      "id": "N096",
       "from": 105,
       "to": 1026,
-      "distance": 143.6,
+      "distance": 48.8,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Convocation Hall Portico",
-      "coords": [
-        [
-          10.761497,
-          78.810984
-        ],
-        [
-          10.760942,
-          78.81209
-        ]
-      ]
+      "label": "Convocation Hall Portico"
     },
     {
-      "id": "N100",
+      "id": "N097",
       "from": 106,
       "to": 1006,
-      "distance": 24.6,
+      "distance": 3.6,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Barn Hall Entrance",
-      "coords": [
-        [
-          10.759385,
-          78.813207
-        ],
-        [
-          10.759398,
-          78.813412
-        ]
-      ]
+      "label": "Barn Hall Entrance"
     },
     {
-      "id": "N101",
+      "id": "N098",
       "from": 107,
       "to": 1007,
-      "distance": 71.3,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "T&P Cell Portico",
-      "coords": [
-        [
-          10.760046,
-          78.813774
-        ],
-        [
-          10.760312,
-          78.813225
-        ]
-      ]
-    },
-    {
-      "id": "N102",
-      "from": 108,
-      "to": 1077,
-      "distance": 160.6,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "SAC Front Entrance",
-      "coords": [
-        [
-          10.756055,
-          78.815686
-        ],
-        [
-          10.755281,
-          78.816831
-        ]
-      ]
-    },
-    {
-      "id": "N103",
-      "from": 109,
-      "to": 1040,
-      "distance": 71.0,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "EMD Office Spur",
-      "coords": [
-        [
-          10.760032,
-          78.814967
-        ],
-        [
-          10.759848,
-          78.814387
-        ]
-      ]
-    },
-    {
-      "id": "N104",
-      "from": 110,
-      "to": 1003,
-      "distance": 9.2,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "Central Roundabout Link",
-      "coords": [
-        [
-          10.75788,
-          78.81323
-        ],
-        [
-          10.757926,
-          78.813228
-        ],
-        [
-          10.757929,
-          78.813281
-        ]
-      ]
-    },
-    {
-      "id": "N105",
-      "from": 121,
-      "to": 1024,
-      "distance": 77.1,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Architecture Department Spur",
-      "coords": [
-        [
-          10.760246,
-          78.810089
-        ],
-        [
-          10.759688,
-          78.810431
-        ]
-      ]
-    },
-    {
-      "id": "N106",
-      "from": 122,
-      "to": 1022,
-      "distance": 34.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Chemical Engineering Spur",
-      "coords": [
-        [
-          10.758803,
-          78.811673
-        ],
-        [
-          10.758575,
-          78.811855
-        ]
-      ]
-    },
-    {
-      "id": "N107",
-      "from": 123,
-      "to": 1029,
-      "distance": 40.7,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Chemistry Department (OJAS West) Spur",
-      "coords": [
-        [
-          10.758983,
-          78.81185
-        ],
-        [
-          10.758939,
-          78.812193
-        ]
-      ]
-    },
-    {
-      "id": "N108",
-      "from": 124,
-      "to": 1032,
-      "distance": 4.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Civil Engineering Spur",
-      "coords": [
-        [
-          10.7588,
-          78.8159
-        ],
-        [
-          10.758775,
-          78.81589
-        ],
-        [
-          10.758768,
-          78.815909
-        ]
-      ]
-    },
-    {
-      "id": "N109",
-      "from": 125,
-      "to": 1035,
-      "distance": 115.6,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "CA Department Spur",
-      "coords": [
-        [
-          10.75918,
-          78.818014
-        ],
-        [
-          10.758203,
-          78.818098
-        ]
-      ]
-    },
-    {
-      "id": "N110",
-      "from": 126,
-      "to": 1035,
-      "distance": 141.2,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "CSE Department Spur",
-      "coords": [
-        [
-          10.7594,
-          78.818014
-        ],
-        [
-          10.758203,
-          78.818098
-        ]
-      ]
-    },
-    {
-      "id": "N111",
-      "from": 127,
-      "to": 1030,
-      "distance": 120.5,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "EEE Department Spur",
-      "coords": [
-        [
-          10.759011,
-          78.814712
-        ],
-        [
-          10.757989,
-          78.814722
-        ]
-      ]
-    },
-    {
-      "id": "N112",
-      "from": 128,
-      "to": 1048,
-      "distance": 62.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "ECE Department Spur",
-      "coords": [
-        [
-          10.76065,
-          78.8168
-        ],
-        [
-          10.760201,
-          78.816514
-        ]
-      ]
-    },
-    {
-      "id": "N113",
-      "from": 129,
-      "to": 1029,
-      "distance": 112.8,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "CEESAT Entrance",
-      "coords": [
-        [
-          10.759791,
-          78.812635
-        ],
-        [
-          10.758939,
-          78.812193
-        ]
-      ]
-    },
-    {
-      "id": "N114",
-      "from": 130,
-      "to": 1022,
-      "distance": 40.4,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "HSS Department Spur",
-      "coords": [
-        [
-          10.7588,
-          78.8116
-        ],
-        [
-          10.758575,
-          78.811855
-        ]
-      ]
-    },
-    {
-      "id": "N115",
-      "from": 131,
-      "to": 1049,
-      "distance": 75.0,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "ICE Department Spur",
-      "coords": [
-        [
-          10.760723,
-          78.818124
-        ],
-        [
-          10.760279,
-          78.818583
-        ]
-      ]
-    },
-    {
-      "id": "N116",
-      "from": 132,
-      "to": 1048,
-      "distance": 153.8,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "DoMS Department Spur",
-      "coords": [
-        [
-          10.761453,
-          78.816896
-        ],
-        [
-          10.760201,
-          78.816514
-        ]
-      ]
-    },
-    {
-      "id": "N117",
-      "from": 133,
-      "to": 1022,
-      "distance": 79.7,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Mathematics Department Spur",
-      "coords": [
-        [
-          10.7592,
-          78.8116
-        ],
-        [
-          10.758575,
-          78.811855
-        ]
-      ]
-    },
-    {
-      "id": "N118",
-      "from": 134,
-      "to": 1046,
-      "distance": 137.3,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Mechanical Engineering Spur",
-      "coords": [
-        [
-          10.759484,
-          78.815625
-        ],
-        [
-          10.758842,
-          78.816616
-        ]
-      ]
-    },
-    {
-      "id": "N119",
-      "from": 135,
-      "to": 1033,
-      "distance": 106.0,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "MME Department Spur",
-      "coords": [
-        [
-          10.758954,
-          78.816181
-        ],
-        [
-          10.758077,
-          78.816378
-        ]
-      ]
-    },
-    {
-      "id": "N120",
-      "from": 136,
-      "to": 1029,
-      "distance": 9.3,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Physics Department (OJAS East) Spur",
-      "coords": [
-        [
-          10.758983,
-          78.81225
-        ],
-        [
-          10.758981,
-          78.812191
-        ],
-        [
-          10.758939,
-          78.812193
-        ]
-      ]
-    },
-    {
-      "id": "N121",
-      "from": 137,
-      "to": 1048,
-      "distance": 127.0,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Production Engineering Spur",
-      "coords": [
-        [
-          10.761189,
-          78.816076
-        ],
-        [
-          10.760201,
-          78.816514
-        ]
-      ]
-    },
-    {
-      "id": "N122",
-      "from": 141,
-      "to": 1046,
-      "distance": 137.3,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Central Workshop Main Gate",
-      "coords": [
-        [
-          10.759484,
-          78.815625
-        ],
-        [
-          10.758842,
-          78.816616
-        ]
-      ]
-    },
-    {
-      "id": "N123",
-      "from": 142,
-      "to": 1046,
-      "distance": 184.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Carpentry Workshop Spur",
-      "coords": [
-        [
-          10.760024,
-          78.815559
-        ],
-        [
-          10.758842,
-          78.816616
-        ]
-      ]
-    },
-    {
-      "id": "N124",
-      "from": 143,
-      "to": 1046,
-      "distance": 160.3,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Machine Shop Spur",
-      "coords": [
-        [
-          10.759742,
-          78.815574
-        ],
-        [
-          10.758842,
-          78.816616
-        ]
-      ]
-    },
-    {
-      "id": "N125",
-      "from": 144,
-      "to": 1046,
-      "distance": 150.8,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Welding Workshop Spur",
-      "coords": [
-        [
-          10.759902,
-          78.815882
-        ],
-        [
-          10.758842,
-          78.816616
-        ]
-      ]
-    },
-    {
-      "id": "N126",
-      "from": 145,
-      "to": 1047,
-      "distance": 205.8,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Production Lab Spur",
-      "coords": [
-        [
-          10.761163,
-          78.815519
-        ],
-        [
-          10.760024,
-          78.816874
-        ]
-      ]
-    },
-    {
-      "id": "N127",
-      "from": 146,
-      "to": 1048,
-      "distance": 92.6,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Siemens CoE Portico",
-      "coords": [
-        [
-          10.7608,
-          78.816
-        ],
-        [
-          10.760201,
-          78.816514
-        ]
-      ]
-    },
-    {
-      "id": "N128",
-      "from": 147,
-      "to": 1041,
-      "distance": 40.3,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Octagon CSG Main Portico",
-      "coords": [
-        [
-          10.760621,
-          78.81475
-        ],
-        [
-          10.760623,
-          78.814408
-        ]
-      ]
-    },
-    {
-      "id": "N129",
-      "from": 148,
-      "to": 1041,
-      "distance": 69.5,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Param Porul Wing Spur",
-      "coords": [
-        [
-          10.761098,
-          78.814757
-        ],
-        [
-          10.760623,
-          78.814408
-        ]
-      ]
-    },
-    {
-      "id": "N130",
-      "from": 149,
-      "to": 1047,
-      "distance": 46.3,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "CECASE Research Spur",
-      "coords": [
-        [
-          10.7599,
-          78.8165
-        ],
-        [
-          10.760024,
-          78.816874
-        ]
-      ]
-    },
-    {
-      "id": "N131",
-      "from": 150,
-      "to": 1032,
-      "distance": 4.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Civil Testing Lab Spur",
-      "coords": [
-        [
-          10.7588,
-          78.8159
-        ],
-        [
-          10.758775,
-          78.81589
-        ],
-        [
-          10.758768,
-          78.815909
-        ]
-      ]
-    },
-    {
-      "id": "N132",
-      "from": 151,
-      "to": 1030,
-      "distance": 109.4,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "High Voltage Lab Spur",
-      "coords": [
-        [
-          10.7589,
-          78.8149
-        ],
-        [
-          10.757989,
-          78.814722
-        ]
-      ]
-    },
-    {
-      "id": "N133",
-      "from": 156,
-      "to": 1073,
-      "distance": 148.5,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Central Library Portico",
-      "coords": [
-        [
-          10.7566,
-          78.8181
-        ],
-        [
-          10.757859,
-          78.818018
-        ]
-      ]
-    },
-    {
-      "id": "N134",
-      "from": 157,
-      "to": 1073,
-      "distance": 131.0,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Digital Library Spur",
-      "coords": [
-        [
-          10.75675,
-          78.8181
-        ],
-        [
-          10.756845,
-          78.818094
-        ],
-        [
-          10.756841,
-          78.818032
-        ],
-        [
-          10.756826,
-          78.817922
-        ],
-        [
-          10.756835,
-          78.81786
-        ],
-        [
-          10.756867,
-          78.817812
-        ],
-        [
-          10.756916,
-          78.817764
-        ],
-        [
-          10.756953,
-          78.817758
-        ],
-        [
-          10.757041,
-          78.817771
-        ],
-        [
-          10.757321,
-          78.817767
-        ],
-        [
-          10.757401,
-          78.817745
-        ],
-        [
-          10.757466,
-          78.817732
-        ],
-        [
-          10.757533,
-          78.817755
-        ],
-        [
-          10.757587,
-          78.817795
-        ],
-        [
-          10.757615,
-          78.817839
-        ],
-        [
-          10.757627,
-          78.817915
-        ],
-        [
-          10.757653,
-          78.817983
-        ],
-        [
-          10.757701,
-          78.818021
-        ],
-        [
-          10.757765,
-          78.818054
-        ],
-        [
-          10.757859,
-          78.818018
-        ]
-      ]
-    },
-    {
-      "id": "N135",
-      "from": 158,
-      "to": 1024,
-      "distance": 35.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Orion LHC Main Entrance",
-      "coords": [
-        [
-          10.759691,
-          78.810735
-        ],
-        [
-          10.759688,
-          78.810431
-        ]
-      ]
-    },
-    {
-      "id": "N136",
-      "from": 159,
-      "to": 1024,
-      "distance": 43.8,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Orion PG Wing Entrance",
-      "coords": [
-        [
-          10.7599,
-          78.810735
-        ],
-        [
-          10.759688,
-          78.810431
-        ]
-      ]
-    },
-    {
-      "id": "N137",
-      "from": 160,
-      "to": 1042,
-      "distance": 88.2,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Old LHC Entrance",
-      "coords": [
-        [
-          10.761028,
-          78.814119
-        ],
-        [
-          10.760321,
-          78.813877
-        ]
-      ]
-    },
-    {
-      "id": "N138",
-      "from": 161,
-      "to": 1043,
       "distance": 66.0,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "NLHC Third Eye Portico",
-      "coords": [
-        [
-          10.761414,
-          78.814835
-        ],
-        [
-          10.7618,
-          78.814427
-        ]
-      ]
+      "label": "T&P Cell Portico"
     },
     {
-      "id": "N139",
-      "from": 162,
+      "id": "N099",
+      "from": 108,
+      "to": 1077,
+      "distance": 41.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "SAC Front Entrance"
+    },
+    {
+      "id": "N100",
+      "from": 109,
+      "to": 1040,
+      "distance": 40.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "EMD Office Spur"
+    },
+    {
+      "id": "N101",
+      "from": 110,
+      "to": 1003,
+      "distance": 1.0,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "road",
+      "label": "Central Roundabout Link"
+    },
+    {
+      "id": "N102",
+      "from": 121,
       "to": 1024,
-      "distance": 33.0,
-      "direction": "two-way",
-      "status": "closed",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "MiG-23 Aircraft Landmark Spur (Closed for Maintenance)",
-      "coords": [
-        [
-          10.75995,
-          78.81035
-        ],
-        [
-          10.759953,
-          78.810421
-        ],
-        [
-          10.759688,
-          78.810431
-        ]
-      ]
-    },
-    {
-      "id": "N140",
-      "from": 166,
-      "to": 1010,
-      "distance": 39.9,
+      "distance": 81.2,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Agate Hostel Gate",
-      "coords": [
-        [
-          10.76224,
-          78.813424
-        ],
-        [
-          10.762394,
-          78.813124
-        ]
-      ]
+      "label": "Architecture Department Spur"
     },
     {
-      "id": "N141",
-      "from": 167,
-      "to": 1050,
-      "distance": 129.1,
+      "id": "N103",
+      "from": 122,
+      "to": 1022,
+      "distance": 24.3,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Coral Hostel Gate",
-      "coords": [
-        [
-          10.762356,
-          78.815544
-        ],
-        [
-          10.762392,
-          78.814429
-        ]
-      ]
+      "label": "Chemical Engineering Spur"
     },
     {
-      "id": "N142",
-      "from": 168,
-      "to": 1012,
-      "distance": 126.7,
+      "id": "N104",
+      "from": 123,
+      "to": 1029,
+      "distance": 47.2,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Diamond Hostel Gate",
-      "coords": [
-        [
-          10.7635,
-          78.8143
-        ],
-        [
-          10.763499,
-          78.813205
-        ]
-      ]
+      "label": "Chemistry Department (OJAS West) Spur"
     },
     {
-      "id": "N143",
-      "from": 169,
-      "to": 1063,
-      "distance": 69.0,
+      "id": "N105",
+      "from": 124,
+      "to": 1032,
+      "distance": 37.2,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Jade Hostel Gate",
-      "coords": [
-        [
-          10.763747,
-          78.819026
-        ],
-        [
-          10.763745,
-          78.818434
-        ]
-      ]
+      "label": "Civil Engineering Spur"
     },
     {
-      "id": "N144",
-      "from": 170,
-      "to": 1013,
-      "distance": 85.0,
+      "id": "N106",
+      "from": 125,
+      "to": 1035,
+      "distance": 27.8,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Garnet A Gate",
-      "coords": [
-        [
-          10.764823,
-          78.813858
-        ],
-        [
-          10.764597,
-          78.813164
-        ]
-      ]
+      "label": "CA Department Spur"
     },
     {
-      "id": "N145",
-      "from": 171,
-      "to": 1013,
-      "distance": 168.7,
+      "id": "N107",
+      "from": 126,
+      "to": 1035,
+      "distance": 53.5,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Garnet B Gate",
-      "coords": [
-        [
-          10.764849,
-          78.814602
-        ],
-        [
-          10.764597,
-          78.813164
-        ]
-      ]
+      "label": "CSE Department Spur"
     },
     {
-      "id": "N146",
-      "from": 172,
-      "to": 1013,
-      "distance": 82.5,
+      "id": "N108",
+      "from": 127,
+      "to": 1030,
+      "distance": 8.0,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Garnet C Gate",
-      "coords": [
-        [
-          10.764446,
-          78.813857
-        ],
-        [
-          10.764597,
-          78.813164
-        ]
-      ]
+      "label": "EEE Department Spur"
     },
     {
-      "id": "N147",
-      "from": 173,
-      "to": 1055,
+      "id": "N109",
+      "from": 128,
+      "to": 1048,
+      "distance": 35.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "ECE Department Spur"
+    },
+    {
+      "id": "N110",
+      "from": 129,
+      "to": 1029,
+      "distance": 109.7,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "CEESAT Entrance"
+    },
+    {
+      "id": "N111",
+      "from": 130,
+      "to": 1022,
+      "distance": 32.0,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "HSS Department Spur"
+    },
+    {
+      "id": "N112",
+      "from": 131,
+      "to": 1049,
       "distance": 20.1,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Zircon A Gate",
-      "coords": [
-        [
-          10.766357,
-          78.816451
-        ],
-        [
-          10.766356,
-          78.816617
-        ]
-      ]
+      "label": "ICE Department Spur"
+    },
+    {
+      "id": "N113",
+      "from": 132,
+      "to": 1048,
+      "distance": 110.6,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "DoMS Department Spur"
+    },
+    {
+      "id": "N114",
+      "from": 133,
+      "to": 1022,
+      "distance": 46.3,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Mathematics Department Spur"
+    },
+    {
+      "id": "N115",
+      "from": 134,
+      "to": 1046,
+      "distance": 37.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Mechanical Engineering Spur"
+    },
+    {
+      "id": "N116",
+      "from": 135,
+      "to": 1033,
+      "distance": 1.4,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "MME Department Spur"
+    },
+    {
+      "id": "N117",
+      "from": 136,
+      "to": 1029,
+      "distance": 5.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Physics Department (OJAS East) Spur"
+    },
+    {
+      "id": "N118",
+      "from": 137,
+      "to": 1048,
+      "distance": 85.3,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Production Engineering Spur"
+    },
+    {
+      "id": "N119",
+      "from": 141,
+      "to": 1046,
+      "distance": 37.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Central Workshop Main Gate"
+    },
+    {
+      "id": "N120",
+      "from": 142,
+      "to": 1046,
+      "distance": 28.3,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Carpentry Workshop Spur"
+    },
+    {
+      "id": "N121",
+      "from": 143,
+      "to": 1046,
+      "distance": 10.0,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Machine Shop Spur"
+    },
+    {
+      "id": "N122",
+      "from": 144,
+      "to": 1046,
+      "distance": 32.8,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Welding Workshop Spur"
+    },
+    {
+      "id": "N123",
+      "from": 145,
+      "to": 1047,
+      "distance": 67.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Production Lab Spur"
+    },
+    {
+      "id": "N124",
+      "from": 146,
+      "to": 1048,
+      "distance": 63.0,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Siemens CoE Portico"
+    },
+    {
+      "id": "N125",
+      "from": 147,
+      "to": 1041,
+      "distance": 29.7,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Octagon CSG Main Portico"
+    },
+    {
+      "id": "N126",
+      "from": 148,
+      "to": 1041,
+      "distance": 64.1,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Param Porul Wing Spur"
+    },
+    {
+      "id": "N127",
+      "from": 149,
+      "to": 1047,
+      "distance": 130.6,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "CECASE Research Spur"
+    },
+    {
+      "id": "N128",
+      "from": 150,
+      "to": 1032,
+      "distance": 37.2,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Civil Testing Lab Spur"
+    },
+    {
+      "id": "N129",
+      "from": 151,
+      "to": 1030,
+      "distance": 23.4,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "High Voltage Lab Spur"
+    },
+    {
+      "id": "N130",
+      "from": 156,
+      "to": 1073,
+      "distance": 10.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Central Library Portico"
+    },
+    {
+      "id": "N131",
+      "from": 157,
+      "to": 1073,
+      "distance": 21.1,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Digital Library Spur"
+    },
+    {
+      "id": "N132",
+      "from": 158,
+      "to": 1024,
+      "distance": 28.0,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Orion LHC Main Entrance"
+    },
+    {
+      "id": "N133",
+      "from": 159,
+      "to": 1024,
+      "distance": 37.4,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Orion PG Wing Entrance"
+    },
+    {
+      "id": "N134",
+      "from": 160,
+      "to": 1042,
+      "distance": 55.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Old LHC Entrance"
+    },
+    {
+      "id": "N135",
+      "from": 161,
+      "to": 1043,
+      "distance": 60.3,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "NLHC Third Eye Portico"
+    },
+    {
+      "id": "N136",
+      "from": 162,
+      "to": 1024,
+      "distance": 35.8,
+      "direction": "two-way",
+      "status": "closed",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "MiG-23 Aircraft Landmark Spur (Closed for Maintenance)"
+    },
+    {
+      "id": "N137",
+      "from": 166,
+      "to": 1010,
+      "distance": 23.3,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Agate Hostel Gate"
+    },
+    {
+      "id": "N138",
+      "from": 167,
+      "to": 1050,
+      "distance": 53.4,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Coral Hostel Gate"
+    },
+    {
+      "id": "N139",
+      "from": 168,
+      "to": 1012,
+      "distance": 123.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Diamond Hostel Gate"
+    },
+    {
+      "id": "N140",
+      "from": 169,
+      "to": 1063,
+      "distance": 61.4,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Jade Hostel Gate"
+    },
+    {
+      "id": "N141",
+      "from": 170,
+      "to": 1013,
+      "distance": 77.7,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Garnet A Gate"
+    },
+    {
+      "id": "N142",
+      "from": 171,
+      "to": 1013,
+      "distance": 161.2,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Garnet B Gate"
+    },
+    {
+      "id": "N143",
+      "from": 172,
+      "to": 1013,
+      "distance": 75.2,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Garnet C Gate"
+    },
+    {
+      "id": "N144",
+      "from": 173,
+      "to": 1055,
+      "distance": 18.1,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Zircon A Gate"
+    },
+    {
+      "id": "N145",
+      "from": 174,
+      "to": 1055,
+      "distance": 160.4,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Zircon B Gate"
+    },
+    {
+      "id": "N146",
+      "from": 175,
+      "to": 1055,
+      "distance": 36.1,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Zircon C Gate"
+    },
+    {
+      "id": "N147",
+      "from": 176,
+      "to": 1056,
+      "distance": 192.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Amber A Gate"
     },
     {
       "id": "N148",
-      "from": 174,
-      "to": 1055,
-      "distance": 158.5,
+      "from": 177,
+      "to": 1056,
+      "distance": 221.0,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Zircon B Gate",
-      "coords": [
-        [
-          10.766414,
-          78.817987
-        ],
-        [
-          10.766356,
-          78.816617
-        ]
-      ]
+      "label": "Amber B Gate"
     },
     {
       "id": "N149",
-      "from": 175,
-      "to": 1055,
-      "distance": 38.1,
+      "from": 178,
+      "to": 1057,
+      "distance": 89.0,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Zircon C Gate",
-      "coords": [
-        [
-          10.76635,
-          78.816294
-        ],
-        [
-          10.766356,
-          78.816617
-        ]
-      ]
+      "label": "Aquamarine A Gate"
     },
     {
       "id": "N150",
-      "from": 176,
-      "to": 1056,
-      "distance": 143.3,
+      "from": 179,
+      "to": 1057,
+      "distance": 113.8,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Amber A Gate",
-      "coords": [
-        [
-          10.767576,
-          78.818269
-        ],
-        [
-          10.767119,
-          78.81712
-        ]
-      ]
+      "label": "Aquamarine B Gate"
     },
     {
       "id": "N151",
-      "from": 177,
-      "to": 1056,
-      "distance": 168.6,
+      "from": 180,
+      "to": 1052,
+      "distance": 30.2,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Amber B Gate",
-      "coords": [
-        [
-          10.76754,
-          78.818515
-        ],
-        [
-          10.767119,
-          78.81712
-        ]
-      ]
+      "label": "Emerald Hostel Gate"
     },
     {
       "id": "N152",
-      "from": 178,
-      "to": 1057,
-      "distance": 62.8,
+      "from": 181,
+      "to": 1053,
+      "distance": 144.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Aquamarine A Gate",
-      "coords": [
-        [
-          10.768306,
-          78.818266
-        ],
-        [
-          10.768287,
-          78.817728
-        ]
-      ]
+      "label": "Pearl Hostel Gate"
     },
     {
       "id": "N153",
-      "from": 179,
-      "to": 1057,
-      "distance": 87.8,
+      "from": 182,
+      "to": 1054,
+      "distance": 34.2,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Aquamarine B Gate",
-      "coords": [
-        [
-          10.768355,
-          78.818481
-        ],
-        [
-          10.768287,
-          78.817728
-        ]
-      ]
+      "label": "Topaz Hostel Gate"
     },
     {
       "id": "N154",
-      "from": 180,
-      "to": 1052,
-      "distance": 48.9,
+      "from": 183,
+      "to": 1014,
+      "distance": 122.3,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Emerald Hostel Gate",
-      "coords": [
-        [
-          10.763488,
-          78.816346
-        ],
-        [
-          10.763079,
-          78.81637
-        ]
-      ]
+      "label": "Sapphire Hostel Gate"
     },
     {
       "id": "N155",
-      "from": 181,
+      "from": 184,
       "to": 1053,
-      "distance": 117.1,
+      "distance": 77.0,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Pearl Hostel Gate",
-      "coords": [
-        [
-          10.764505,
-          78.815351
-        ],
-        [
-          10.764174,
-          78.816304
-        ]
-      ]
+      "label": "Ruby Hostel Gate"
     },
     {
       "id": "N156",
-      "from": 182,
-      "to": 1054,
-      "distance": 46.7,
+      "from": 185,
+      "to": 1058,
+      "distance": 100.3,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Topaz Hostel Gate",
-      "coords": [
-        [
-          10.765549,
-          78.816315
-        ],
-        [
-          10.765158,
-          78.816325
-        ]
-      ]
+      "label": "Jasper Hostel Gate"
     },
     {
       "id": "N157",
-      "from": 183,
-      "to": 1014,
-      "distance": 131.6,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Sapphire Hostel Gate",
-      "coords": [
-        [
-          10.765481,
-          78.814286
-        ],
-        [
-          10.765499,
-          78.813149
-        ]
-      ]
-    },
-    {
-      "id": "N158",
-      "from": 184,
-      "to": 1053,
-      "distance": 120.2,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Ruby Hostel Gate",
-      "coords": [
-        [
-          10.764579,
-          78.817257
-        ],
-        [
-          10.764174,
-          78.816304
-        ]
-      ]
-    },
-    {
-      "id": "N159",
-      "from": 185,
-      "to": 1058,
-      "distance": 63.3,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Jasper Hostel Gate",
-      "coords": [
-        [
-          10.769399,
-          78.818365
-        ],
-        [
-          10.769492,
-          78.818362
-        ],
-        [
-          10.769473,
-          78.817831
-        ],
-        [
-          10.769372,
-          78.817823
-        ]
-      ]
-    },
-    {
-      "id": "N160",
       "from": 186,
       "to": 1062,
-      "distance": 50.8,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Lapis Hostel Gate",
-      "coords": [
-        [
-          10.763,
-          78.8182
-        ],
-        [
-          10.762678,
-          78.818484
-        ]
-      ]
-    },
-    {
-      "id": "N161",
-      "from": 191,
-      "to": 1081,
-      "distance": 14.2,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Opal Complex Security Gate",
-      "coords": [
-        [
-          10.7562,
-          78.82
-        ],
-        [
-          10.756313,
-          78.819993
-        ]
-      ]
-    },
-    {
-      "id": "N162",
-      "from": 192,
-      "to": 1082,
-      "distance": 52.7,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Opal A Hostel Gate",
-      "coords": [
-        [
-          10.755866,
-          78.821032
-        ],
-        [
-          10.756198,
-          78.820735
-        ]
-      ]
-    },
-    {
-      "id": "N163",
-      "from": 193,
-      "to": 1082,
-      "distance": 84.6,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Opal B Hostel Gate",
-      "coords": [
-        [
-          10.755884,
-          78.821389
-        ],
-        [
-          10.756198,
-          78.820735
-        ]
-      ]
-    },
-    {
-      "id": "N164",
-      "from": 194,
-      "to": 1083,
-      "distance": 25.7,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Opal C East Wing Gate",
-      "coords": [
-        [
-          10.7559,
-          78.82175
-        ],
-        [
-          10.756057,
-          78.821606
-        ]
-      ]
-    },
-    {
-      "id": "N165",
-      "from": 195,
-      "to": 1083,
-      "distance": 18.8,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Opal C West Wing Gate",
-      "coords": [
-        [
-          10.756,
-          78.82175
-        ],
-        [
-          10.756063,
-          78.821747
-        ],
-        [
-          10.756057,
-          78.821606
-        ]
-      ]
-    },
-    {
-      "id": "N166",
-      "from": 196,
-      "to": 1082,
-      "distance": 31.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Opal D Hostel Gate",
-      "coords": [
-        [
-          10.75621,
-          78.820466
-        ],
-        [
-          10.756198,
-          78.820735
-        ]
-      ]
-    },
-    {
-      "id": "N167",
-      "from": 197,
-      "to": 1081,
-      "distance": 30.4,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Opal E Hostel Gate",
-      "coords": [
-        [
-          10.756524,
-          78.820132
-        ],
-        [
-          10.756313,
-          78.819993
-        ]
-      ]
-    },
-    {
-      "id": "N168",
-      "from": 198,
-      "to": 1082,
       "distance": 51.9,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Opal F Hostel Gate",
-      "coords": [
-        [
-          10.756543,
-          78.820464
-        ],
-        [
-          10.756198,
-          78.820735
-        ]
-      ]
+      "label": "Lapis Hostel Gate"
+    },
+    {
+      "id": "N158",
+      "from": 191,
+      "to": 1081,
+      "distance": 1.0,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Opal Complex Security Gate"
+    },
+    {
+      "id": "N159",
+      "from": 192,
+      "to": 1082,
+      "distance": 48.3,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Opal A Hostel Gate"
+    },
+    {
+      "id": "N160",
+      "from": 193,
+      "to": 1082,
+      "distance": 78.1,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Opal B Hostel Gate"
+    },
+    {
+      "id": "N161",
+      "from": 194,
+      "to": 1083,
+      "distance": 40.1,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Opal C East Wing Gate"
+    },
+    {
+      "id": "N162",
+      "from": 195,
+      "to": 1083,
+      "distance": 30.0,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Opal C West Wing Gate"
+    },
+    {
+      "id": "N163",
+      "from": 196,
+      "to": 1082,
+      "distance": 39.4,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Opal D Hostel Gate"
+    },
+    {
+      "id": "N164",
+      "from": 197,
+      "to": 1081,
+      "distance": 41.8,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Opal E Hostel Gate"
+    },
+    {
+      "id": "N165",
+      "from": 198,
+      "to": 1082,
+      "distance": 56.6,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Opal F Hostel Gate"
+    },
+    {
+      "id": "N166",
+      "from": 199,
+      "to": 1082,
+      "distance": 84.1,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Opal G Hostel Gate"
+    },
+    {
+      "id": "N167",
+      "from": 200,
+      "to": 1051,
+      "distance": 96.0,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Beryl Hostel Gate"
+    },
+    {
+      "id": "N168",
+      "from": 206,
+      "to": 1014,
+      "distance": 246.7,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Mega Mess I Ground Floor Portico"
     },
     {
       "id": "N169",
-      "from": 199,
-      "to": 1082,
-      "distance": 81.6,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Opal G Hostel Gate",
-      "coords": [
-        [
-          10.756848,
-          78.820502
-        ],
-        [
-          10.756198,
-          78.820735
-        ]
-      ]
-    },
-    {
-      "id": "N170",
-      "from": 200,
-      "to": 1051,
-      "distance": 118.7,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Beryl Hostel Gate",
-      "coords": [
-        [
-          10.762622,
-          78.817427
-        ],
-        [
-          10.762609,
-          78.816402
-        ]
-      ]
-    },
-    {
-      "id": "N171",
-      "from": 206,
-      "to": 1014,
-      "distance": 255.9,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Mega Mess I Ground Floor Portico",
-      "coords": [
-        [
-          10.765952,
-          78.81532
-        ],
-        [
-          10.765499,
-          78.813149
-        ]
-      ]
-    },
-    {
-      "id": "N172",
       "from": 207,
       "to": 206,
       "distance": 12.5,
@@ -7512,41 +5309,21 @@ window.CAMPUS_DATA = {
       "status": "open",
       "stepFree": "no",
       "type": "stairs",
-      "label": "Mega Mess I Stairs to 1st Floor",
-      "coords": [
-        [
-          10.76605,
-          78.81532
-        ],
-        [
-          10.765952,
-          78.81532
-        ]
-      ]
+      "label": "Mega Mess I Stairs to 1st Floor"
     },
     {
-      "id": "N173",
+      "id": "N170",
       "from": 208,
       "to": 1013,
-      "distance": 80.8,
+      "distance": 88.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Mega Mess II Ground Floor Portico",
-      "coords": [
-        [
-          10.764593,
-          78.812469
-        ],
-        [
-          10.764597,
-          78.813164
-        ]
-      ]
+      "label": "Mega Mess II Ground Floor Portico"
     },
     {
-      "id": "N174",
+      "id": "N171",
       "from": 209,
       "to": 208,
       "distance": 7.7,
@@ -7554,192 +5331,98 @@ window.CAMPUS_DATA = {
       "status": "open",
       "stepFree": "no",
       "type": "stairs",
-      "label": "Mega Mess II Stairs to 1st Floor",
-      "coords": [
-        [
-          10.76465,
-          78.812469
-        ],
-        [
-          10.764593,
-          78.812469
-        ]
-      ]
+      "label": "Mega Mess II Stairs to 1st Floor"
+    },
+    {
+      "id": "N172",
+      "from": 210,
+      "to": 1011,
+      "distance": 39.4,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "A Mess Entrance"
+    },
+    {
+      "id": "N173",
+      "from": 211,
+      "to": 1011,
+      "distance": 44.9,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "B Mess Entrance"
+    },
+    {
+      "id": "N174",
+      "from": 212,
+      "to": 1027,
+      "distance": 7.0,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Kailash Mess Entrance"
     },
     {
       "id": "N175",
-      "from": 210,
-      "to": 1011,
-      "distance": 26.9,
+      "from": 213,
+      "to": 1056,
+      "distance": 97.8,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "A Mess Entrance",
-      "coords": [
-        [
-          10.762484,
-          78.812896
-        ],
-        [
-          10.762497,
-          78.813121
-        ]
-      ]
+      "label": "Sabari Mess Entrance"
     },
     {
       "id": "N176",
-      "from": 211,
-      "to": 1011,
-      "distance": 39.0,
+      "from": 214,
+      "to": 1016,
+      "distance": 63.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "B Mess Entrance",
-      "coords": [
-        [
-          10.7628,
-          78.813
-        ],
-        [
-          10.762497,
-          78.813121
-        ]
-      ]
+      "label": "Andhra Mess Entrance"
     },
     {
       "id": "N177",
-      "from": 212,
-      "to": 1027,
-      "distance": 25.0,
+      "from": 215,
+      "to": 1081,
+      "distance": 15.3,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Kailash Mess Entrance",
-      "coords": [
-        [
-          10.762682,
-          78.812252
-        ],
-        [
-          10.76264,
-          78.812047
-        ]
-      ]
+      "label": "Opal Girls Mess 1 Entrance"
     },
     {
       "id": "N178",
-      "from": 213,
-      "to": 1056,
-      "distance": 90.7,
+      "from": 216,
+      "to": 1081,
+      "distance": 19.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Sabari Mess Entrance",
-      "coords": [
-        [
-          10.767848,
-          78.817365
-        ],
-        [
-          10.767119,
-          78.81712
-        ]
-      ]
+      "label": "Opal Girls Mess 2 Entrance"
     },
     {
       "id": "N179",
-      "from": 214,
-      "to": 1016,
-      "distance": 54.5,
+      "from": 226,
+      "to": 1029,
+      "distance": 52.9,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Andhra Mess Entrance",
-      "coords": [
-        [
-          10.767782,
-          78.812769
-        ],
-        [
-          10.767501,
-          78.813137
-        ]
-      ]
+      "label": "Staff Canteen Main Entrance"
     },
     {
       "id": "N180",
-      "from": 215,
-      "to": 1081,
-      "distance": 22.1,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Opal Girls Mess 1 Entrance",
-      "coords": [
-        [
-          10.756187,
-          78.820124
-        ],
-        [
-          10.756313,
-          78.819993
-        ]
-      ]
-    },
-    {
-      "id": "N181",
-      "from": 216,
-      "to": 1081,
-      "distance": 16.1,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Opal Girls Mess 2 Entrance",
-      "coords": [
-        [
-          10.7563,
-          78.820124
-        ],
-        [
-          10.756321,
-          78.820123
-        ],
-        [
-          10.756313,
-          78.819993
-        ]
-      ]
-    },
-    {
-      "id": "N182",
-      "from": 226,
-      "to": 1029,
-      "distance": 54.2,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Staff Canteen Main Entrance",
-      "coords": [
-        [
-          10.759383,
-          78.812295
-        ],
-        [
-          10.758939,
-          78.812193
-        ]
-      ]
-    },
-    {
-      "id": "N183",
       "from": 227,
       "to": 226,
       "distance": 8.8,
@@ -7747,129 +5430,65 @@ window.CAMPUS_DATA = {
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Central Canteen Fast Food Counter",
-      "coords": [
-        [
-          10.75945,
-          78.812295
-        ],
-        [
-          10.759383,
-          78.812295
-        ]
-      ]
+      "label": "Central Canteen Fast Food Counter"
+    },
+    {
+      "id": "N181",
+      "from": 228,
+      "to": 1041,
+      "distance": 84.7,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Nescafe Kiosk Walkway"
+    },
+    {
+      "id": "N182",
+      "from": 229,
+      "to": 1043,
+      "distance": 9.7,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Aavin Milk Parlour Walkway"
+    },
+    {
+      "id": "N183",
+      "from": 230,
+      "to": 1054,
+      "distance": 101.6,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Mega Mess Plaza Night Canteen"
     },
     {
       "id": "N184",
-      "from": 228,
-      "to": 1041,
-      "distance": 78.0,
+      "from": 231,
+      "to": 1052,
+      "distance": 64.5,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Nescafe Kiosk Walkway",
-      "coords": [
-        [
-          10.7601,
-          78.814
-        ],
-        [
-          10.760623,
-          78.814408
-        ]
-      ]
+      "label": "Garnet Plaza Night Canteen"
     },
     {
       "id": "N185",
-      "from": 229,
-      "to": 1043,
-      "distance": 14.3,
+      "from": 232,
+      "to": 1082,
+      "distance": 37.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Aavin Milk Parlour Walkway",
-      "coords": [
-        [
-          10.761873,
-          78.814516
-        ],
-        [
-          10.761873,
-          78.814428
-        ],
-        [
-          10.7618,
-          78.814427
-        ]
-      ]
+      "label": "Opal Night Canteen"
     },
     {
       "id": "N186",
-      "from": 230,
-      "to": 1054,
-      "distance": 113.2,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Mega Mess Plaza Night Canteen",
-      "coords": [
-        [
-          10.764958,
-          78.817281
-        ],
-        [
-          10.765158,
-          78.816325
-        ]
-      ]
-    },
-    {
-      "id": "N187",
-      "from": 231,
-      "to": 1052,
-      "distance": 105.2,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Garnet Plaza Night Canteen",
-      "coords": [
-        [
-          10.76397,
-          78.816344
-        ],
-        [
-          10.763079,
-          78.81637
-        ]
-      ]
-    },
-    {
-      "id": "N188",
-      "from": 232,
-      "to": 1082,
-      "distance": 30.3,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Opal Night Canteen",
-      "coords": [
-        [
-          10.7561,
-          78.8205
-        ],
-        [
-          10.756198,
-          78.820735
-        ]
-      ]
-    },
-    {
-      "id": "N189",
       "from": 233,
       "to": 1001,
       "distance": 93.0,
@@ -7877,41 +5496,21 @@ window.CAMPUS_DATA = {
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "BHEL Gate Snack Stalls",
-      "coords": [
-        [
-          10.756188,
-          78.812834
-        ],
-        [
-          10.756873,
-          78.813229
-        ]
-      ]
+      "label": "BHEL Gate Snack Stalls"
     },
     {
-      "id": "N190",
+      "id": "N187",
       "from": 236,
       "to": 1062,
-      "distance": 38.3,
+      "distance": 36.5,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Health Centre Main Portico",
-      "coords": [
-        [
-          10.762679,
-          78.818809
-        ],
-        [
-          10.762678,
-          78.818484
-        ]
-      ]
+      "label": "Health Centre Main Portico"
     },
     {
-      "id": "N191",
+      "id": "N188",
       "from": 237,
       "to": 236,
       "distance": 9.3,
@@ -7919,827 +5518,425 @@ window.CAMPUS_DATA = {
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Hospital Emergency Bay",
-      "coords": [
-        [
-          10.76275,
-          78.818809
-        ],
-        [
-          10.762679,
-          78.818809
-        ]
-      ]
+      "label": "Hospital Emergency Bay"
+    },
+    {
+      "id": "N189",
+      "from": 238,
+      "to": 1071,
+      "distance": 22.0,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Sports Complex Entrance"
+    },
+    {
+      "id": "N190",
+      "from": 239,
+      "to": 1071,
+      "distance": 99.6,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Badminton Stadium Entrance"
+    },
+    {
+      "id": "N191",
+      "from": 240,
+      "to": 1075,
+      "distance": 24.8,
+      "direction": "two-way",
+      "status": "open",
+      "stepFree": "yes",
+      "type": "walkway",
+      "label": "Cricket Pavilion Entrance"
     },
     {
       "id": "N192",
-      "from": 238,
-      "to": 1071,
-      "distance": 75.2,
+      "from": 241,
+      "to": 1075,
+      "distance": 92.3,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Sports Complex Entrance",
-      "coords": [
-        [
-          10.7577,
-          78.816703
-        ],
-        [
-          10.757233,
-          78.816265
-        ]
-      ]
+      "label": "Football Ground Gate"
     },
     {
       "id": "N193",
-      "from": 239,
-      "to": 1071,
-      "distance": 50.9,
+      "from": 242,
+      "to": 1076,
+      "distance": 16.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Badminton Stadium Entrance",
-      "coords": [
-        [
-          10.757038,
-          78.816652
-        ],
-        [
-          10.757233,
-          78.816265
-        ]
-      ]
+      "label": "Tennis Courts Gate"
     },
     {
       "id": "N194",
-      "from": 240,
-      "to": 1075,
-      "distance": 173.6,
+      "from": 243,
+      "to": 1076,
+      "distance": 25.7,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Cricket Pavilion Entrance",
-      "coords": [
-        [
-          10.75692,
-          78.815123
-        ],
-        [
-          10.755772,
-          78.816069
-        ]
-      ]
+      "label": "Basketball Courts Gate"
     },
     {
       "id": "N195",
-      "from": 241,
-      "to": 1075,
-      "distance": 86.5,
+      "from": 244,
+      "to": 1072,
+      "distance": 1.0,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Football Ground Gate",
-      "coords": [
-        [
-          10.7565,
-          78.816
-        ],
-        [
-          10.755772,
-          78.816069
-        ]
-      ]
+      "label": "Swimming Pool Entrance"
     },
     {
       "id": "N196",
-      "from": 242,
-      "to": 1076,
-      "distance": 92.9,
+      "from": 245,
+      "to": 1063,
+      "distance": 61.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Tennis Courts Gate",
-      "coords": [
-        [
-          10.756773,
-          78.817235
-        ],
-        [
-          10.756841,
-          78.818032
-        ]
-      ]
+      "label": "Jade Playground Gate"
     },
     {
       "id": "N197",
-      "from": 243,
-      "to": 1076,
-      "distance": 101.0,
+      "from": 251,
+      "to": 1061,
+      "distance": 1.0,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Basketball Courts Gate",
-      "coords": [
-        [
-          10.757111,
-          78.817206
-        ],
-        [
-          10.756841,
-          78.818032
-        ]
-      ]
+      "label": "Shopping Complex Main Gate"
     },
     {
       "id": "N198",
-      "from": 244,
-      "to": 1072,
-      "distance": 142.0,
+      "from": 252,
+      "to": 1021,
+      "distance": 26.1,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Swimming Pool Entrance",
-      "coords": [
-        [
-          10.75771,
-          78.817137
-        ],
-        [
-          10.756834,
-          78.817981
-        ]
-      ]
+      "label": "SBI Bank Branch Entrance"
     },
     {
       "id": "N199",
-      "from": 245,
-      "to": 1063,
-      "distance": 69.0,
+      "from": 253,
+      "to": 1061,
+      "distance": 10.8,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Jade Playground Gate",
-      "coords": [
-        [
-          10.763747,
-          78.819026
-        ],
-        [
-          10.763745,
-          78.818434
-        ]
-      ]
+      "label": "Shopping Complex ATM Walkway"
     },
     {
       "id": "N200",
-      "from": 251,
-      "to": 1061,
-      "distance": 90.1,
+      "from": 254,
+      "to": 1077,
+      "distance": 68.7,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Shopping Complex Main Gate",
-      "coords": [
-        [
-          10.761171,
-          78.81887
-        ],
-        [
-          10.761858,
-          78.818533
-        ]
-      ]
+      "label": "Canara Bank ATM Walkway"
     },
     {
       "id": "N201",
-      "from": 252,
-      "to": 1021,
-      "distance": 34.3,
+      "from": 255,
+      "to": 1061,
+      "distance": 17.1,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "SBI Bank Branch Entrance",
-      "coords": [
-        [
-          10.757713,
-          78.810581
-        ],
-        [
-          10.757792,
-          78.81086
-        ]
-      ]
+      "label": "Post Office Entrance"
     },
     {
       "id": "N202",
-      "from": 253,
+      "from": 256,
       "to": 1061,
-      "distance": 91.6,
+      "distance": 9.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Shopping Complex ATM Walkway",
-      "coords": [
-        [
-          10.7612,
-          78.81895
-        ],
-        [
-          10.761858,
-          78.818533
-        ]
-      ]
+      "label": "Co-op Store Entrance"
     },
     {
       "id": "N203",
-      "from": 254,
-      "to": 1077,
-      "distance": 131.9,
+      "from": 257,
+      "to": 1012,
+      "distance": 290.6,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Canara Bank ATM Walkway",
-      "coords": [
-        [
-          10.755937,
-          78.815907
-        ],
-        [
-          10.755281,
-          78.816831
-        ]
-      ]
+      "label": "Campus Xerox & Stationery"
     },
     {
       "id": "N204",
-      "from": 255,
-      "to": 1061,
-      "distance": 93.0,
+      "from": 258,
+      "to": 1062,
+      "distance": 29.8,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Post Office Entrance",
-      "coords": [
-        [
-          10.7611,
-          78.81875
-        ],
-        [
-          10.761858,
-          78.818533
-        ]
-      ]
+      "label": "Campus Pharmacy"
     },
     {
       "id": "N205",
-      "from": 256,
-      "to": 1061,
-      "distance": 89.2,
+      "from": 259,
+      "to": 1043,
+      "distance": 250.9,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Co-op Store Entrance",
-      "coords": [
-        [
-          10.76115,
-          78.8188
-        ],
-        [
-          10.761858,
-          78.818533
-        ]
-      ]
+      "label": "Kurunji Guest House Gate"
     },
     {
       "id": "N206",
-      "from": 257,
-      "to": 1012,
-      "distance": 293.0,
+      "from": 260,
+      "to": 1043,
+      "distance": 254.7,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Campus Xerox & Stationery",
-      "coords": [
-        [
-          10.764908,
-          78.815305
-        ],
-        [
-          10.763499,
-          78.813205
-        ]
-      ]
+      "label": "Marutham Guest House Gate"
     },
     {
       "id": "N207",
-      "from": 258,
-      "to": 1062,
-      "distance": 31.7,
+      "from": 261,
+      "to": 1086,
+      "distance": 60.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Campus Pharmacy",
-      "coords": [
-        [
-          10.7627,
-          78.81875
-        ],
-        [
-          10.762678,
-          78.818484
-        ]
-      ]
+      "label": "Director Bungalow Gate"
     },
     {
       "id": "N208",
-      "from": 259,
-      "to": 1043,
-      "distance": 251.9,
+      "from": 262,
+      "to": 1084,
+      "distance": 73.6,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Kurunji Guest House Gate",
-      "coords": [
-        [
-          10.763926,
-          78.814731
-        ],
-        [
-          10.7618,
-          78.814427
-        ]
-      ]
+      "label": "Staff Quarters Sector Gate"
     },
     {
       "id": "N209",
-      "from": 260,
-      "to": 1043,
-      "distance": 256.6,
+      "from": 266,
+      "to": 1087,
+      "distance": 69.9,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Marutham Guest House Gate",
-      "coords": [
-        [
-          10.763926,
-          78.814946
-        ],
-        [
-          10.7618,
-          78.814427
-        ]
-      ]
+      "label": "Ganapathi Temple Entrance"
     },
     {
       "id": "N210",
-      "from": 261,
-      "to": 1086,
-      "distance": 61.5,
+      "from": 267,
+      "to": 1087,
+      "distance": 71.2,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Director Bungalow Gate",
-      "coords": [
-        [
-          10.760071,
-          78.821517
-        ],
-        [
-          10.759938,
-          78.821008
-        ]
-      ]
+      "label": "Hanuman Shrine Walkway"
     },
     {
       "id": "N211",
-      "from": 262,
-      "to": 1084,
-      "distance": 75.0,
+      "from": 268,
+      "to": 1064,
+      "distance": 1.0,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Staff Quarters Sector Gate",
-      "coords": [
-        [
-          10.757191,
-          78.820432
-        ],
-        [
-          10.757293,
-          78.819796
-        ]
-      ]
+      "label": "Mosque Main Entrance"
     },
     {
       "id": "N212",
-      "from": 266,
-      "to": 1087,
-      "distance": 111.5,
+      "from": 269,
+      "to": 1059,
+      "distance": 512.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Ganapathi Temple Entrance",
-      "coords": [
-        [
-          10.755184,
-          78.8198
-        ],
-        [
-          10.755167,
-          78.818838
-        ]
-      ]
+      "label": "Christian Fellowship Centre"
     },
     {
       "id": "N213",
-      "from": 267,
+      "from": 276,
       "to": 1087,
-      "distance": 112.5,
+      "distance": 137.5,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
-      "type": "walkway",
-      "label": "Hanuman Shrine Walkway",
-      "coords": [
-        [
-          10.7553,
-          78.8198
-        ],
-        [
-          10.755167,
-          78.818838
-        ]
-      ]
+      "type": "road",
+      "label": "Staff East Gate"
     },
     {
       "id": "N214",
-      "from": 268,
-      "to": 1064,
-      "distance": 23.7,
+      "from": 277,
+      "to": 1059,
+      "distance": 76.1,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
-      "type": "walkway",
-      "label": "Mosque Main Entrance",
-      "coords": [
-        [
-          10.765348,
-          78.818477
-        ],
-        [
-          10.765198,
-          78.818352
-        ]
-      ]
+      "type": "road",
+      "label": "Thuvakudi Rear Gate"
     },
     {
       "id": "N215",
-      "from": 269,
-      "to": 1059,
-      "distance": 413.8,
+      "from": 281,
+      "to": 1042,
+      "distance": 24.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Christian Fellowship Centre",
-      "coords": [
-        [
-          10.771724,
-          78.820927
-        ],
-        [
-          10.769903,
-          78.817847
-        ]
-      ]
+      "label": "Classic Foods Entrance"
     },
     {
       "id": "N216",
-      "from": 276,
-      "to": 1087,
-      "distance": 130.1,
+      "from": 282,
+      "to": 1040,
+      "distance": 2.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
-      "type": "road",
-      "label": "Staff East Gate",
-      "coords": [
-        [
-          10.754063,
-          78.818868
-        ],
-        [
-          10.755167,
-          78.818838
-        ]
-      ]
+      "type": "walkway",
+      "label": "Electrical Maintenance Entrance"
     },
     {
       "id": "N217",
-      "from": 277,
-      "to": 1059,
-      "distance": 237.8,
+      "from": 283,
+      "to": 1045,
+      "distance": 74.6,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
-      "type": "road",
-      "label": "Thuvakudi Rear Gate",
-      "coords": [
-        [
-          10.770689,
-          78.815946
-        ],
-        [
-          10.769903,
-          78.817847
-        ]
-      ]
+      "type": "walkway",
+      "label": "Automobile Lab Entrance"
     },
     {
       "id": "N218",
-      "from": 281,
-      "to": 1042,
-      "distance": 11.9,
+      "from": 284,
+      "to": 1047,
+      "distance": 41.2,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Classic Foods Entrance",
-      "coords": [
-        [
-          10.76041,
-          78.813906
-        ],
-        [
-          10.760319,
-          78.813899
-        ],
-        [
-          10.760321,
-          78.813877
-        ]
-      ]
+      "label": "Powder Metallurgy Entrance"
     },
     {
       "id": "N219",
-      "from": 282,
-      "to": 1040,
-      "distance": 37.4,
+      "from": 285,
+      "to": 1048,
+      "distance": 57.7,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Electrical Maintenance Entrance",
-      "coords": [
-        [
-          10.7598,
-          78.8147
-        ],
-        [
-          10.759848,
-          78.814387
-        ]
-      ]
+      "label": "Silver Jubilee Building Entrance"
     },
     {
       "id": "N220",
-      "from": 283,
-      "to": 1045,
-      "distance": 111.9,
+      "from": 286,
+      "to": 1035,
+      "distance": 6.7,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Automobile Lab Entrance",
-      "coords": [
-        [
-          10.75939,
-          78.814984
-        ],
-        [
-          10.75869,
-          78.815636
-        ]
-      ]
+      "label": "Lyceum Faculty Block Entrance"
     },
     {
       "id": "N221",
-      "from": 284,
-      "to": 1047,
-      "distance": 119.7,
+      "from": 287,
+      "to": 1036,
+      "distance": 1.0,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Powder Metallurgy Entrance",
-      "coords": [
-        [
-          10.760497,
-          78.815959
-        ],
-        [
-          10.760024,
-          78.816874
-        ]
-      ]
+      "label": "Space Technology Incubation Entrance"
     },
     {
       "id": "N222",
-      "from": 285,
-      "to": 1048,
-      "distance": 75.8,
+      "from": 288,
+      "to": 1034,
+      "distance": 11.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
-      "type": "walkway",
-      "label": "Silver Jubilee Building Entrance",
-      "coords": [
-        [
-          10.760602,
-          78.816006
-        ],
-        [
-          10.760201,
-          78.816514
-        ]
-      ]
+      "type": "road",
+      "label": "Academic Parking Lot Entrance"
     },
     {
       "id": "N223",
-      "from": 286,
-      "to": 1035,
-      "distance": 94.7,
+      "from": 289,
+      "to": 1070,
+      "distance": 4.5,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Lyceum Faculty Block Entrance",
-      "coords": [
-        [
-          10.759,
-          78.818014
-        ],
-        [
-          10.758203,
-          78.818098
-        ]
-      ]
+      "label": "Physical Education Entrance"
     },
     {
       "id": "N224",
-      "from": 287,
-      "to": 1036,
-      "distance": 13.8,
+      "from": 290,
+      "to": 1002,
+      "distance": 28.9,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
-      "type": "walkway",
-      "label": "Space Technology Incubation Entrance",
-      "coords": [
-        [
-          10.7588,
-          78.818014
-        ],
-        [
-          10.758715,
-          78.818085
-        ]
-      ]
+      "type": "road",
+      "label": "NIT Cycle Parking Entrance"
     },
     {
       "id": "N225",
-      "from": 288,
-      "to": 1034,
-      "distance": 128.1,
+      "from": 291,
+      "to": 1075,
+      "distance": 24.8,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
-      "type": "road",
-      "label": "Academic Parking Lot Entrance",
-      "coords": [
-        [
-          10.75904,
-          78.817177
-        ],
-        [
-          10.758092,
-          78.816635
-        ]
-      ]
+      "type": "walkway",
+      "label": "NSO Ground Entrance"
     },
     {
       "id": "N226",
-      "from": 289,
-      "to": 1070,
-      "distance": 125.0,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "Physical Education Entrance",
-      "coords": [
-        [
-          10.75785,
-          78.81533
-        ],
-        [
-          10.757966,
-          78.814257
-        ]
-      ]
-    },
-    {
-      "id": "N227",
-      "from": 290,
-      "to": 1002,
-      "distance": 17.8,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "road",
-      "label": "NIT Cycle Parking Entrance",
-      "coords": [
-        [
-          10.75725,
-          78.81345
-        ],
-        [
-          10.757247,
-          78.813382
-        ],
-        [
-          10.757296,
-          78.81338
-        ],
-        [
-          10.757293,
-          78.81331
-        ]
-      ]
-    },
-    {
-      "id": "N228",
-      "from": 291,
-      "to": 1075,
-      "distance": 173.6,
-      "direction": "two-way",
-      "status": "open",
-      "stepFree": "yes",
-      "type": "walkway",
-      "label": "NSO Ground Entrance",
-      "coords": [
-        [
-          10.75692,
-          78.815123
-        ],
-        [
-          10.755772,
-          78.816069
-        ]
-      ]
-    },
-    {
-      "id": "N229",
       "from": 292,
       "to": 1032,
-      "distance": 33.3,
+      "distance": 9.4,
       "direction": "two-way",
       "status": "open",
       "stepFree": "yes",
       "type": "walkway",
-      "label": "Mech Roundabout Lab Entrance",
-      "coords": [
-        [
-          10.758951,
-          78.815698
-        ],
-        [
-          10.758768,
-          78.815909
-        ]
-      ]
+      "label": "Mech Roundabout Lab Entrance"
     }
   ],
   "bounds": {
@@ -8749,15 +5946,15 @@ window.CAMPUS_DATA = {
     "maxY": 1653.21
   },
   "gps": {
-    "refLat": 10.756873,
-    "refLon": 78.813229,
+    "center": [
+      10.763161,
+      78.814601
+    ],
     "minLat": 10.754063,
     "maxLat": 10.771724,
     "minLon": 78.810089,
-    "maxLon": 78.82175,
-    "center": [
-      10.76069,
-      78.815913
-    ]
+    "maxLon": 78.82175
   }
 };
+if (typeof window !== 'undefined') { window.CAMPUS_DATA = dataObj; }
+if (typeof module !== 'undefined') { module.exports = dataObj; }

@@ -132,7 +132,7 @@ class CampusMap {
             const v = this.nodeMap.get(e.to);
             if (!u || !v || !u.lat || !v.lat) return;
 
-            const latlngs = (e.coords && e.coords.length >= 2) ? e.coords : [
+            const latlngs = [
                 [u.lat, u.lon],
                 [v.lat, v.lon]
             ];
@@ -301,29 +301,7 @@ class CampusMap {
             return;
         }
 
-        let latlngs = [];
-        if (routeResult.pathEdges && routeResult.pathEdges.length > 0) {
-            routeResult.pathEdges.forEach((edge, idx) => {
-                const u = this.nodeMap.get(edge.from);
-                const v = this.nodeMap.get(edge.to);
-                const fromNode = routeResult.pathNodes[idx];
-                const isForward = (fromNode && fromNode.id === edge.from);
-                let pts = (edge.coords && edge.coords.length >= 2)
-                    ? edge.coords
-                    : [[u.lat, u.lon], [v.lat, v.lon]];
-                if (!isForward) {
-                    pts = [...pts].reverse();
-                }
-                if (latlngs.length > 0 && pts.length > 0) {
-                    latlngs.push(...pts.slice(1));
-                } else {
-                    latlngs.push(...pts);
-                }
-            });
-        } else {
-            latlngs = routeResult.pathNodes.map(n => [n.lat, n.lon]);
-        }
-        routeResult.detailedCoords = latlngs;
+        const latlngs = routeResult.pathNodes.map(n => [n.lat, n.lon]);
 
         // 1. Glowing outer shadow polyline
         const glowLine = L.polyline(latlngs, {
@@ -377,9 +355,7 @@ class CampusMap {
 
     focusOnRoute() {
         if (!this.currentRoute || !this.currentRoute.pathNodes || this.currentRoute.pathNodes.length < 2) return;
-        const latlngs = (this.currentRoute.detailedCoords && this.currentRoute.detailedCoords.length >= 2)
-            ? this.currentRoute.detailedCoords
-            : this.currentRoute.pathNodes.map(n => [n.lat, n.lon]);
+        const latlngs = this.currentRoute.pathNodes.map(n => [n.lat, n.lon]);
         this.map.fitBounds(L.latLngBounds(latlngs), { padding: [60, 60], maxZoom: 17 });
     }
 
@@ -419,9 +395,7 @@ class CampusMap {
             clearInterval(this.simInterval);
         }
 
-        const latlngs = (this.currentRoute.detailedCoords && this.currentRoute.detailedCoords.length >= 2)
-            ? this.currentRoute.detailedCoords
-            : this.currentRoute.pathNodes.map(n => [n.lat, n.lon]);
+        const latlngs = this.currentRoute.pathNodes.map(n => [n.lat, n.lon]);
         let step = 0;
         const totalSteps = latlngs.length;
 
