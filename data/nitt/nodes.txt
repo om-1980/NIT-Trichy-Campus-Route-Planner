@@ -135,76 +135,76 @@
 291|NSO Ground, NITT|207.13|5.23
 292|Mechanical Dept Labs (Roundabout)|270.01|231.32
 1001|Main Gate Entrance J01|0.00|0.00
-1002|Security Office & Cycle Parking J02|0.00|53.10
-1003|Admin Circle Roundabout J03|0.11|112.10
-1004|Admin South Front J04|0.11|181.12
-1005|Admin Block East Avenue J05|0.11|230.21
-1006|Barn Hall Cross J06|0.11|279.64
-1007|Classic Foods Turn J07|0.11|370.36
-1008|Old LHC Cross J08|0.11|437.15
-1009|Convocation East Cross J09|0.11|515.08
-1010|Agate Hostel Entry J10|0.11|597.45
-1011|A Mess North Spine J11|0.11|626.40
-1012|Diamond Avenue Cross J12|0.11|737.72
-1013|Mega Mess II Cross J13|0.11|860.17
-1014|Sapphire & Mega Mess I J14|0.11|960.36
-1015|North Hostel Spine J15|0.11|1071.68
-1016|Andhra Mess Cross J16|0.11|1183.00
-1020|SBI Branch Road Turn J20|-156.28|112.10
-1021|SBI Main Entrance Plaza J21|-265.64|93.51
-1022|Science Avenue West Cross J22|-150.81|225.65
-1023|Orion LHC South Approach J23|-272.74|270.17
-1024|Orion Front Plaza J24|-298.44|313.70
-1025|Old LHC West Approach J25|-156.28|370.36
-1026|GJCH West Approach J26|-200.02|514.74
-1027|Kailash Mess Avenue J27|-112.53|646.66
-1028|Mega Mess II West Approach J28|-112.53|859.39
-1029|OJAS Science Block Plaza J29|-107.06|230.21
-1030|EEE Front Cross J30|162.18|231.32
-1031|Automobile Lab Road Turn J31|215.55|231.32
-1032|Mechanical Dept Roundabout J32|262.03|231.32
-1033|MME Front Cross J33|322.83|231.32
-1034|Academic Parking Cross J34|431.75|231.32
-1035|Lyceum & CSE Front J35|523.29|231.32
-1036|S-TIC Front Cross J36|523.29|214.51
-1040|Electrical & Estate Maint J40|162.18|325.83
-1041|Octagon Computer Center Front J41|139.00|417.23
-1042|Classic Foods & Old LHC Walkway J42|73.38|416.00
-1043|Third i & Hostel Office Cross J43|139.00|548.47
-1045|Automobile Lab East Gate J45|262.03|280.19
-1046|Central Workshop Front J46|262.03|325.83
-1047|Powder Metallurgy & SJB Turn J47|262.03|414.89
-1048|Silver Jubilee Front J48|357.72|414.89
-1049|ICE Department Cross J49|523.29|414.89
-1050|Coral Hostel Approach J50|303.04|610.37
-1051|Beryl & Nilkesh Canteen J51|368.65|639.98
-1052|Emerald Hostel Approach J52|368.65|736.38
-1053|Pearl & Ruby Hostel Cross J53|368.65|849.04
-1054|Topaz & Nikesh Food Court J54|368.65|960.36
-1055|Zircon Hostel Avenue J55|368.65|1055.76
-1056|Sabari Mess & Amber South J56|368.65|1183.00
-1057|Aquamarine Hostel Avenue J57|467.08|1272.72
-1058|Jasper Hostel North Approach J58|467.08|1394.39
-1059|Rear Perimeter Road J59|368.65|1538.00
-1060|Shopping Centre Turn J60|521.76|478.45
-1061|Shopping Centre Central Plaza J61|616.90|478.45
-1062|Hospital Main Entrance Turn J62|576.44|646.32
-1063|Jade Hostel & Playground Turn J63|576.44|765.21
-1064|NITT Mosque Approach J64|573.92|943.44
-1065|Amber & Aquamarine East Spur J65|551.17|1191.46
-1070|Physical Education Front J70|229.77|112.10
-1071|Sports Complex Front J71|379.59|112.10
-1072|Swimming Pool Front J72|427.38|93.17
-1073|Central Library Front J73|523.29|-30.39
-1074|East Avenue Central Cross J74|523.29|112.10
-1075|Sports Grounds Central Access J75|229.77|5.23
-1076|Courts Complex Access J76|434.27|3.01
-1077|SAC & Pavilion Access J77|229.77|-91.06
-1080|New Avenue West Gate J80|609.24|-74.92
-1081|Opal Main Entrance Plaza J81|740.48|-74.92
-1082|Opal Central Residence Circle J82|827.96|-74.92
-1083|Opal East Block Avenue J83|915.45|-74.92
-1084|Staff Quarters South Avenue J84|718.60|35.40
-1085|Staff Quarters North Turn J85|795.16|292.44
-1086|Director Bungalow Turn J86|849.84|356.00
-1087|Temple Avenue J87|652.99|-188.02
+1002|Security Office & Cycle Parking J02|8.86|46.75
+1003|Admin Circle Roundabout J03|5.69|117.55
+1004|Admin South Front J04|-9.40|180.78
+1005|Admin Block East Avenue J05|5.47|210.62
+1006|Barn Hall Spine J06|20.01|281.08
+1007|Classic Foods Turn J07|-0.44|382.83
+1008|Old LHC Spine J08|15.75|437.38
+1009|Convocation East Cross J09|-1.20|516.08
+1010|Hostel Entry Spine J10|-11.48|614.60
+1011|A Mess Spine J11|-11.81|626.06
+1012|Diamond Avenue Spine J12|-2.62|737.61
+1013|Mega Mess II Spine J13|-7.11|859.84
+1014|Sapphire Spine J14|-8.75|960.25
+1015|North Hostel Spine J15|-10.06|1071.57
+1016|Andhra Mess Spine J16|-10.06|1183.11
+1020|SBI Branch Road Turn J20|-154.31|115.88
+1021|SBI Plaza Road J21|-259.07|102.30
+1022|Science Avenue West Cross J22|-150.26|189.47
+1023|Orion LHC South Approach J23|-304.35|268.95
+1024|Orion Front Plaza J24|-305.99|313.37
+1025|Old LHC West Walkway J25|-119.86|372.59
+1026|Convocation Hall Front J26|-124.56|452.96
+1027|Kailash Mess Approach J27|-129.26|641.98
+1028|Mega Mess II West Approach J28|-51.07|869.19
+1029|Science Avenue Central J29|-113.30|229.99
+1030|EEE Front Cross J30|163.27|124.23
+1031|Automobile Lab Approach J31|285.98|172.32
+1032|Mechanical Dept Roundabout J32|293.08|210.95
+1033|MME Front Cross J33|344.37|134.03
+1034|Academic Parking Cross J34|372.48|135.70
+1035|Lyceum & CSE Front J35|532.47|148.06
+1036|S-TIC Front Cross J36|531.05|205.05
+1040|Electrical & Estate Maint J40|126.64|331.18
+1041|Octagon Computer Center Front J41|128.94|417.45
+1042|Classic Foods & Old LHC Walkway J42|70.87|383.83
+1043|Third i & Hostel Office Cross J43|131.01|548.47
+1045|Automobile Lab East Gate J45|263.23|202.27
+1046|Central Workshop Front J46|370.40|219.19
+1047|Powder Metallurgy & SJB Turn J47|398.62|350.77
+1048|Silver Jubilee Front J48|359.25|370.47
+1049|ICE Department Cross J49|585.51|379.16
+1050|Coral & Beryl Avenue J50|131.23|614.38
+1051|Emerald & Jade Avenue J51|347.00|638.53
+1052|Pearl & Ruby Avenue J52|343.50|690.85
+1053|Pearl Hostel Front J53|336.28|812.75
+1054|Topaz & Zircon Turn J54|338.58|922.29
+1055|Zircon Plaza Cross J55|370.51|1055.65
+1056|Amber & Sabari Turn J56|425.52|1140.58
+1057|Aquamarine North Turn J57|492.01|1270.61
+1058|Jasper Research Avenue J58|502.40|1391.39
+1059|Rear Perimeter Way J59|505.02|1450.50
+1060|Shopping Centre Turn J60|582.56|480.46
+1061|Shopping Centre East J61|580.05|554.93
+1062|Hospital Main Road J62|574.69|646.21
+1063|Hospital North Gate J63|569.22|764.99
+1064|Mosque Way Turn J64|560.25|926.74
+1065|Amber East Avenue J65|481.40|1147.15
+1070|Admin East to Sports Turn J70|112.42|121.67
+1071|Sports Complex Front J71|332.02|40.08
+1072|Swimming Pool & Gym Access J72|519.68|-4.34
+1073|Central Library Front J73|523.73|109.76
+1074|East Avenue Central Cross J74|534.55|120.00
+1075|Sports Grounds Central Access J75|310.58|-122.56
+1076|Courts Complex Access J76|525.26|-3.56
+1077|SAC & Pavilion Access J77|393.91|-177.22
+1080|New Avenue West Gate J80|607.60|-74.92
+1081|Opal Main Entrance Plaza J81|739.71|-62.34
+1082|Opal Central Residence Circle J82|820.86|-75.14
+1083|Opal East Block Avenue J83|916.11|-90.84
+1084|Staff Quarters South Avenue J84|718.17|46.75
+1085|Staff Quarters North Turn J85|794.94|299.12
+1086|Director Bungalow Turn J86|850.71|341.20
+1087|Temple Avenue J87|613.40|-189.91
