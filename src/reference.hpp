@@ -1,7 +1,4 @@
 #pragma once
-// Independent correctness oracle used only by tests and benchmarks (M8).
-// It does not use the adjacency lists, the heap or edgeAllowed(): arcs and the
-// mode filter are rebuilt directly from the physical edge records.
 
 #include "graph.hpp"
 #include "router.hpp"
@@ -9,11 +6,13 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 namespace campus {
 
 struct ReferenceLabels {
-    std::vector<double> dist;   // kInf if unreachable
-    std::vector<int> segments;  // segment count of the lexicographically best label
+    vector<double> dist;   // kInf if unreachable
+    vector<int> segments;  // segment count of the lexicographically best label
     int rounds = 0;             // Bellman-Ford passes performed
 };
 
@@ -25,7 +24,7 @@ bool nearlyEqual(double a, double b, double tol = 1e-9);
 
 struct RouteCheck {
     bool valid = true;
-    std::string reason;
+    string reason;
 };
 
 // Checks an OK route: correct endpoints, consecutive edges join the reported

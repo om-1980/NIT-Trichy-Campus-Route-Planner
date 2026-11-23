@@ -1,13 +1,3 @@
-// Measurement program for the evaluation metrics (module M8, timing part).
-//
-// Only the search call is timed (findRoute / dijkstra / bellmanFordReference).
-// File loading is timed separately; nothing is printed inside a timed region.
-// Timing: std::chrono::steady_clock around a batch of K identical calls; the
-// per-call time of a batch is (batch time / K); B batches give B samples and
-// the median sample is reported.
-//
-// Usage: benchmark [data_dir] [results_dir]   (defaults: data/demo results)
-
 #include "graph.hpp"
 #include "reference.hpp"
 #include "router.hpp"
@@ -29,8 +19,9 @@
 #define BENCH_FLAGS "unknown"
 #endif
 
+using namespace std;
 using namespace campus;
-using Clock = std::chrono::steady_clock;
+using Clock = chrono::steady_clock;
 
 namespace {
 
@@ -41,8 +32,8 @@ struct Timing {
     int batches = 0, perBatch = 0;
 };
 
-Timing timeCall(const std::function<double()>& call, int batches, int perBatch) {
-    std::vector<double> samples;
+Timing timeCall(const function<double()>& call, int batches, int perBatch) {
+    vector<double> samples;
     samples.reserve(batches);
     for (int b = 0; b < batches; ++b) {
         double acc = 0.0;
@@ -50,25 +41,25 @@ Timing timeCall(const std::function<double()>& call, int batches, int perBatch) 
         for (int k = 0; k < perBatch; ++k) acc += call();
         const auto t1 = Clock::now();
         gSink = gSink + acc;
-        samples.push_back(std::chrono::duration<double, std::micro>(t1 - t0).count() / perBatch);
+        samples.push_back(chrono::duration<double, micro>(t1 - t0).count() / perBatch);
     }
-    std::sort(samples.begin(), samples.end());
+    sort(samples.begin(), samples.end());
     return {samples[samples.size() / 2], samples.front(), samples.back(), batches, perBatch};
 }
 
-std::string f2(double v, int p = 3) {
-    std::ostringstream o;
-    o << std::fixed << std::setprecision(p) << v;
+string f2(double v, int p = 3) {
+    ostringstream o;
+    o << fixed << setprecision(p) << v;
     return o.str();
 }
 
-std::string distText(const Route& r) { return r.status == RouteStatus::Ok ? f2(r.distance, 1) : ""; }
+string distText(const Route& r) { return r.status == RouteStatus::Ok ? f2(r.distance, 1) : ""; }
 
 // Grid graph: side x side junctions, 4-neighbour two-way paths, integer metres.
-void gridText(int side, unsigned seed, std::string& nodes, std::string& edges) {
-    std::mt19937 rng(seed);
-    std::uniform_int_distribution<int> w(50, 150);
-    std::ostringstream ns, es;
+void gridText(int side, unsigned seed, string& nodes, string& edges) {
+    mt19937 rng(seed);
+    uniform_int_distribution<int> w(50, 150);
+    ostringstream ns, es;
     for (int r = 0; r < side; ++r)
         for (int c = 0; c < side; ++c) ns << r * side + c << "|J" << r << "_" << c << "\n";
     int k = 0;
@@ -85,14 +76,14 @@ void gridText(int side, unsigned seed, std::string& nodes, std::string& edges) {
 }  // namespace
 
 int main(int argc, char** argv) {
-    const std::string dataDir = argc > 1 ? argv[1] : "data/demo";
-    const std::string out = argc > 2 ? argv[2] : "results";
+    const string dataDir = argc > 1 ? argv[1] : "data/demo";
+    const string out = argc > 2 ? argv[2] : "results";
 
     // ------------------------------------------------ load time (separate from search)
     CampusGraph demo;
     LoadReport rep;
     if (!CampusGraph::loadDirectory(dataDir, demo, rep)) {
-        std::cout << "cannot load " << dataDir << "\n";
+        cout << "cannot load " << dataDir << "\n";
         return 1;
     }
     const Timing load = timeCall([&] {
@@ -104,7 +95,7 @@ int main(int argc, char** argv) {
 
     // ------------------------------------------------ demo: every ordered place pair, both modes
     {
-        std::ofstream f(out + "/bench_demo_queries.csv");
+        ofstream f(out + "/bench_demo_queries.csv");
         f << "mode,src_place,dst_place,src_node,dst_node,status,distance_m,segments,settled,stale_pops,adjacency_scanned,"
              "edges_filtered,relax_attempts,relax_successes,heap_pushes,max_heap,batches,calls_per_batch,median_us,min_us,max_us\n";
         for (RouteMode mode : {RouteMode::Standard, RouteMode::StepFree})
@@ -115,7 +106,7 @@ int main(int argc, char** argv) {
                     const SearchStats& s = r.stats;
                     f << toString(mode) << "," << a.id << "," << b.id << "," << demo.nodes()[a.node].id << ","
                       << demo.nodes()[b.node].id << "," << toString(r.status) << "," << distText(r) << ","
-                      << (r.status == RouteStatus::Ok ? std::to_string(r.segments) : "") << "," << s.settled << ","
+                      << (r.status == RouteStatus::Ok ? to_string(r.segments) : "") << "," << s.settled << ","
                       << s.stalePops << "," << s.adjacencyScanned << "," << s.edgesFiltered << "," << s.relaxAttempts
                       << "," << s.relaxSuccesses << "," << s.heapPushes << "," << s.maxHeapSize << "," << t.batches << ","
                       << t.perBatch << "," << f2(t.medianUs) << "," << f2(t.minUs) << "," << f2(t.maxUs) << "\n";
@@ -125,11 +116,11 @@ int main(int argc, char** argv) {
     // ------------------------------------------------ closure scenarios (route-distance increase)
     {
         struct Scenario {
-            std::string name;
+            string name;
             int src, dst;  // place IDs
-            std::vector<std::string> close;
+            vector<string> close;
         };
-        const std::vector<Scenario> scenarios = {
+        const vector<Scenario> scenarios = {
             {"S1 footbridge closed", 1, 3, {"E22"}},
             {"S2 footbridge + north road centre closed", 1, 3, {"E22", "E04"}},
             {"S3 + central cross walk closed", 1, 3, {"E22", "E04", "E20"}},
@@ -141,19 +132,19 @@ int main(int argc, char** argv) {
             {"S9 admin approach closed", 1, 2, {"E03"}},
             {"S10 canteen service path closed", 6, 9, {"E29"}},
         };
-        std::ofstream f(out + "/closure_impact.csv");
+        ofstream f(out + "/closure_impact.csv");
         f << "scenario,src_place,dst_place,closed_edges,base_status,base_distance_m,base_edges,new_status,new_distance_m,"
              "new_edges,increase_m,increase_percent\n";
         auto edgesOf = [](const CampusGraph& g, const Route& r) {
-            std::string s;
-            for (std::size_t i = 0; i < r.edges.size(); ++i) s += (i ? " " : "") + g.edges()[r.edges[i]].id;
+            string s;
+            for (size_t i = 0; i < r.edges.size(); ++i) s += (i ? " " : "") + g.edges()[r.edges[i]].id;
             return s;
         };
         for (const Scenario& sc : scenarios) {
             CampusGraph g = demo;
             const int s = g.findPlace(sc.src)->node, t = g.findPlace(sc.dst)->node;
             const Route base = findRoute(g, s, t, RouteMode::Standard);
-            std::string closed;
+            string closed;
             for (const auto& id : sc.close) {
                 g.setEdgeOpen(id, false);
                 closed += (closed.empty() ? "" : " ") + id;
@@ -169,7 +160,7 @@ int main(int argc, char** argv) {
 
     // ------------------------------------------------ single-edge closure sensitivity over all place pairs
     {
-        std::ofstream f(out + "/closure_single_edge_summary.csv");
+        ofstream f(out + "/closure_single_edge_summary.csv");
         f << "edge_id,pairs_reachable_before,pairs_longer,pairs_disconnected,pairs_unchanged,mean_increase_m_over_longer,"
              "max_increase_m\n";
         for (const PhysicalEdge& e : demo.edges()) {
@@ -189,7 +180,7 @@ int main(int argc, char** argv) {
                     else if (r1.distance > r0.distance + 1e-9) {
                         ++longer;
                         sum += r1.distance - r0.distance;
-                        mx = std::max(mx, r1.distance - r0.distance);
+                        mx = max(mx, r1.distance - r0.distance);
                     } else ++unchanged;
                 }
             f << e.id << "," << reachable << "," << longer << "," << disconnected << "," << unchanged << ","
@@ -199,41 +190,41 @@ int main(int argc, char** argv) {
 
     // ------------------------------------------------ scaling on synthetic grid graphs
     {
-        std::ofstream f(out + "/bench_scaling.csv");
+        ofstream f(out + "/bench_scaling.csv");
         f << "graph,nodes,physical_edges,adjacency_entries,build_ms,algorithm,queries,batches,calls_per_batch,"
              "median_of_query_medians_us,mean_settled,mean_adjacency_scanned,mean_heap_pushes,mean_stale_pops,"
              "mean_max_heap,est_query_workspace_bytes,est_graph_bytes,oracle_agreement\n";
-        const std::size_t heapEntry = sizeof(std::tuple<double, int, int>);
+        const size_t heapEntry = sizeof(tuple<double, int, int>);
         for (int side : {10, 32, 100, 317}) {
-            std::string nt, et;
+            string nt, et;
             gridText(side, 42u + side, nt, et);
             CampusGraph g;
             LoadReport r;
             const auto b0 = Clock::now();
-            std::istringstream ni(nt), ei(et);
+            istringstream ni(nt), ei(et);
             CampusGraph::loadStreams(ni, ei, nullptr, nullptr, g, r);
-            const double buildMs = std::chrono::duration<double, std::milli>(Clock::now() - b0).count();
+            const double buildMs = chrono::duration<double, milli>(Clock::now() - b0).count();
             const int n = g.nodeCount();
-            const std::size_t graphBytes = n * sizeof(Node) + g.edgeCount() * sizeof(PhysicalEdge) +
-                                           g.adjacencyEntryCount() * sizeof(AdjEntry) + n * sizeof(std::vector<AdjEntry>);
-            std::mt19937 rng(1000 + side);
-            std::uniform_int_distribution<int> pick(0, n - 1);
+            const size_t graphBytes = n * sizeof(Node) + g.edgeCount() * sizeof(PhysicalEdge) +
+                                           g.adjacencyEntryCount() * sizeof(AdjEntry) + n * sizeof(vector<AdjEntry>);
+            mt19937 rng(1000 + side);
+            uniform_int_distribution<int> pick(0, n - 1);
             const int queries = 20;
-            std::vector<std::pair<int, int>> pairs;
+            vector<pair<int, int>> pairs;
             for (int q = 0; q < queries; ++q) pairs.emplace_back(pick(rng), pick(rng));
             const int batches = side >= 317 ? 5 : (side >= 100 ? 9 : 21);
 
             struct Algo {
-                std::string name;
+                string name;
                 bool enabled;
             };
-            const std::vector<Algo> algos = {{"dijkstra_p2p_early_stop", true},
+            const vector<Algo> algos = {{"dijkstra_p2p_early_stop", true},
                                              {"dijkstra_full_sssp", true},
                                              {"bellman_ford_reference_full", side <= 100}};
             for (const Algo& al : algos) {
                 if (!al.enabled) continue;
                 const int perBatch = al.name[0] == 'b' ? 1 : (side >= 317 ? 1 : (side >= 100 ? 5 : 50));
-                std::vector<double> med;
+                vector<double> med;
                 double settled = 0, scanned = 0, pushes = 0, stale = 0, maxHeap = 0;
                 int agree = 0;
                 for (const auto& [s, t] : pairs) {
@@ -260,20 +251,20 @@ int main(int argc, char** argv) {
                     }
                     med.push_back(tm.medianUs);
                 }
-                std::sort(med.begin(), med.end());
+                sort(med.begin(), med.end());
                 const double q = static_cast<double>(queries);
                 const bool counted = al.name[0] == 'd';
-                const std::size_t workspace =
-                    n * (sizeof(double) + 3 * sizeof(int) + sizeof(char)) + static_cast<std::size_t>(maxHeap / q) * heapEntry;
+                const size_t workspace =
+                    n * (sizeof(double) + 3 * sizeof(int) + sizeof(char)) + static_cast<size_t>(maxHeap / q) * heapEntry;
                 f << "grid_" << side << "x" << side << "," << n << "," << g.edgeCount() << "," << g.adjacencyEntryCount()
                   << "," << f2(buildMs, 2) << "," << al.name << "," << queries << ","
                   << (al.name[0] == 'b' ? (side >= 100 ? 3 : batches) : batches) << "," << perBatch << ","
                   << f2(med[med.size() / 2]) << "," << (counted ? f2(settled / q, 1) : "") << ","
                   << (counted ? f2(scanned / q, 1) : "") << "," << (counted ? f2(pushes / q, 1) : "") << ","
                   << (counted ? f2(stale / q, 1) : "") << "," << (counted ? f2(maxHeap / q, 1) : "") << ","
-                  << (counted ? std::to_string(workspace) : "") << "," << graphBytes << ","
-                  << (agree >= 0 ? std::to_string(agree) + "/" + std::to_string(queries) : "") << "\n";
-                std::cout << "  grid " << side << "x" << side << " " << al.name << ": median " << f2(med[med.size() / 2])
+                  << (counted ? to_string(workspace) : "") << "," << graphBytes << ","
+                  << (agree >= 0 ? to_string(agree) + "/" + to_string(queries) : "") << "\n";
+                cout << "  grid " << side << "x" << side << " " << al.name << ": median " << f2(med[med.size() / 2])
                           << " us\n";
             }
         }
@@ -281,13 +272,13 @@ int main(int argc, char** argv) {
 
     // ------------------------------------------------ environment record
     {
-        std::ofstream f(out + "/bench_environment.txt");
-        const std::time_t now = std::time(nullptr);
-        f << "run_at_local: " << std::put_time(std::localtime(&now), "%Y-%m-%d %H:%M:%S") << "\n"
+        ofstream f(out + "/bench_environment.txt");
+        const time_t now = time(nullptr);
+        f << "run_at_local: " << put_time(localtime(&now), "%Y-%m-%d %H:%M:%S") << "\n"
           << "compiler: g++ " << __VERSION__ << "\n"
           << "flags: " << BENCH_FLAGS << "\n"
           << "cplusplus: " << __cplusplus << "\n"
-          << "timer: std::chrono::steady_clock, period " << Clock::period::num << "/" << Clock::period::den << " s\n"
+          << "timer: chrono::steady_clock, period " << Clock::period::num << "/" << Clock::period::den << " s\n"
           << "method: per-call time = batch time / calls_per_batch; median over batches; loading, printing and\n"
           << "        result checking are outside timed regions\n"
           << "demo_load_time_us_median: " << f2(load.medianUs, 1) << " (" << load.batches << " batches x " << load.perBatch
@@ -295,8 +286,8 @@ int main(int argc, char** argv) {
           << "demo_dataset: " << demo.nodeCount() << " nodes, " << demo.edgeCount() << " physical edges, "
           << demo.adjacencyEntryCount() << " adjacency entries, " << demo.places().size() << " places\n"
           << "sizeof: Node " << sizeof(Node) << ", PhysicalEdge " << sizeof(PhysicalEdge) << ", AdjEntry "
-          << sizeof(AdjEntry) << ", heap entry " << sizeof(std::tuple<double, int, int>) << " bytes\n";
+          << sizeof(AdjEntry) << ", heap entry " << sizeof(tuple<double, int, int>) << " bytes\n";
     }
-    std::cout << "Benchmark complete. Results written to " << out << "/\n";
+    cout << "Benchmark complete. Results written to " << out << "/\n";
     return 0;
 }

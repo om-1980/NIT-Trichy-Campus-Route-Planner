@@ -6,6 +6,8 @@
 #include <stdexcept>
 #include <tuple>
 
+using namespace std;
+
 namespace campus {
 
 const char* toString(RouteMode m) { return m == RouteMode::Standard ? "standard" : "step-free"; }
@@ -28,16 +30,16 @@ SearchResult dijkstra(const CampusGraph& g, int source, int target, RouteMode mo
     const int n = g.nodeCount();
     SearchResult r;
     r.dist.assign(n, kInf);
-    r.segments.assign(n, std::numeric_limits<int>::max());
+    r.segments.assign(n, numeric_limits<int>::max());
     r.parent.assign(n, -1);
     r.parentEdge.assign(n, -1);
     if (source < 0 || source >= n) return r;
 
-    using Entry = std::tuple<double, int, int>;  // (distance, segments, node index)
-    std::priority_queue<Entry, std::vector<Entry>, std::greater<Entry>> heap;
-    std::vector<char> settled(n, 0);
+    using Entry = tuple<double, int, int>;  // (distance, segments, node index)
+    priority_queue<Entry, vector<Entry>, greater<Entry>> heap;
+    vector<char> settled(n, 0);
     SearchStats& s = r.stats;
-    const std::vector<PhysicalEdge>& edges = g.edges();
+    const vector<PhysicalEdge>& edges = g.edges();
 
     r.dist[source] = 0.0;
     r.segments[source] = 0;
@@ -74,7 +76,7 @@ SearchResult dijkstra(const CampusGraph& g, int source, int target, RouteMode mo
                 heap.emplace(nd, nh, a.to);
                 ++s.relaxSuccesses;
                 ++s.heapPushes;
-                s.maxHeapSize = std::max(s.maxHeapSize, heap.size());
+                s.maxHeapSize = max(s.maxHeapSize, heap.size());
             }
         }
     }
@@ -106,13 +108,13 @@ Route findRoute(const CampusGraph& g, int source, int target, RouteMode mode) {
 
     // M7: follow parent pointers back from the target, then reverse once.
     for (int v = target, steps = 0; v != source; v = r.parent[v], ++steps) {
-        if (r.parent[v] < 0 || steps > n) throw std::logic_error("broken parent chain in route reconstruction");
+        if (r.parent[v] < 0 || steps > n) throw logic_error("broken parent chain in route reconstruction");
         route.nodes.push_back(v);
         route.edges.push_back(r.parentEdge[v]);
     }
     route.nodes.push_back(source);
-    std::reverse(route.nodes.begin(), route.nodes.end());
-    std::reverse(route.edges.begin(), route.edges.end());
+    reverse(route.nodes.begin(), route.nodes.end());
+    reverse(route.edges.begin(), route.edges.end());
     route.distance = r.dist[target];
     route.segments = r.segments[target];
     route.status = RouteStatus::Ok;

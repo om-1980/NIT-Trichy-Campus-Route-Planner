@@ -12,6 +12,8 @@
 #include <numeric>
 #include <sstream>
 
+using namespace std;
+
 namespace campus {
 
 const char* toString(Direction d) { return d == Direction::TwoWay ? "two-way" : "one-way"; }
@@ -35,43 +37,43 @@ const char* toString(PathType t) {
 
 namespace {
 
-std::string trim(const std::string& s) {
-    std::size_t b = 0, e = s.size();
-    while (b < e && std::isspace(static_cast<unsigned char>(s[b]))) ++b;
-    while (e > b && std::isspace(static_cast<unsigned char>(s[e - 1]))) --e;
+string trim(const string& s) {
+    size_t b = 0, e = s.size();
+    while (b < e && isspace(static_cast<unsigned char>(s[b]))) ++b;
+    while (e > b && isspace(static_cast<unsigned char>(s[e - 1]))) --e;
     return s.substr(b, e - b);
 }
 
-std::string lower(std::string s) {
-    for (char& c : s) c = static_cast<char>(std::tolower(static_cast<unsigned char>(c)));
+string lower(string s) {
+    for (char& c : s) c = static_cast<char>(tolower(static_cast<unsigned char>(c)));
     return s;
 }
 
-std::string upper(std::string s) {
-    for (char& c : s) c = static_cast<char>(std::toupper(static_cast<unsigned char>(c)));
+string upper(string s) {
+    for (char& c : s) c = static_cast<char>(toupper(static_cast<unsigned char>(c)));
     return s;
 }
 
-std::vector<std::string> splitPipe(const std::string& line) {
-    std::vector<std::string> out;
-    std::string field;
-    std::istringstream in(line);
-    while (std::getline(in, field, '|')) out.push_back(trim(field));
+vector<string> splitPipe(const string& line) {
+    vector<string> out;
+    string field;
+    istringstream in(line);
+    while (getline(in, field, '|')) out.push_back(trim(field));
     if (!line.empty() && line.back() == '|') out.emplace_back();
     return out;
 }
 
 // Strict integer parse: the whole field must be an integer that fits in int.
-bool parseInt(const std::string& s, int& out) {
+bool parseInt(const string& s, int& out) {
     if (s.empty()) return false;
-    std::size_t i = (s[0] == '-' || s[0] == '+') ? 1 : 0;
+    size_t i = (s[0] == '-' || s[0] == '+') ? 1 : 0;
     if (i == s.size()) return false;
-    for (std::size_t k = i; k < s.size(); ++k)
-        if (!std::isdigit(static_cast<unsigned char>(s[k]))) return false;
+    for (size_t k = i; k < s.size(); ++k)
+        if (!isdigit(static_cast<unsigned char>(s[k]))) return false;
     errno = 0;
     char* end = nullptr;
-    long long v = std::strtoll(s.c_str(), &end, 10);
-    if (errno == ERANGE || v < std::numeric_limits<int>::min() || v > std::numeric_limits<int>::max())
+    long long v = strtoll(s.c_str(), &end, 10);
+    if (errno == ERANGE || v < numeric_limits<int>::min() || v > numeric_limits<int>::max())
         return false;
     out = static_cast<int>(v);
     return true;
@@ -79,42 +81,42 @@ bool parseInt(const std::string& s, int& out) {
 
 // Strict real parse: the whole field must be consumed. "nan"/"inf" parse here and
 // are rejected by the caller's finiteness check so the message is specific.
-bool parseDouble(const std::string& s, double& out) {
+bool parseDouble(const string& s, double& out) {
     if (s.empty()) return false;
     char* end = nullptr;
     errno = 0;
-    out = std::strtod(s.c_str(), &end);
+    out = strtod(s.c_str(), &end);
     return end == s.c_str() + s.size();
 }
 
-bool validEdgeId(const std::string& id) {
+bool validEdgeId(const string& id) {
     if (id.empty()) return false;
-    return std::all_of(id.begin(), id.end(), [](char c) {
-        return std::isalnum(static_cast<unsigned char>(c)) || c == '_' || c == '-';
+    return all_of(id.begin(), id.end(), [](char c) {
+        return isalnum(static_cast<unsigned char>(c)) || c == '_' || c == '-';
     });
 }
 
 // Reads non-blank, non-comment lines. Calls fn(lineNumber, fields).
-void forEachRecord(std::istream& in, const std::function<void(int, const std::string&)>& fn) {
-    std::string line;
+void forEachRecord(istream& in, const function<void(int, const string&)>& fn) {
+    string line;
     int lineNo = 0;
-    while (std::getline(in, line)) {
+    while (getline(in, line)) {
         ++lineNo;
         if (lineNo == 1 && line.size() >= 3 && line.compare(0, 3, "\xEF\xBB\xBF") == 0) line.erase(0, 3);
-        std::string t = trim(line);
+        string t = trim(line);
         if (t.empty() || t[0] == '#') continue;
         fn(lineNo, t);
     }
 }
 
-std::string at(const char* file, int line) { return std::string(file) + ":" + std::to_string(line) + ": "; }
+string at(const char* file, int line) { return string(file) + ":" + to_string(line) + ": "; }
 
 }  // namespace
 
-bool CampusGraph::loadDirectory(const std::string& dir, CampusGraph& out, LoadReport& report) {
-    const std::string base = dir.empty() ? std::string(".") : dir;
-    std::ifstream nodes(base + "/nodes.txt"), edges(base + "/edges.txt"), places(base + "/places.txt");
-    std::ifstream metadata(base + "/metadata.txt");
+bool CampusGraph::loadDirectory(const string& dir, CampusGraph& out, LoadReport& report) {
+    const string base = dir.empty() ? string(".") : dir;
+    ifstream nodes(base + "/nodes.txt"), edges(base + "/edges.txt"), places(base + "/places.txt");
+    ifstream metadata(base + "/metadata.txt");
     if (!nodes) report.errors.push_back("cannot open file '" + base + "/nodes.txt'");
     if (!edges) report.errors.push_back("cannot open file '" + base + "/edges.txt'");
     if (!places) report.errors.push_back("cannot open file '" + base + "/places.txt'");
@@ -122,18 +124,18 @@ bool CampusGraph::loadDirectory(const std::string& dir, CampusGraph& out, LoadRe
     return loadStreams(nodes, edges, &places, metadata ? &metadata : nullptr, out, report);
 }
 
-bool CampusGraph::loadStreams(std::istream& nodesIn, std::istream& edgesIn, std::istream* placesIn,
-                              std::istream* metadataIn, CampusGraph& out, LoadReport& report) {
-    const std::size_t errorsBefore = report.errors.size();
-    auto error = [&](const std::string& msg) { report.errors.push_back(msg); };
+bool CampusGraph::loadStreams(istream& nodesIn, istream& edgesIn, istream* placesIn,
+                              istream* metadataIn, CampusGraph& out, LoadReport& report) {
+    const size_t errorsBefore = report.errors.size();
+    auto error = [&](const string& msg) { report.errors.push_back(msg); };
     CampusGraph g;
-    std::unordered_map<int, int> nodeLine;
+    unordered_map<int, int> nodeLine;
 
     // ---- nodes.txt: node_id|name[|x_m|y_m]
-    forEachRecord(nodesIn, [&](int ln, const std::string& line) {
+    forEachRecord(nodesIn, [&](int ln, const string& line) {
         const auto f = splitPipe(line);
         if (f.size() != 2 && f.size() != 4) {
-            error(at("nodes.txt", ln) + "expected 2 or 4 '|'-separated fields, found " + std::to_string(f.size()));
+            error(at("nodes.txt", ln) + "expected 2 or 4 '|'-separated fields, found " + to_string(f.size()));
             return;
         }
         Node n;
@@ -148,7 +150,7 @@ bool CampusGraph::loadStreams(std::istream& nodesIn, std::istream& edgesIn, std:
         }
         if (f.size() == 4 && !(f[2].empty() && f[3].empty())) {
             if (f[2].empty() || f[3].empty() || !parseDouble(f[2], n.x) || !parseDouble(f[3], n.y) ||
-                !std::isfinite(n.x) || !std::isfinite(n.y)) {
+                !isfinite(n.x) || !isfinite(n.y)) {
                 error(at("nodes.txt", ln) + "coordinates must be two finite numbers or both empty");
                 return;
             }
@@ -156,8 +158,8 @@ bool CampusGraph::loadStreams(std::istream& nodesIn, std::istream& edgesIn, std:
         }
         auto it = nodeLine.find(n.id);
         if (it != nodeLine.end()) {
-            error(at("nodes.txt", ln) + "duplicate node_id " + std::to_string(n.id) + " (first on line " +
-                  std::to_string(it->second) + ")");
+            error(at("nodes.txt", ln) + "duplicate node_id " + to_string(n.id) + " (first on line " +
+                  to_string(it->second) + ")");
             return;
         }
         nodeLine[n.id] = ln;
@@ -167,14 +169,14 @@ bool CampusGraph::loadStreams(std::istream& nodesIn, std::istream& edgesIn, std:
     if (g.nodes_.empty() && report.errors.size() == errorsBefore) error("nodes.txt: no node records found");
 
     // ---- edges.txt: edge_id|from|to|distance_m|direction|status|step_free|path_type[|label]
-    std::unordered_map<std::string, int> edgeLine;
-    forEachRecord(edgesIn, [&](int ln, const std::string& line) {
+    unordered_map<string, int> edgeLine;
+    forEachRecord(edgesIn, [&](int ln, const string& line) {
         const auto f = splitPipe(line);
         if (f.size() != 8 && f.size() != 9) {
-            error(at("edges.txt", ln) + "expected 8 or 9 '|'-separated fields, found " + std::to_string(f.size()));
+            error(at("edges.txt", ln) + "expected 8 or 9 '|'-separated fields, found " + to_string(f.size()));
             return;
         }
-        const std::string where = at("edges.txt", ln);
+        const string where = at("edges.txt", ln);
         bool ok = true;
         PhysicalEdge e;
         e.id = upper(f[0]);
@@ -182,7 +184,7 @@ bool CampusGraph::loadStreams(std::istream& nodesIn, std::istream& edgesIn, std:
             error(where + "edge_id must use letters, digits, '_' or '-' (got '" + f[0] + "')");
             ok = false;
         } else if (edgeLine.count(e.id)) {
-            error(where + "duplicate edge_id " + e.id + " (first on line " + std::to_string(edgeLine[e.id]) + ")");
+            error(where + "duplicate edge_id " + e.id + " (first on line " + to_string(edgeLine[e.id]) + ")");
             ok = false;
         }
         int fromId = 0, toId = 0;
@@ -192,7 +194,7 @@ bool CampusGraph::loadStreams(std::istream& nodesIn, std::istream& edgesIn, std:
                 error(where + (k == 1 ? "from_node" : "to_node") + " is not an integer (got '" + f[k] + "')");
                 ok = false;
             } else if (!g.nodeIndex_.count(id)) {
-                error(where + (k == 1 ? "from_node " : "to_node ") + std::to_string(id) + " is not in nodes.txt");
+                error(where + (k == 1 ? "from_node " : "to_node ") + to_string(id) + " is not in nodes.txt");
                 ok = false;
             }
         }
@@ -203,14 +205,14 @@ bool CampusGraph::loadStreams(std::istream& nodesIn, std::istream& edgesIn, std:
         if (!parseDouble(f[3], e.distance)) {
             error(where + "distance_m is not a number (got '" + f[3] + "')");
             ok = false;
-        } else if (!std::isfinite(e.distance)) {
+        } else if (!isfinite(e.distance)) {
             error(where + "distance_m must be finite (got '" + f[3] + "')");
             ok = false;
         } else if (e.distance < 0.0) {
             error(where + "distance_m must be >= 0; Dijkstra requires non-negative weights (got '" + f[3] + "')");
             ok = false;
         }
-        const std::string dir = lower(f[4]), status = lower(f[5]), sf = lower(f[6]), type = lower(f[7]);
+        const string dir = lower(f[4]), status = lower(f[5]), sf = lower(f[6]), type = lower(f[7]);
         if (dir == "two-way") e.direction = Direction::TwoWay;
         else if (dir == "one-way") e.direction = Direction::OneWay;
         else { error(where + "direction must be two-way or one-way (got '" + f[4] + "')"); ok = false; }
@@ -238,9 +240,9 @@ bool CampusGraph::loadStreams(std::istream& nodesIn, std::istream& edgesIn, std:
         const Node& a = g.nodes_[e.from];
         const Node& b = g.nodes_[e.to];
         if (a.hasCoords && b.hasCoords) {
-            const double straight = std::hypot(a.x - b.x, a.y - b.y);
+            const double straight = hypot(a.x - b.x, a.y - b.y);
             if (e.distance + 1e-6 < straight) {
-                std::ostringstream w;
+                ostringstream w;
                 w << where << e.id << " distance " << e.distance << " m is shorter than the straight-line distance "
                   << straight << " m between its endpoints (check data)";
                 report.warnings.push_back(w.str());
@@ -253,12 +255,12 @@ bool CampusGraph::loadStreams(std::istream& nodesIn, std::istream& edgesIn, std:
 
     // ---- places.txt: place_id|node_id|name
     if (placesIn) {
-        std::unordered_map<int, int> placeLine;
-        forEachRecord(*placesIn, [&](int ln, const std::string& line) {
+        unordered_map<int, int> placeLine;
+        forEachRecord(*placesIn, [&](int ln, const string& line) {
             const auto f = splitPipe(line);
-            const std::string where = at("places.txt", ln);
+            const string where = at("places.txt", ln);
             if (f.size() != 3) {
-                error(where + "expected 3 '|'-separated fields, found " + std::to_string(f.size()));
+                error(where + "expected 3 '|'-separated fields, found " + to_string(f.size()));
                 return;
             }
             Place p;
@@ -277,8 +279,8 @@ bool CampusGraph::loadStreams(std::istream& nodesIn, std::istream& edgesIn, std:
                 return;
             }
             if (placeLine.count(p.id)) {
-                error(where + "duplicate place_id " + std::to_string(p.id) + " (first on line " +
-                      std::to_string(placeLine[p.id]) + ")");
+                error(where + "duplicate place_id " + to_string(p.id) + " (first on line " +
+                      to_string(placeLine[p.id]) + ")");
                 return;
             }
             placeLine[p.id] = ln;
@@ -291,9 +293,9 @@ bool CampusGraph::loadStreams(std::istream& nodesIn, std::istream& edgesIn, std:
 
     // ---- metadata.txt (optional): key = value
     if (metadataIn) {
-        forEachRecord(*metadataIn, [&](int, const std::string& line) {
+        forEachRecord(*metadataIn, [&](int, const string& line) {
             const auto eq = line.find('=');
-            if (eq == std::string::npos) return;
+            if (eq == string::npos) return;
             g.metadata_.emplace_back(trim(line.substr(0, eq)), trim(line.substr(eq + 1)));
         });
     }
@@ -307,17 +309,17 @@ bool CampusGraph::loadStreams(std::istream& nodesIn, std::istream& edgesIn, std:
         g.adj_[e.from].push_back({e.to, i});
         if (e.direction == Direction::TwoWay) g.adj_[e.to].push_back({e.from, i});
     }
-    out = std::move(g);
+    out = move(g);
     return true;
 }
 
-std::size_t CampusGraph::adjacencyEntryCount() const {
-    std::size_t n = 0;
+size_t CampusGraph::adjacencyEntryCount() const {
+    size_t n = 0;
     for (const auto& list : adj_) n += list.size();
     return n;
 }
 
-std::string CampusGraph::metadataValue(const std::string& key) const {
+string CampusGraph::metadataValue(const string& key) const {
     for (const auto& kv : metadata_)
         if (kv.first == key) return kv.second;
     return {};
@@ -328,7 +330,7 @@ int CampusGraph::indexOfNodeId(int nodeId) const {
     return it == nodeIndex_.end() ? -1 : it->second;
 }
 
-int CampusGraph::indexOfEdgeId(const std::string& edgeId) const {
+int CampusGraph::indexOfEdgeId(const string& edgeId) const {
     auto it = edgeIndex_.find(upper(trim(edgeId)));
     return it == edgeIndex_.end() ? -1 : it->second;
 }
@@ -338,7 +340,7 @@ const Place* CampusGraph::findPlace(int placeId) const {
     return it == placeIndex_.end() ? nullptr : &places_[it->second];
 }
 
-StatusChange CampusGraph::setEdgeOpen(const std::string& edgeId, bool open) {
+StatusChange CampusGraph::setEdgeOpen(const string& edgeId, bool open) {
     const int i = indexOfEdgeId(edgeId);
     if (i < 0) return StatusChange::UnknownEdge;
     if (edges_[i].open == open) return StatusChange::Unchanged;
@@ -360,7 +362,7 @@ int CampusGraph::resetToDataStatus() {
 }
 
 int CampusGraph::closedEdgeCount() const {
-    return static_cast<int>(std::count_if(edges_.begin(), edges_.end(), [](const PhysicalEdge& e) { return !e.open; }));
+    return static_cast<int>(count_if(edges_.begin(), edges_.end(), [](const PhysicalEdge& e) { return !e.open; }));
 }
 
 GraphSummary summarize(const CampusGraph& g) {
@@ -369,9 +371,9 @@ GraphSummary summarize(const CampusGraph& g) {
     s.physicalEdges = g.edgeCount();
     s.places = static_cast<int>(g.places().size());
     s.adjacencyEntries = g.adjacencyEntryCount();
-    std::vector<int> parent(s.nodes), degree(s.nodes, 0);
-    std::iota(parent.begin(), parent.end(), 0);
-    std::function<int(int)> find = [&](int v) { return parent[v] == v ? v : parent[v] = find(parent[v]); };
+    vector<int> parent(s.nodes), degree(s.nodes, 0);
+    iota(parent.begin(), parent.end(), 0);
+    function<int(int)> find = [&](int v) { return parent[v] == v ? v : parent[v] = find(parent[v]); };
     for (const auto& e : g.edges()) {
         (e.direction == Direction::TwoWay ? s.twoWay : s.oneWay)++;
         if (!e.open) ++s.closed;

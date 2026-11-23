@@ -4,6 +4,7 @@
 #include <cmath>
 #include <limits>
 #include <unordered_set>
+using namespace std;
 
 namespace campus {
 
@@ -26,10 +27,10 @@ ReferenceLabels bellmanFordReference(const CampusGraph& g, int source, RouteMode
     const int n = g.nodeCount();
     ReferenceLabels out;
     out.dist.assign(n, kInf);
-    out.segments.assign(n, std::numeric_limits<int>::max());
+    out.segments.assign(n, numeric_limits<int>::max());
     if (source < 0 || source >= n) return out;
 
-    std::vector<Arc> arcs;
+    vector<Arc> arcs;
     for (const PhysicalEdge& e : g.edges()) {
         if (!permitted(e, mode)) continue;
         arcs.push_back({e.from, e.to, e.distance});
@@ -38,7 +39,7 @@ ReferenceLabels bellmanFordReference(const CampusGraph& g, int source, RouteMode
 
     out.dist[source] = 0.0;
     out.segments[source] = 0;
-    for (int round = 1; round < std::max(n, 2); ++round) {
+    for (int round = 1; round < max(n, 2); ++round) {
         bool changed = false;
         for (const Arc& a : arcs) {
             if (out.dist[a.u] == kInf) continue;
@@ -57,12 +58,12 @@ ReferenceLabels bellmanFordReference(const CampusGraph& g, int source, RouteMode
 }
 
 bool nearlyEqual(double a, double b, double tol) {
-    if (std::isinf(a) || std::isinf(b)) return a == b;
-    return std::fabs(a - b) <= tol * std::max({1.0, std::fabs(a), std::fabs(b)});
+    if (isinf(a) || isinf(b)) return a == b;
+    return fabs(a - b) <= tol * max({1.0, fabs(a), fabs(b)});
 }
 
 RouteCheck checkRoute(const CampusGraph& g, const Route& r, double tol) {
-    auto fail = [](const std::string& why) { return RouteCheck{false, why}; };
+    auto fail = [](const string& why) { return RouteCheck{false, why}; };
     if (r.status != RouteStatus::Ok) return fail("route status is not OK");
     if (r.nodes.empty()) return fail("empty node list");
     if (r.nodes.front() != r.source) return fail("route does not start at the source");
@@ -70,13 +71,13 @@ RouteCheck checkRoute(const CampusGraph& g, const Route& r, double tol) {
     if (r.edges.size() + 1 != r.nodes.size()) return fail("edge count is not node count - 1");
     if (r.segments != static_cast<int>(r.edges.size())) return fail("segment count differs from edge count");
 
-    std::unordered_set<int> seen;
+    unordered_set<int> seen;
     for (int v : r.nodes) {
         if (v < 0 || v >= g.nodeCount()) return fail("node index out of range");
         if (!seen.insert(v).second) return fail("route repeats a node");
     }
     double sum = 0.0;
-    for (std::size_t i = 0; i < r.edges.size(); ++i) {
+    for (size_t i = 0; i < r.edges.size(); ++i) {
         const int id = r.edges[i];
         if (id < 0 || id >= g.edgeCount()) return fail("edge index out of range");
         const PhysicalEdge& e = g.edges()[id];

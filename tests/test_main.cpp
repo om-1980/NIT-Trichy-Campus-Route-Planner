@@ -1,8 +1,3 @@
-// Automated tests (module M8). Writes results/test_results.csv and
-// results/correctness_metrics.csv; exit code is the number of failed tests.
-//
-// Usage: run_tests [data_dir] [results_dir]   (defaults: data/demo results)
-
 #include "graph.hpp"
 #include "reference.hpp"
 #include "router.hpp"
@@ -17,53 +12,54 @@
 #include <vector>
 
 using namespace campus;
+using namespace std;
 
 namespace {
 
 struct Record {
-    std::string id, category, scenario, setup, expected, actual;
+    string id, category, scenario, setup, expected, actual;
     bool pass;
 };
 
-std::vector<Record> records;
+vector<Record> records;
 
-void record(const std::string& id, const std::string& category, const std::string& scenario, const std::string& setup,
-            const std::string& expected, const std::string& actual, bool pass) {
+void record(const string& id, const string& category, const string& scenario, const string& setup,
+            const string& expected, const string& actual, bool pass) {
     records.push_back({id, category, scenario, setup, expected, actual, pass});
-    std::cout << (pass ? "[PASS] " : "[FAIL] ") << id << "  " << scenario << "\n";
-    if (!pass) std::cout << "         expected: " << expected << "\n         actual:   " << actual << "\n";
+    cout << (pass ? "[PASS] " : "[FAIL] ") << id << "  " << scenario << "\n";
+    if (!pass) cout << "         expected: " << expected << "\n         actual:   " << actual << "\n";
 }
 
-std::string fmt(double v) {
-    std::ostringstream o;
-    o << std::fixed << std::setprecision(1) << v;
+string fmt(double v) {
+    ostringstream o;
+    o << fixed << setprecision(1) << v;
     return o.str();
 }
 
-std::string join(const std::vector<std::string>& v, const std::string& sep) {
-    std::string s;
-    for (std::size_t i = 0; i < v.size(); ++i) s += (i ? sep : "") + v[i];
+string join(const vector<string>& v, const string& sep) {
+    string s;
+    for (size_t i = 0; i < v.size(); ++i) s += (i ? sep : "") + v[i];
     return s;
 }
 
-std::vector<std::string> edgeIds(const CampusGraph& g, const Route& r) {
-    std::vector<std::string> out;
+vector<string> edgeIds(const CampusGraph& g, const Route& r) {
+    vector<string> out;
     for (int e : r.edges) out.push_back(g.edges()[e].id);
     return out;
 }
 
-std::vector<int> nodeIds(const CampusGraph& g, const Route& r) {
-    std::vector<int> out;
+vector<int> nodeIds(const CampusGraph& g, const Route& r) {
+    vector<int> out;
     for (int v : r.nodes) out.push_back(g.nodes()[v].id);
     return out;
 }
 
-std::string describe(const CampusGraph& g, const Route& r) {
+string describe(const CampusGraph& g, const Route& r) {
     if (r.status != RouteStatus::Ok) return toString(r.status);
-    std::vector<std::string> ids;
-    for (int id : nodeIds(g, r)) ids.push_back(std::to_string(id));
-    std::string edges = join(edgeIds(g, r), ",");
-    return "OK " + fmt(r.distance) + " m, " + std::to_string(r.segments) + " seg, nodes " + join(ids, ">") +
+    vector<string> ids;
+    for (int id : nodeIds(g, r)) ids.push_back(to_string(id));
+    string edges = join(edgeIds(g, r), ",");
+    return "OK " + fmt(r.distance) + " m, " + to_string(r.segments) + " seg, nodes " + join(ids, ">") +
            ", edges " + (edges.empty() ? "-" : edges);
 }
 
@@ -77,18 +73,18 @@ bool matchesOracle(const CampusGraph& g, const Route& r, bool compareSegments = 
     return !compareSegments || ref.segments[r.target] == r.segments;
 }
 
-bool loadText(const std::string& nodes, const std::string& edges, const std::string& places, CampusGraph& g,
+bool loadText(const string& nodes, const string& edges, const string& places, CampusGraph& g,
               LoadReport& rep) {
-    std::istringstream n(nodes), e(edges), p(places);
+    istringstream n(nodes), e(edges), p(places);
     return CampusGraph::loadStreams(n, e, places.empty() ? nullptr : &p, nullptr, g, rep);
 }
 
-const std::string kNodes3 = "1|A\n2|B\n3|C\n";
+const string kNodes3 = "1|A\n2|B\n3|C\n";
 
 // ---------------------------------------------------------------- oracle sweep
 struct SweepStats {
     long pairs = 0, agree = 0, okRoutes = 0, validRoutes = 0, noRoute = 0;
-    std::string firstFailure;
+    string firstFailure;
 };
 
 // Every ordered (source, target) pair: Dijkstra (with early stop) vs Bellman-Ford.
@@ -101,7 +97,7 @@ void sweep(const CampusGraph& g, RouteMode mode, bool compareSegments, SweepStat
             const Route r = findRoute(g, src, dst, mode);
             ++s.pairs;
             bool ok;
-            std::string why;
+            string why;
             if (r.status == RouteStatus::NoRoute) {
                 ++s.noRoute;
                 ok = ref.dist[dst] == kInf && full.dist[dst] == kInf;
@@ -113,21 +109,21 @@ void sweep(const CampusGraph& g, RouteMode mode, bool compareSegments, SweepStat
                 ok = c.valid && nearlyEqual(ref.dist[dst], r.distance) && nearlyEqual(full.dist[dst], r.distance) &&
                      (!compareSegments || (ref.segments[dst] == r.segments && full.segments[dst] == r.segments));
                 if (!c.valid) why = "invalid route: " + c.reason;
-                else if (!ok) why = "label mismatch: dijkstra " + fmt(r.distance) + "/" + std::to_string(r.segments) +
-                                    " reference " + fmt(ref.dist[dst]) + "/" + std::to_string(ref.segments[dst]);
+                else if (!ok) why = "label mismatch: dijkstra " + fmt(r.distance) + "/" + to_string(r.segments) +
+                                    " reference " + fmt(ref.dist[dst]) + "/" + to_string(ref.segments[dst]);
             }
             if (ok) ++s.agree;
             else if (s.firstFailure.empty())
-                s.firstFailure = std::string(toString(mode)) + " " + std::to_string(g.nodes()[src].id) + "->" +
-                                 std::to_string(g.nodes()[dst].id) + ": " + why;
+                s.firstFailure = string(toString(mode)) + " " + to_string(g.nodes()[src].id) + "->" +
+                                 to_string(g.nodes()[dst].id) + ": " + why;
         }
     }
 }
 
-std::string sweepText(const SweepStats& s) {
-    return "agree " + std::to_string(s.agree) + "/" + std::to_string(s.pairs) + " pairs; valid routes " +
-           std::to_string(s.validRoutes) + "/" + std::to_string(s.okRoutes) + "; NO_ROUTE pairs " +
-           std::to_string(s.noRoute) + (s.firstFailure.empty() ? "" : "; first failure: " + s.firstFailure);
+string sweepText(const SweepStats& s) {
+    return "agree " + to_string(s.agree) + "/" + to_string(s.pairs) + " pairs; valid routes " +
+           to_string(s.validRoutes) + "/" + to_string(s.okRoutes) + "; NO_ROUTE pairs " +
+           to_string(s.noRoute) + (s.firstFailure.empty() ? "" : "; first failure: " + s.firstFailure);
 }
 
 SweepStats totalSweep;  // aggregated across all sweep tests for the metrics file
@@ -142,20 +138,20 @@ void addTotals(const SweepStats& s) {
 
 // Random graph text with non-contiguous node IDs, parallel edges, zero weights,
 // one-way edges, closed edges, mixed step-free flags and possibly isolated nodes.
-void randomGraphText(std::mt19937& rng, int n, int m, bool fractional, std::string& nodes, std::string& edges) {
-    std::ostringstream ns, es;
-    std::vector<int> ids(n);
+void randomGraphText(mt19937& rng, int n, int m, bool fractional, string& nodes, string& edges) {
+    ostringstream ns, es;
+    vector<int> ids(n);
     for (int i = 0; i < n; ++i) ids[i] = 1000 + 7 * i;
-    std::shuffle(ids.begin(), ids.end(), rng);
+    shuffle(ids.begin(), ids.end(), rng);
     for (int i = 0; i < n; ++i) ns << ids[i] << "|N" << ids[i] << "\n";
-    std::uniform_int_distribution<int> pick(0, n - 1), pct(0, 99), w(1, 100);
-    std::uniform_real_distribution<double> wr(0.0, 100.0);
+    uniform_int_distribution<int> pick(0, n - 1), pct(0, 99), w(1, 100);
+    uniform_real_distribution<double> wr(0.0, 100.0);
     for (int k = 0; k < m && n > 1; ++k) {
         int u = pick(rng), v = pick(rng);
         while (v == u) v = pick(rng);
-        std::ostringstream dist;
+        ostringstream dist;
         if (pct(rng) < 10) dist << 0;
-        else if (fractional) dist << std::setprecision(17) << wr(rng);
+        else if (fractional) dist << setprecision(17) << wr(rng);
         else dist << w(rng);
         const int sf = pct(rng);
         const bool stairs = sf < 15;
@@ -171,14 +167,14 @@ void randomGraphText(std::mt19937& rng, int n, int m, bool fractional, std::stri
 }  // namespace
 
 int main(int argc, char** argv) {
-    const std::string dataDir = argc > 1 ? argv[1] : "data/demo";
-    const std::string resultsDir = argc > 2 ? argv[2] : "results";
+    const string dataDir = argc > 1 ? argv[1] : "data/demo";
+    const string resultsDir = argc > 2 ? argv[2] : "results";
 
     CampusGraph demo;
     LoadReport demoRep;
     if (!CampusGraph::loadDirectory(dataDir, demo, demoRep)) {
-        std::cout << "Cannot load demo dataset from " << dataDir << "\n";
-        for (const auto& e : demoRep.errors) std::cout << "  " << e << "\n";
+        cout << "Cannot load demo dataset from " << dataDir << "\n";
+        for (const auto& e : demoRep.errors) cout << "  " << e << "\n";
         return 100;
     }
     const RouteMode STD = RouteMode::Standard, SF = RouteMode::StepFree;
@@ -187,7 +183,7 @@ int main(int argc, char** argv) {
     // ===================================================== dataset integrity
     {
         const GraphSummary s = summarize(demo);
-        std::ostringstream a;
+        ostringstream a;
         a << s.nodes << " nodes, " << s.physicalEdges << " edges (" << s.oneWay << " one-way), " << s.adjacencyEntries
           << " adjacency entries, " << s.places << " places, " << s.closed << " closed, " << s.components
           << " components, " << demoRep.warnings.size() << " warnings";
@@ -204,7 +200,7 @@ int main(int argc, char** argv) {
         record("T01", "routing", "Normal shortest route", "demo; 101 Main Gate -> 106 Library; standard",
                "OK 590.0 m via E01,E02,E03,E22 (matches oracle, valid)", describe(demo, r),
                r.status == RouteStatus::Ok && nearlyEqual(r.distance, 590) &&
-                   edgeIds(demo, r) == std::vector<std::string>{"E01", "E02", "E03", "E22"} && matchesOracle(demo, r));
+                   edgeIds(demo, r) == vector<string>{"E01", "E02", "E03", "E22"} && matchesOracle(demo, r));
     }
     {
         CampusGraph g;
@@ -213,7 +209,7 @@ int main(int argc, char** argv) {
         const Route r = findRouteByNodeId(g, 1, 2, STD);
         record("T02", "routing", "Multi-hop route shorter than a direct edge", "A-B 10 direct; A-C 3, C-B 4",
                "OK 7.0 m via A>C>B (not the 10 m direct edge)", describe(g, r),
-               r.status == RouteStatus::Ok && nearlyEqual(r.distance, 7) && nodeIds(g, r) == std::vector<int>{1, 3, 2} &&
+               r.status == RouteStatus::Ok && nearlyEqual(r.distance, 7) && nodeIds(g, r) == vector<int>{1, 3, 2} &&
                    matchesOracle(g, r));
     }
     {
@@ -221,13 +217,13 @@ int main(int argc, char** argv) {
         record("T02b", "routing", "Multi-hop beats direct perimeter road (demo)", "demo; 101 -> 105; E21 direct = 520 m",
                "OK 473.0 m via E01,E02,E04 (not E21)", describe(demo, r),
                r.status == RouteStatus::Ok && nearlyEqual(r.distance, 473) &&
-                   edgeIds(demo, r) == std::vector<std::string>{"E01", "E02", "E04"} && matchesOracle(demo, r));
+                   edgeIds(demo, r) == vector<string>{"E01", "E02", "E04"} && matchesOracle(demo, r));
     }
     {
         const Route r = findRouteByNodeId(demo, 106, 106, STD);
         record("T03", "routing", "Source equals destination", "demo; 106 -> 106",
                "OK 0.0 m, 0 segments, single node 106", describe(demo, r),
-               r.status == RouteStatus::Ok && r.distance == 0.0 && r.segments == 0 && nodeIds(demo, r) == std::vector<int>{106} &&
+               r.status == RouteStatus::Ok && r.distance == 0.0 && r.segments == 0 && nodeIds(demo, r) == vector<int>{106} &&
                    r.edges.empty());
     }
     {
@@ -242,7 +238,7 @@ int main(int argc, char** argv) {
         const Place* p1 = demo.findPlace(1);
         const Place* p99 = demo.findPlace(99);
         const Place* p0 = demo.findPlace(0);
-        std::string actual = std::string("place 1 -> node ") + (p1 ? std::to_string(demo.nodes()[p1->node].id) : "none") +
+        string actual = string("place 1 -> node ") + (p1 ? to_string(demo.nodes()[p1->node].id) : "none") +
                              "; place 99 " + (p99 ? "found" : "not found") + "; place 0 " + (p0 ? "found" : "not found") +
                              "; node ID 1 " + (demo.indexOfNodeId(1) >= 0 ? "exists" : "does not exist");
         record("T06", "input", "Invalid place IDs rejected; place IDs distinct from node IDs",
@@ -267,15 +263,15 @@ int main(int argc, char** argv) {
         record("T08", "closure", "Closing an edge gives the alternative route", "demo; close E22; 101 -> 106",
                "OK 608.0 m via E01,E02,E04,E05 (+18 m)", describe(g, r),
                r.status == RouteStatus::Ok && nearlyEqual(r.distance, 608) &&
-                   edgeIds(g, r) == std::vector<std::string>{"E01", "E02", "E04", "E05"} && matchesOracle(g, r));
+                   edgeIds(g, r) == vector<string>{"E01", "E02", "E04", "E05"} && matchesOracle(g, r));
     }
     {
         CampusGraph g = fresh();
-        const std::vector<std::string> order = {"E22", "E04", "E20", "E21", "E06", "E24"};
-        std::vector<std::string> got;
+        const vector<string> order = {"E22", "E04", "E20", "E21", "E06", "E24"};
+        vector<string> got;
         bool pass = true;
-        const std::vector<double> want = {608, 620, 655, 1229, 1262, -1};
-        for (std::size_t i = 0; i < order.size(); ++i) {
+        const vector<double> want = {608, 620, 655, 1229, 1262, -1};
+        for (size_t i = 0; i < order.size(); ++i) {
             g.setEdgeOpen(order[i], false);
             const Route r = findRouteByNodeId(g, 101, 106, STD);
             got.push_back(order[i] + ":" + (r.status == RouteStatus::Ok ? fmt(r.distance) : toString(r.status)));
@@ -296,7 +292,7 @@ int main(int argc, char** argv) {
                "demo; close E22, route, reopen E22, route 101 -> 106", "608.0 m while closed; 590.0 m after reopening",
                fmt(closed.distance) + " m while closed; " + describe(g, reopened) + " after reopening",
                nearlyEqual(closed.distance, 608) && nearlyEqual(reopened.distance, 590) &&
-                   edgeIds(g, reopened) == std::vector<std::string>{"E01", "E02", "E03", "E22"});
+                   edgeIds(g, reopened) == vector<string>{"E01", "E02", "E03", "E22"});
     }
     {
         CampusGraph g = fresh();
@@ -310,12 +306,12 @@ int main(int argc, char** argv) {
         const Route back = findRouteByNodeId(g, 106, 101, STD);
         const auto uses22 = [&](const Route& r) {
             const auto ids = edgeIds(g, r);
-            return std::find(ids.begin(), ids.end(), "E22") != ids.end();
+            return find(ids.begin(), ids.end(), "E22") != ids.end();
         };
         record("T11", "closure", "Closing a two-way edge blocks both directions",
                "demo; E22 (104<->106) closed; route both ways",
                "2 adjacency entries share E22; reverse route used E22 before (590.0); after closing neither direction uses E22 (608.0 both ways)",
-               std::to_string(refs) + " adjacency entries share E22; before: " + describe(g, before) + "; after fwd " +
+               to_string(refs) + " adjacency entries share E22; before: " + describe(g, before) + "; after fwd " +
                    fmt(fwd.distance) + (uses22(fwd) ? " uses E22" : "") + ", back " + fmt(back.distance) +
                    (uses22(back) ? " uses E22" : ""),
                refs == 2 && uses22(before) && !uses22(fwd) && !uses22(back) && nearlyEqual(fwd.distance, 608) &&
@@ -332,7 +328,7 @@ int main(int argc, char** argv) {
         const unsigned v3 = g.version();
         const int restored = g.resetToDataStatus();
         const unsigned v4 = g.version();
-        std::ostringstream a;
+        ostringstream a;
         a << "E99 " << (unknown == StatusChange::UnknownEdge ? "unknown" : "accepted") << " (v" << v1 << "); e22 "
           << (lower == StatusChange::Changed ? "closed" : "not closed") << " (v" << v2 << "); E22 again "
           << (again == StatusChange::Unchanged ? "unchanged" : "changed") << " (v" << v3 << "); reset restored "
@@ -354,7 +350,7 @@ int main(int argc, char** argv) {
                "420.0 m via E01,E02,E03; after reopening E31: 350.0 m via E01,E31",
                describe(g, before) + " | " + describe(g, after),
                nearlyEqual(before.distance, 420) && nearlyEqual(after.distance, 350) &&
-                   edgeIds(g, after) == std::vector<std::string>{"E01", "E31"});
+                   edgeIds(g, after) == vector<string>{"E01", "E31"});
     }
 
     // ===================================================== direction, ties, weights, modes
@@ -366,8 +362,8 @@ int main(int argc, char** argv) {
                "demo; E23 is one-way 118 -> 115; route 118->116 and 116->118",
                "118->116: 382.0 m via E23,E15; 116->118: 491.0 m without E23",
                describe(demo, a) + " | " + describe(demo, b),
-               nearlyEqual(a.distance, 382) && edgeIds(demo, a) == std::vector<std::string>{"E23", "E15"} &&
-                   nearlyEqual(b.distance, 491) && std::find(ids.begin(), ids.end(), "E23") == ids.end() &&
+               nearlyEqual(a.distance, 382) && edgeIds(demo, a) == vector<string>{"E23", "E15"} &&
+                   nearlyEqual(b.distance, 491) && find(ids.begin(), ids.end(), "E23") == ids.end() &&
                    matchesOracle(demo, a) && matchesOracle(demo, b));
     }
     {
@@ -386,7 +382,7 @@ int main(int argc, char** argv) {
                "demo; 113 -> 120; 555 m via E29,E27 (2 seg) or E12,E11,E28,E27 (4 seg)",
                "OK 555.0 m, 2 segments via E29,E27", describe(demo, r),
                nearlyEqual(r.distance, 555) && r.segments == 2 &&
-                   edgeIds(demo, r) == std::vector<std::string>{"E29", "E27"} && matchesOracle(demo, r));
+                   edgeIds(demo, r) == vector<string>{"E29", "E27"} && matchesOracle(demo, r));
     }
     {
         // The 3-segment route reaches D first (C is settled before E), so the
@@ -399,7 +395,7 @@ int main(int argc, char** argv) {
         const Route r = findRouteByNodeId(g, 1, 4, STD);
         record("T16b", "ties", "Equal distance: later-found route with fewer segments replaces earlier one",
                "A-B-C-D 2+2+2 (3 seg, found first); A-E-D 5+1 (2 seg)", "OK 6.0 m, 2 segments via A>E>D",
-               describe(g, r), nearlyEqual(r.distance, 6) && nodeIds(g, r) == std::vector<int>{1, 5, 4} && matchesOracle(g, r));
+               describe(g, r), nearlyEqual(r.distance, 6) && nodeIds(g, r) == vector<int>{1, 5, 4} && matchesOracle(g, r));
     }
     {
         CampusGraph g;
@@ -413,7 +409,7 @@ int main(int argc, char** argv) {
                "A-B-D and A-C-D both 10 m, 2 segments", "OK 10.0 m, 2 segments, A>B>D or A>C>D, valid",
                describe(g, r),
                nearlyEqual(r.distance, 10) && r.segments == 2 &&
-                   (n == std::vector<int>{1, 2, 4} || n == std::vector<int>{1, 3, 4}) && matchesOracle(g, r));
+                   (n == vector<int>{1, 2, 4} || n == vector<int>{1, 3, 4}) && matchesOracle(g, r));
     }
     {
         CampusGraph g;
@@ -423,7 +419,7 @@ int main(int argc, char** argv) {
         const Route b = findRouteByNodeId(g, 1, 2, STD);
         record("T18", "weights", "Zero-weight edge handled", "A-B 0 m, B-C 5 m, A-C 6 m",
                "A->C OK 5.0 m via A>B>C; A->B OK 0.0 m, 1 segment", describe(g, a) + " | " + describe(g, b),
-               nearlyEqual(a.distance, 5) && nodeIds(g, a) == std::vector<int>{1, 2, 3} && b.distance == 0.0 &&
+               nearlyEqual(a.distance, 5) && nodeIds(g, a) == vector<int>{1, 2, 3} && b.distance == 0.0 &&
                    b.segments == 1 && matchesOracle(g, a) && matchesOracle(g, b));
     }
     {
@@ -435,7 +431,7 @@ int main(int argc, char** argv) {
         const Route b = findRouteByNodeId(g, 1, 2, STD);
         record("T19", "weights", "Parallel physical paths kept separate", "A-B by P1 30 m and P2 20 m; then close P2",
                "20.0 m via P2; after closing P2: 30.0 m via P1", describe(g, a) + " | " + describe(g, b),
-               edgeIds(g, a) == std::vector<std::string>{"P2"} && edgeIds(g, b) == std::vector<std::string>{"P1"} &&
+               edgeIds(g, a) == vector<string>{"P2"} && edgeIds(g, b) == vector<string>{"P1"} &&
                    nearlyEqual(b.distance, 30));
     }
     {
@@ -452,7 +448,7 @@ int main(int argc, char** argv) {
         record("T21", "mode", "Step-free mode excludes step_free=unknown", "demo; 110 -> 118; E25 is unknown",
                "standard 350.0 m via E25; step-free 468.0 m via E09,E17,E18", describe(demo, a) + " | " + describe(demo, b),
                nearlyEqual(a.distance, 350) && nearlyEqual(b.distance, 468) &&
-                   edgeIds(demo, b) == std::vector<std::string>{"E09", "E17", "E18"});
+                   edgeIds(demo, b) == vector<string>{"E09", "E17", "E18"});
     }
 
     {
@@ -460,10 +456,10 @@ int main(int argc, char** argv) {
         // every other heap removal is counted as stale.
         const int src = demo.indexOfNodeId(101);
         const SearchResult r = dijkstra(demo, src, -1, STD);
-        std::size_t reachable = 0;
+        size_t reachable = 0;
         for (double d : r.dist) reachable += d < kInf ? 1 : 0;
         const SearchStats& s = r.stats;
-        std::ostringstream a;
+        ostringstream a;
         a << "settled " << s.settled << " of " << reachable << " reachable; pushes " << s.heapPushes << " = settled + stale "
           << s.stalePops << "; scanned " << s.adjacencyScanned << " = filtered " << s.edgesFiltered << " + attempts "
           << s.relaxAttempts << "; successes " << s.relaxSuccesses << " = pushes - 1";
@@ -478,10 +474,10 @@ int main(int argc, char** argv) {
     struct Bad {
         const char* id;
         const char* scenario;
-        std::string nodes, edges, places, mustContain;
+        string nodes, edges, places, mustContain;
     };
-    const std::string goodEdge = "E1|1|2|10|two-way|open|yes|walkway\n";
-    const std::vector<Bad> bad = {
+    const string goodEdge = "E1|1|2|10|two-way|open|yes|walkway\n";
+    const vector<Bad> bad = {
         {"T30", "Negative distance rejected", kNodes3, "E1|1|2|-5|two-way|open|yes|walkway\n", "", "must be >= 0"},
         {"T31", "NaN distance rejected", kNodes3, "E1|1|2|nan|two-way|open|yes|walkway\n", "", "must be finite"},
         {"T32", "Infinite distance rejected", kNodes3, "E1|1|2|inf|two-way|open|yes|walkway\n", "", "must be finite"},
@@ -508,15 +504,15 @@ int main(int argc, char** argv) {
         CampusGraph g = fresh();
         LoadReport rep;
         const bool loaded = loadText(b.nodes, b.edges, b.places, g, rep);
-        std::string msg = rep.errors.empty() ? "(no error)" : rep.errors.front();
+        string msg = rep.errors.empty() ? "(no error)" : rep.errors.front();
         bool found = false;
-        for (const auto& e : rep.errors) found = found || e.find(b.mustContain) != std::string::npos;
+        for (const auto& e : rep.errors) found = found || e.find(b.mustContain) != string::npos;
         const bool untouched = g.nodeCount() == demo.nodeCount();  // failed load must not overwrite the target
         // Show the file that contains the bad record.
-        std::string setup = !b.places.empty() ? "places.txt: " + b.places
+        string setup = !b.places.empty() ? "places.txt: " + b.places
                             : (b.edges.empty() || b.edges == goodEdge) ? "nodes.txt: " + b.nodes
                                                                        : "edges.txt: " + b.edges;
-        std::replace(setup.begin(), setup.end(), '\n', ' ');
+        replace(setup.begin(), setup.end(), '\n', ' ');
         record(b.id, "validation", b.scenario, setup, "DATA_ERROR containing '" + b.mustContain + "'",
                (loaded ? "LOADED; " : "DATA_ERROR: ") + msg + (untouched ? "" : " [target graph modified]"),
                !loaded && found && untouched);
@@ -527,9 +523,9 @@ int main(int argc, char** argv) {
         const bool loaded = CampusGraph::loadDirectory("data/does_not_exist", g, rep);
         record("T50", "validation", "Missing data files reported", "load data/does_not_exist",
                "DATA_ERROR: cannot open nodes.txt, edges.txt, places.txt",
-               (loaded ? "LOADED" : "DATA_ERROR: " + std::to_string(rep.errors.size()) + " errors, first: ") +
+               (loaded ? "LOADED" : "DATA_ERROR: " + to_string(rep.errors.size()) + " errors, first: ") +
                    (rep.errors.empty() ? "" : rep.errors.front()),
-               !loaded && rep.errors.size() == 3 && rep.errors[0].find("cannot open") != std::string::npos);
+               !loaded && rep.errors.size() == 3 && rep.errors[0].find("cannot open") != string::npos);
     }
     {
         CampusGraph g;
@@ -537,13 +533,13 @@ int main(int argc, char** argv) {
         const bool loaded = loadText("1|A|0|0\n2|B|30|40\n", "E1|1|2|20|two-way|open|yes|walkway\n", "", g, rep);
         record("T51", "validation", "Distance shorter than straight line gives a warning (not an error)",
                "A(0,0) B(30,40) straight 50 m; E1 = 20 m", "loaded with 1 warning",
-               std::string(loaded ? "loaded" : "rejected") + " with " + std::to_string(rep.warnings.size()) + " warning(s)",
+               string(loaded ? "loaded" : "rejected") + " with " + to_string(rep.warnings.size()) + " warning(s)",
                loaded && rep.warnings.size() == 1);
     }
 
     // ===================================================== oracle sweeps (demo dataset)
     {
-        const std::vector<std::pair<std::string, std::vector<std::string>>> scenarios = {
+        const vector<pair<string, vector<string>>> scenarios = {
             {"no extra closures", {}},
             {"E22 closed", {"E22"}},
             {"E22,E04 closed", {"E22", "E04"}},
@@ -560,9 +556,9 @@ int main(int argc, char** argv) {
                 SweepStats s;
                 sweep(g, mode, true, s);
                 addTotals(s);
-                std::ostringstream id;
+                ostringstream id;
                 id << "T" << k++;
-                record(id.str(), "oracle", std::string("All-pairs agreement with Bellman-Ford, ") + toString(mode),
+                record(id.str(), "oracle", string("All-pairs agreement with Bellman-Ford, ") + toString(mode),
                        "demo; " + sc.first + "; all 22x22 node pairs", "agree 484/484; all OK routes valid",
                        sweepText(s), s.agree == s.pairs && s.validRoutes == s.okRoutes && s.pairs == 484);
             }
@@ -571,14 +567,14 @@ int main(int argc, char** argv) {
 
     // ===================================================== randomized property tests
     {
-        std::mt19937 rng(20261102);
+        mt19937 rng(20261102);
         const int graphs = 300;
         SweepStats s;
         long nodesTotal = 0;
         for (int i = 0; i < graphs; ++i) {
             const int n = 1 + static_cast<int>(rng() % 30);
             const int m = static_cast<int>(rng() % (3 * n + 1));
-            std::string nt, et;
+            string nt, et;
             randomGraphText(rng, n, m, false, nt, et);
             CampusGraph g;
             LoadReport rep;
@@ -593,15 +589,15 @@ int main(int argc, char** argv) {
         addTotals(s);
         record("T70", "oracle", "Random graphs, integer weights: labels match Bellman-Ford",
                "300 seeded random graphs, 1-30 nodes, zero weights, parallel/one-way/closed edges; all pairs",
-               "all pairs agree (distance and segments); all OK routes valid", sweepText(s) + "; nodes total " + std::to_string(nodesTotal),
+               "all pairs agree (distance and segments); all OK routes valid", sweepText(s) + "; nodes total " + to_string(nodesTotal),
                s.agree == s.pairs && s.validRoutes == s.okRoutes && s.pairs > 0);
     }
     {
-        std::mt19937 rng(7);
+        mt19937 rng(7);
         SweepStats s;
         for (int i = 0; i < 200; ++i) {
             const int n = 2 + static_cast<int>(rng() % 25);
-            std::string nt, et;
+            string nt, et;
             randomGraphText(rng, n, 3 * n, true, nt, et);
             CampusGraph g;
             LoadReport rep;
@@ -624,20 +620,20 @@ int main(int argc, char** argv) {
     for (const auto& r : records) failed += r.pass ? 0 : 1;
     const int total = static_cast<int>(records.size());
 
-    auto csv = [](const std::string& s) {
-        std::string out = "\"";
-        for (char c : s) out += (c == '"') ? std::string("\"\"") : std::string(1, c);
+    auto csv = [](const string& s) {
+        string out = "\"";
+        for (char c : s) out += (c == '"') ? string("\"\"") : string(1, c);
         return out + "\"";
     };
-    std::ofstream f(resultsDir + "/test_results.csv");
+    ofstream f(resultsDir + "/test_results.csv");
     f << "test_id,category,scenario,setup,expected,actual,status\n";
     for (const auto& r : records)
         f << r.id << "," << r.category << "," << csv(r.scenario) << "," << csv(r.setup) << "," << csv(r.expected) << ","
           << csv(r.actual) << "," << (r.pass ? "PASS" : "FAIL") << "\n";
 
-    std::ofstream m(resultsDir + "/correctness_metrics.csv");
+    ofstream m(resultsDir + "/correctness_metrics.csv");
     m << "metric,numerator,denominator,value_percent\n";
-    auto pct = [](long a, long b) { std::ostringstream o; o << std::fixed << std::setprecision(2) << (b ? 100.0 * a / b : 0.0); return o.str(); };
+    auto pct = [](long a, long b) { ostringstream o; o << fixed << setprecision(2) << (b ? 100.0 * a / b : 0.0); return o.str(); };
     m << "test_pass_rate," << (total - failed) << "," << total << "," << pct(total - failed, total) << "\n";
     m << "oracle_agreement_rate (all sweep pairs incl. NO_ROUTE)," << totalSweep.agree << "," << totalSweep.pairs << ","
       << pct(totalSweep.agree, totalSweep.pairs) << "\n";
@@ -646,7 +642,7 @@ int main(int argc, char** argv) {
     m << "no_route_pairs_checked," << totalSweep.noRoute << "," << totalSweep.pairs << ","
       << pct(totalSweep.noRoute, totalSweep.pairs) << "\n";
 
-    std::cout << "\n" << (total - failed) << "/" << total << " tests passed. Oracle pairs agreeing: " << totalSweep.agree
+    cout << "\n" << (total - failed) << "/" << total << " tests passed. Oracle pairs agreeing: " << totalSweep.agree
               << "/" << totalSweep.pairs << ". Valid OK routes: " << totalSweep.validRoutes << "/" << totalSweep.okRoutes
               << ".\nWrote " << resultsDir << "/test_results.csv and " << resultsDir << "/correctness_metrics.csv\n";
     return failed;
